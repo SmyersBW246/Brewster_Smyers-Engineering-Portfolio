@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "course_code": "ENGR 100",
+  "course_title": "Engineering Design Experience",
+  "department": "Engineering (College of Engineering, interdisciplinary)",
+  "catalog_year": "2025-2026",
+  "official_source_url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/engineeringsciencesengr/",
+  "academic_verification_status": "verified_2025_2026_catalog",
+  "enrollment_status": "listed_in_degree_audit_completion_unknown",
+  "content_status": "complete_draft_personal_status_unverified",
+  "publication_gate": "Confirm completed/current/planned or transfer status and first-person framing; no course-specific project currently established.",
+  "personal_evidence_status": "audit_only",
+  "suggested_portfolio_category": "Engineering Foundations",
+  "documents": {
+    "portfolio_page": "PORTFOLIO_PAGE.md",
+    "technical_reference": "TECHNICAL_REFERENCE.md",
+    "sources": "SOURCES.md",
+    "evidence_notes": "EVIDENCE_NOTES.md"
+  },
+  "assets": [
+    {
+      "filename": "assets/illustrative_design_trade_study.svg",
+      "caption": "Original illustrative engineering design trade study with hypothetical scores;not a student test or assignment result.",
+      "asset_type": "original_explanatory_diagram",
+      "evidence_category": "Illustrative technical content;not personal work",
+      "placement": "After the related representative example;actual project evidence near project summary",
+      "alt_text": "Original illustrative engineering design trade study with hypothetical scores;not a student test or assignment result."
+    },
+    {
+      "filename": "assets/illustrative_design_trade_study.png",
+      "caption": "Original illustrative engineering design trade study with hypothetical scores;not a student test or assignment result.",
+      "asset_type": "original_explanatory_diagram",
+      "evidence_category": "Illustrative technical content;not personal work",
+      "placement": "After the related representative example;actual project evidence near project summary",
+      "alt_text": "Original illustrative engineering design trade study with hypothetical scores;not a student test or assignment result.",
+      "format_relationship": "PNG rendering of same precise SVG diagram"
+    }
+  ],
+  "relevant_project_links": [],
+  "source_records": [
+    {
+      "source_id": "BU_ENGR_2025",
+      "source_type": "official_university_catalog",
+      "evidence_category": "Bucknell-verified",
+      "title": "Engineering",
+      "url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/engineeringsciencesengr/",
+      "locator": "Engineering :  ENGR 099 and ENGR 100 course blocks",
+      "claims_supported": [
+        "official code, title, credit and short course scope"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": "2025-2026"
+    },
+    {
+      "source_id": "NASA_REQUIREMENTS",
+      "source_type": "government_engineering_handbook",
+      "evidence_category": "Standard engineering",
+      "title": "NASA Systems Engineering Handbook",
+      "url": "https://www.nasa.gov/reference/4-2-technical-requirements-definition/",
+      "locator": "NASA Systems Engineering Handbook :  4.2 Technical Requirements Definition",
+      "claims_supported": [
+        "measurable and verifiable requirements",
+        "constraints and interfaces"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "NASA_DECISIONS",
+      "source_type": "government_engineering_handbook",
+      "evidence_category": "Standard engineering",
+      "title": "NASA Systems Engineering Handbook",
+      "url": "https://www.nasa.gov/reference/6-8-decision-analysis/",
+      "locator": "NASA Systems Engineering Handbook :  6.8.1.2 Decision Analysis",
+      "claims_supported": [
+        "weighted trade studies",
+        "mandatory criteria",
+        "normalization, uncertainty and sensitivity"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "NASA_SE_APPENDIX",
+      "source_type": "government_engineering_handbook",
+      "evidence_category": "Standard engineering",
+      "title": "NASA Systems Engineering Handbook",
+      "url": "https://www.nasa.gov/reference/system-engineering-handbook-appendix/",
+      "locator": "NASA Systems Engineering Handbook :  Appendix B glossary: Verification and Validation; Appendix D",
+      "claims_supported": [
+        "verification versus validation",
+        "requirements verification matrix"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "NASA_JPL_DESIGN",
+      "source_type": "government_educational_material",
+      "evidence_category": "Standard engineering",
+      "title": "NASA/JPL",
+      "url": "https://www.jpl.nasa.gov/edu/resources/image/engineering-design-process-flow-chart/",
+      "locator": "NASA/JPL :  Engineering Design Process Flow Chart",
+      "claims_supported": [
+        "iterative engineering design process"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    }
+  ],
+  "personal_evidence": [
+    {
+      "source_id": "P-AUDIT",
+      "location": "Supplied degree-audit course-code screenshots, visually reviewed by coordinating agent; screenshot header dated 2026-10-26, catalog term Fall 2025-2026",
+      "supports": "Course code appears in supplied academic audit; grade, completion status and course term not shown."
+    }
+  ],
+  "unverified_personal_claims": [
+    "Completed, current, planned or transfer-credit status",
+    "Specific assignments or personal challenges",
+    "Demonstrated proficiency or learning outcomes"
+  ],
+  "review_notes": [
+    "No course-specific public learning-outcome list located; do not substitute program-wide outcomes.",
+    "No student project is assigned to this course without separate evidence."
+  ],
+  "page_word_count": 683,
+  "official_title": "Engineering Design Experience",
+  "display_title": "Engineering Design Experience",
+  "documented_subject_areas": [
+    "engineering design process",
+    "authentic design projects",
+    "teamwork fundamentals",
+    "engineering ethics",
+    "technical and professional skills"
+  ],
+  "course_specific_learning_objectives_status": "Not located in retrieved public catalog records; catalog coverage is documented, but no separate course-level learning-outcome list was found.",
+  "official_description_paraphrase": "Introduces engineering through themed design projects, with attention to design methods, teamwork, ethics and professional practice.",
+  "student_attendance_term": null,
+  "completion_status": "not_established_from_available_records",
+  "recommended_authentic_artifact": "The actual course design project with requirements,prototype and one documented test;robot only if confirmed here."
+}

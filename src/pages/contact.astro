@@ -1,0 +1,4 @@
+---
+import Base from '../layouts/Base.astro';import {url,email,linkedin} from '../lib/urls';
+---
+<Base title="Contact | Brewster Smyers"><section class="contact-page wrap"><p class="eyebrow">Let’s connect</p><h1>Good work starts<br/>with a <span>conversation.</span></h1><p class="lead">I’m interested in Summer 2027 engineering internships and opportunities to learn from people working in mechanical design, manufacturing, aerospace and robotics.</p><div class="contact-links"><a href={`mailto:${email}`}><small>Email</small><span>{email}</span><b aria-hidden="true">↗</b></a><a href={linkedin}><small>LinkedIn</small><span>Connect with Brewster</span><b aria-hidden="true">↗</b></a><a href={url('resume/Brewster_Smyers_Resume.pdf')}><small>Background</small><span>Download my resume</span><b aria-hidden="true">↓</b></a></div><p class="muted">Bucknell University · Lewisburg, PA<br/>Home: Marblehead, MA</p></section></Base>

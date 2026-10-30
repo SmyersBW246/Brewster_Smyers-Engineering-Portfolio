@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "course_code": "MECH 355",
+  "course_title": "Manufacturing Processes",
+  "official_title": "Manufacturing Processes",
+  "display_title": "Manufacturing Processes",
+  "department": "Mechanical Engineering",
+  "catalog_year": "2025-2026",
+  "official_source_url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/",
+  "official_description_paraphrase": "Surveys shaping and processing methods, supported by fabrication laboratories and introductory numerical control and CAD/CAM.",
+  "documented_subject_areas": [
+    "deformation processing",
+    "solidification",
+    "material removal",
+    "plastics forming",
+    "additive manufacturing",
+    "laboratory fabrication",
+    "numerical control",
+    "CAD/CAM"
+  ],
+  "course_specific_learning_objectives_status": "Not located in retrieved public catalog records; catalog coverage is documented, but no separate course-level learning-outcome list was found.",
+  "academic_verification_status": "verified_official_catalog",
+  "enrollment_status": "listed_in_degree_audit_completion_unknown",
+  "content_status": "complete_draft_personal_status_unverified",
+  "publication_gate": "Confirm completed/current/planned/transfer status and personal phrasing; do not publish suggested experiences as actual coursework.",
+  "personal_evidence_status": "user_confirmed_manufacturing_activities",
+  "suggested_portfolio_category": "Manufacturing and Materials",
+  "documents": {
+    "portfolio_page": "PORTFOLIO_PAGE.md",
+    "technical_reference": "TECHNICAL_REFERENCE.md",
+    "sources": "SOURCES.md",
+    "evidence_notes": "EVIDENCE_NOTES.md"
+  },
+  "assets": [
+    {
+      "filename": "assets/MECH_355_Illustrative_Casting_Size.svg",
+      "caption": "Original illustrative casting-size scaling for hypothetical cubes and constant;not measured bronze-lab data.",
+      "evidence_category": "Original illustrative technical diagram",
+      "placement": "After representative example",
+      "alt_text": "Original illustrative casting-size scaling for hypothetical cubes and constant;not measured bronze-lab data.",
+      "asset_type": "original_explanatory_diagram"
+    },
+    {
+      "filename": "assets/MECH_355_Illustrative_Casting_Size.png",
+      "caption": "Original illustrative casting-size scaling for hypothetical cubes and constant;not measured bronze-lab data.",
+      "evidence_category": "Original illustrative technical diagram",
+      "placement": "After representative example",
+      "alt_text": "Original illustrative casting-size scaling for hypothetical cubes and constant;not measured bronze-lab data.",
+      "asset_type": "original_explanatory_diagram",
+      "format_relationship": "PNG rendering of same precise SVG diagram"
+    }
+  ],
+  "relevant_project_links": [
+    {
+      "project_key": "carbon_drone",
+      "relationship": "manufacturing-related proposal;course attribution unconfirmed",
+      "url": null
+    }
+  ],
+  "source_records": [
+    {
+      "source_id": "BU_MECH_2025",
+      "source_type": "official_university_catalog",
+      "evidence_category": "Bucknell-verified content",
+      "title": "Bucknell 2025-2026 catalog: Mechanical Engineering",
+      "url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/",
+      "catalog_year": "2025-2026",
+      "locator": "Courses :  MECH 355",
+      "claims_supported": [
+        "Official course code, title, department and course-description scope"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MECH355-01",
+      "source_type": "primary_technical_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "MIT OCW 2.008: Metal Casting, Lecture21",
+      "url": "https://ocw.mit.edu/courses/2-008-design-and-manufacturing-ii-spring-2025/mit2_008_s25_lec21.pdf",
+      "locator": "Printed slides26-28:solidification,modulus,Chvorinov scaling",
+      "claims_supported": [
+        "P2;E3;D2 model basis"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH355-02",
+      "source_type": "primary_technical_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "MIT OCW 2.008: Solidification and Cooling, Lecture21a",
+      "url": "https://ocw.mit.edu/courses/2-008-design-and-manufacturing-ii-spring-2025/mit2_008_s25_lec21a.pdf",
+      "locator": "Heat-transfer models and casting solidification",
+      "claims_supported": [
+        "P2;E3 applicability limits"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH355-03",
+      "source_type": "primary_technical_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "MIT OCW 2.008: Deforming, Lecture20a",
+      "url": "https://ocw.mit.edu/courses/2-008-design-and-manufacturing-ii-spring-2025/mit2_008_s25_lec20a.pdf",
+      "locator": "Plastic forming and deformation mechanics",
+      "claims_supported": [
+        "P3;E4;D3 ideal deformation"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH355-04",
+      "source_type": "primary_technical_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "MIT OCW 2.008: Metal Cutting I, Lecture05",
+      "url": "https://ocw.mit.edu/courses/2-008-design-and-manufacturing-ii-spring-2025/mit2_008_s25_lec05.pdf",
+      "locator": "Printed slides43-45:speed,feed,milling MRR and power",
+      "claims_supported": [
+        "P4;E1-E2;D1;original chosen values"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH355-05",
+      "source_type": "primary_technical_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "MIT OCW 2.008: Joining II, Lecture10",
+      "url": "https://ocw.mit.edu/courses/2-008-design-and-manufacturing-ii-spring-2025/mit2_008_s25_lec10.pdf",
+      "locator": "Joining process types and interface preparation",
+      "claims_supported": [
+        "P5;standard joining considerations;not personal joint testing"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH355-06",
+      "source_type": "primary_technical_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "MIT OCW 2.008: Injection Molding I, Lecture02",
+      "url": "https://ocw.mit.edu/courses/2-008-design-and-manufacturing-ii-spring-2025/mit2_008_s25_lec02.pdf",
+      "locator": "Printed slide28:projected-area clamp-force model;packing/cooling sections",
+      "claims_supported": [
+        "P6;E5;D4;no actual machine capacity claim"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    }
+  ],
+  "personal_evidence": [
+    {
+      "source_id": "PE09",
+      "location": "User manufacturing notes and audit",
+      "supports": "PE09 direct user-confirmed manufacturing activities and tours;PE08 audit code;PE04-06 related preliminary carbon-drone/mount documents reviewed but not assigned or completed"
+    }
+  ],
+  "unverified_personal_claims": [
+    "Course completion/semester",
+    "Specific personal difficulty and demonstrated resolution",
+    "Assignment authorship and course association for suggested artifacts"
+  ],
+  "recommended_authentic_artifact": "Actual bronze object and quarter ring;one pattern-to-part sequence;optional CNC/mold/weld/composite photographs.",
+  "review_notes": [
+    "No AI-generated project image",
+    "Representative numerical examples independently recalculable"
+  ],
+  "page_word_count": 682,
+  "student_attendance_term": null,
+  "completion_status": "lab_activities_user_confirmed_course_completion_not_established"
+}

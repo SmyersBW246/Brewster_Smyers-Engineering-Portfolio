@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0",
+  "course_code": "MATH 227",
+  "course_title": "Statistics and Engineering",
+  "display_title": "Statistics and Engineering",
+  "department": "Mathematics & Statistics",
+  "catalog_year": "2025-2026",
+  "official_source_url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/mathematicsmath/",
+  "academic_verification_status": "verified_2025_2026_catalog",
+  "enrollment_status": "listed_in_degree_audit_completion_unknown",
+  "content_status": "complete_draft_personal_status_unverified",
+  "publication_gate": "Confirm completed/current/planned or transfer-credit status;confirm first-person framing;keep illustrative examples separate from personal coursework.",
+  "personal_evidence_status": "audit_only_no_course_artifact_reviewed",
+  "suggested_portfolio_category": "Mathematics and Analysis",
+  "documents": {
+    "portfolio_page": "PORTFOLIO_PAGE.md",
+    "technical_reference": "TECHNICAL_REFERENCE.md",
+    "sources": "SOURCES.md",
+    "evidence_notes": "EVIDENCE_NOTES.md"
+  },
+  "assets": [
+    {
+      "filename": "assets/MATH_227_illustrative_calibration_regression.png",
+      "caption": "Illustrative least-squares calibration for four assumed force-deflection pairs. Line:y=0.100+2.000x in mm andN. Synthetic benchmark,not Brewster test data.",
+      "type": "original_explanatory_plot",
+      "evidence_category": "Illustrative standard mathematics",
+      "placement": "After representative problem example",
+      "student_project_result": false,
+      "asset_type": "original_explanatory_diagram",
+      "alt_text": "Illustrative least-squares calibration for four assumed force-deflection pairs. Line:y=0.100+2.000x in mm andN. Synthetic benchmark,not Brewster test data."
+    }
+  ],
+  "relevant_project_links": [],
+  "source_records": [
+    {
+      "source_id": "BU_MATH_2025",
+      "source_type": "official_university_catalog",
+      "evidence_category": "Bucknell-verified",
+      "title": "Bucknell University 2025-2026 Mathematics & Statistics catalog",
+      "url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/mathematicsmath/",
+      "catalog_year": "2025-2026",
+      "locator": "Courses: MATH 227 entry",
+      "claims_supported": [
+        "Official code,title,department,brief course description and topic labels"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH227-01",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "NIST/SEMATECH e-Handbook: Confidence Limits for the Mean",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+      "catalog_year": null,
+      "locator": "t confidence interval,standard error,and repeated-sampling interpretation",
+      "claims_supported": [
+        "P1-P3;E1-E2;D1"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH227-02",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "NIST/SEMATECH e-Handbook: Linear Least Squares Regression",
+      "url": "https://www.itl.nist.gov/div898/handbook/pmd/section1/pmd141.htm",
+      "catalog_year": null,
+      "locator": "Linear-in-parameter models,least-squares fitting and limitations",
+      "claims_supported": [
+        "P4;E3-E4;D2"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH227-03",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "NIST/SEMATECH e-Handbook: One-way ANOVA model and assumptions",
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section4/prc432.htm",
+      "catalog_year": null,
+      "locator": "Fixed-effect model and independent normal equal-variance errors",
+      "claims_supported": [
+        "P5;E5"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH227-04",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "NIST/SEMATECH e-Handbook: One-way ANOVA overview",
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section4/prc431.htm",
+      "catalog_year": null,
+      "locator": "Between-group/within-group sums of squares and F ratio",
+      "claims_supported": [
+        "E6;D3"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH227-05",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "NIST/SEMATECH e-Handbook: Are the model residuals well-behaved?",
+      "url": "https://www.itl.nist.gov/div898/handbook/pri/section2/pri24.htm",
+      "catalog_year": null,
+      "locator": "Residual diagnostics and model assumptions",
+      "claims_supported": [
+        "P4-P5;interpretation ofD2-D3"
+      ],
+      "accessed_date": "2026-10-30"
+    }
+  ],
+  "personal_evidence": [
+    {
+      "source_id": "P-AUDIT-MATH",
+      "location": "Supplied image(2).png and image(5).png",
+      "supports": "Listed course code only;no completion status,grade or term"
+    }
+  ],
+  "unverified_personal_claims": [
+    "Completion and term",
+    "Specific original coursework or lab",
+    "Personal challenge and successful resolution"
+  ],
+  "review_notes": [
+    "Standard subject material is separated from documented Bucknell scope.",
+    "Illustrative input data must never become claimed personal results."
+  ],
+  "page_word_count": 679,
+  "overview_word_count": 117,
+  "recommended_authentic_artifact": "Actual measured dataset,regression or uncertainty analysis with labeled axes and sample information.",
+  "official_title": "Statistics and Engineering",
+  "documented_subject_areas": [
+    "probability theory",
+    "discrete random variables",
+    "continuous random variables",
+    "sampling distributions",
+    "statistical inference",
+    "regression",
+    "ANOVA",
+    "software use"
+  ],
+  "course_specific_learning_objectives_status": "Not located in retrieved public catalog records; catalog coverage is documented, but no separate course-level learning-outcome list was found.",
+  "official_description_paraphrase": "Builds probability and random-variable foundations for inference, regression and analysis of variance using software.",
+  "student_attendance_term": null,
+  "completion_status": "not_established_from_available_records"
+}

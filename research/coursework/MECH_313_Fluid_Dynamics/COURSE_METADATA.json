@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0",
+  "course_code": "MECH 313",
+  "course_title": "Fluid Dynamics",
+  "official_title": "Fluid Dynamics",
+  "display_title": "Fluid Dynamics",
+  "department": "Mechanical Engineering",
+  "catalog_year": "2025-2026",
+  "official_source_url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/",
+  "academic_verification_status": "verified_2025_2026_catalog",
+  "enrollment_status": "in_progress_Fall_2026_documented_in_portfolio",
+  "content_status": "complete_draft_personal_status_unverified",
+  "publication_gate": "Confirm current project/status dates and first-person framing; retain all preliminary/unverified results qualifications.",
+  "personal_evidence_status": "direct_portfolio_course_mapping; Phase1 documented; inprogress_Fall2026",
+  "suggested_portfolio_category": "Thermal and Fluid Systems",
+  "documents": {
+    "portfolio_page": "PORTFOLIO_PAGE.md",
+    "technical_reference": "TECHNICAL_REFERENCE.md",
+    "sources": "SOURCES.md",
+    "evidence_notes": "EVIDENCE_NOTES.md"
+  },
+  "assets": [
+    {
+      "filename": "assets/MECH_313_Illustrative_Pressure_Depth.png",
+      "caption": "Original illustrative freshwater gauge-pressure profile with density 1000 kg/m³ and g=9.81 m/s², giving 49.05 kPa at 5 m. A hydrostatic model, not measured AUV test data.",
+      "asset_type": "original_explanatory_plot",
+      "evidence_category": "Illustrative technical content;not personal work",
+      "placement": "Beside the related representative example",
+      "alt_text": "Original illustrative freshwater gauge-pressure profile with density 1000 kg/m³ and g=9.81 m/s², giving 49.05 kPa at 5 m. A hydrostatic model, not measured AUV test data."
+    },
+    {
+      "filename": "assets/MECH_313_AUV_Original_Hull_Concept.jpeg",
+      "caption": "Original Phase 1 AUV hull concept reproduced from Brewster’s supplied portfolio, page 3. Preliminary design; geometry and performance remain to be validated.",
+      "asset_type": "authentic_supplied_work",
+      "evidence_category": "Personal project evidence",
+      "placement": "Beside the verified course-project summary",
+      "alt_text": "Original Phase 1 AUV hull concept reproduced from Brewster’s supplied portfolio, page 3. Preliminary design; geometry and performance remain to be validated."
+    },
+    {
+      "filename": "assets/MECH_313_AUV_Qualitative_Flow_Prediction.jpeg",
+      "caption": "Original Phase 1 qualitative flow prediction reproduced from Brewster’s supplied portfolio, page 3. An engineering sketch/prediction, not CFD or an experimental flow measurement.",
+      "asset_type": "authentic_supplied_work",
+      "evidence_category": "Personal project evidence",
+      "placement": "Beside the verified course-project summary",
+      "alt_text": "Original Phase 1 qualitative flow prediction reproduced from Brewster’s supplied portfolio, page 3. An engineering sketch/prediction, not CFD or an experimental flow measurement."
+    }
+  ],
+  "asset_captions": [
+    {
+      "filename": "MECH_313_Illustrative_Pressure_Depth.png",
+      "asset_type": "original_explanatory_plot",
+      "caption": "Original illustrative freshwater gauge-pressure profile with density 1000 kg/m³ and g=9.81 m/s², giving 49.05 kPa at 5 m. A hydrostatic model, not measured AUV test data.",
+      "placement": "Beside the representative numerical example; label illustrative.",
+      "provenance": "Created from explicit equations and assumed values in TECHNICAL_REFERENCE.md using Python/matplotlib; not ImageGen."
+    },
+    {
+      "filename": "MECH_313_AUV_Original_Hull_Concept.jpeg",
+      "source": "Brewster_Smyers_Engnieering Portfolio 9-27.pdf",
+      "pdf_page": 3,
+      "caption": "Original Phase 1 AUV hull concept reproduced from Brewster’s supplied portfolio, page 3. Preliminary design; geometry and performance remain to be validated.",
+      "asset_type": "authentic_supplied_work",
+      "extraction": "Unmodified embedded image bytes via PyMuPDF extract_image.",
+      "placement": "Project connection section; preserve preliminary status in caption."
+    },
+    {
+      "filename": "MECH_313_AUV_Qualitative_Flow_Prediction.jpeg",
+      "source": "Brewster_Smyers_Engnieering Portfolio 9-27.pdf",
+      "pdf_page": 3,
+      "caption": "Original Phase 1 qualitative flow prediction reproduced from Brewster’s supplied portfolio, page 3. An engineering sketch/prediction, not CFD or an experimental flow measurement.",
+      "asset_type": "authentic_supplied_work",
+      "extraction": "Unmodified embedded image bytes via PyMuPDF extract_image.",
+      "placement": "Project connection section; preserve preliminary status in caption."
+    }
+  ],
+  "relevant_project_links": [
+    {
+      "project_key": "autonomous_underwater_vehicle",
+      "relationship": "documented MECH 313 Phase1 course project",
+      "url": null
+    }
+  ],
+  "source_records": [
+    {
+      "source_id": "BU_MECH_2025",
+      "source_type": "official_university_catalog",
+      "evidence_category": "Bucknell-verified",
+      "title": "Bucknell Mechanical Engineering catalog",
+      "url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/",
+      "catalog_year": "2025-2026",
+      "locator": "Courses  |  MECH 313",
+      "claims_supported": [
+        "official code, title, department, short catalog paraphrase, documented subject areas"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MECH313-01",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "OpenStax/Rice University, University Physics Volume1,14.4 Archimedes Principle and Buoyancy",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/14-4-archimedes-principle-and-buoyancy",
+      "locator": "Pressure variation and displaced-fluid weight",
+      "claims_supported": [
+        "P1; E1; D1; AUV arithmetic context"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH313-02",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "MIT Unified Engineering, Fluid Mechanics F6 Control Volume, Mass Conservation",
+      "url": "https://ocw.mit.edu/courses/16-01-unified-engineering-i-ii-iii-iv-fall-2005-spring-2006/pages/fluid-mechanics/",
+      "locator": "F6 control volume and mass conservation notes",
+      "claims_supported": [
+        "P2; E2; D2"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH313-03",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "MIT OCW1.060, lecture9 Reynolds Transport Theorem",
+      "url": "https://ocw.mit.edu/courses/1-060-engineering-mechanics-ii-spring-2006/resources/lecture9/",
+      "locator": "Finite control-volume conservation and Reynolds transport theorem; lecture10 covers momentum",
+      "claims_supported": [
+        "P3; E3; D3"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH313-04",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "OpenStax/Rice University, University Physics Volume1,14.6 Bernoulli Equation",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/14-6-bernoullis-equation",
+      "locator": "Steady incompressible mechanical-energy relation and limitations",
+      "claims_supported": [
+        "P4; E4; D2"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH313-05",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "MIT Unified Engineering, Fluid Mechanics F4/F5 and NASA Drag Equation",
+      "url": "https://ocw.mit.edu/courses/16-01-unified-engineering-i-ii-iii-iv-fall-2005-spring-2006/pages/fluid-mechanics/",
+      "locator": "F4 dimensional analysis, F5 Reynolds/Mach numbers; drag definition separately NASA source below",
+      "claims_supported": [
+        "P5; E5 Reynolds number"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH313-06",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "MIT OCW1.060, lecture16 Pipe Friction Losses",
+      "url": "https://ocw.mit.edu/courses/1-060-engineering-mechanics-ii-spring-2006/resources/lecture16/",
+      "locator": "Friction head loss, Moody diagram and conduit losses",
+      "claims_supported": [
+        "E6; D4"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH313-07",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "NASA Glenn Research Center, Drag Equation",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/drag-equation/",
+      "locator": "Drag coefficient, reference area and dynamic pressure; same force normalization used in water when flow conditions/coefficients are appropriate",
+      "claims_supported": [
+        "E5 drag definition only; no AUV coefficient supplied"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    }
+  ],
+  "personal_evidence": [
+    {
+      "source_id": "PE08",
+      "location": "Audit code crops, dated2026-10-26",
+      "supports": "Listed course code only; no grade or completion status."
+    },
+    {
+      "source_id": "PE02",
+      "location": "Supplied project records as described in EVIDENCE_NOTES.md",
+      "supports": "Supplied portfolio page3 explicitly names MECH 313, individual Phase1 AUV literature review, hull concept, hydrostatics and qualitative flow prediction; it labels work in progress through Fall2026. It reports1.10m length,0.20m max diameter,27.2L volume,267N buoyancy,49.1kPa gauge pressure at 5m, and CB0.501m aft of nose. Arithmetic for pressure and buoyancy is reproducible; original shape integration is absent. No built vehicle, CFD, measured drag or completed team phase is established."
+    }
+  ],
+  "unverified_personal_claims": [
+    "Term and completed/current/planned/transfer status except explicit date-qualified AUV progress",
+    "Specific class challenge and independently verified resolution",
+    "Demonstrated proficiency beyond supplied evidence"
+  ],
+  "review_notes": [
+    "No course-specific public learning-objective list located.",
+    "Representative problems are original illustrations, not submitted coursework.",
+    "No AI-generated project imagery used."
+  ],
+  "page_word_count": 787,
+  "principle_count": 5,
+  "equation_group_count": 6,
+  "representative_problem_count": 4,
+  "recommended_authentic_artifact": "Original AUV hull and qualitative-flow figures already supplied; add the actual hydrostatics worksheet or newer team result.",
+  "documented_subject_areas": [
+    "integral control-volume analysis",
+    "differential control-volume analysis",
+    "conservation equations",
+    "dimensional analysis",
+    "incompressible inviscid flows",
+    "internal viscous flows",
+    "external viscous flows"
+  ],
+  "course_specific_learning_objectives_status": "Not located in retrieved public catalog records; catalog coverage is documented, but no separate course-level learning-outcome list was found.",
+  "official_description_paraphrase": "Develops conservation-based fluid models, dimensional reasoning and analysis of inviscid and viscous internal and external flows.",
+  "student_attendance_term": null,
+  "completion_status": "course_project_in_progress_Fall_2026_in_supplied_portfolio"
+}

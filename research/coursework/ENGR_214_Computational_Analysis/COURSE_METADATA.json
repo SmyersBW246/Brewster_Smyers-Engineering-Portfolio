@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "course_code": "ENGR 214",
+  "course_title": "Computational Analysis",
+  "display_title": "Computational Analysis",
+  "department": "Engineering (College of Engineering, interdisciplinary)",
+  "catalog_year": "2025-2026",
+  "official_source_url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/engineeringsciencesengr/",
+  "academic_verification_status": "verified_2025_2026_catalog",
+  "enrollment_status": "listed_in_degree_audit_completion_unknown",
+  "content_status": "complete_draft_personal_status_unverified",
+  "publication_gate": "Confirm completed/current/planned/transfer status and first-person framing. Do not assign unverified personal artifacts or reflections.",
+  "personal_evidence_status": "audit_only",
+  "suggested_portfolio_category": "Computational and Analytical Tools",
+  "documents": {
+    "portfolio_page": "PORTFOLIO_PAGE.md",
+    "technical_reference": "TECHNICAL_REFERENCE.md",
+    "sources": "SOURCES.md",
+    "evidence_notes": "EVIDENCE_NOTES.md"
+  },
+  "assets": [
+    {
+      "filename": "assets/ENGR_214_illustrative_trapezoidal_integration.png",
+      "asset_type": "original_explanatory_plot_png",
+      "caption": "Original illustrative trapezoidal integration of assumed velocity samples. The 4 m area is a benchmark, not output from Brewster coursework.",
+      "placement": "Preferred display image after representative example; SVG is an optional vector version",
+      "evidence_category": "Illustrative, not personal project evidence",
+      "alt_text": "Original illustrative trapezoidal integration of assumed velocity samples. The 4 m area is a benchmark, not output from Brewster coursework."
+    },
+    {
+      "filename": "assets/ENGR_214_illustrative_trapezoidal_integration.svg",
+      "asset_type": "original_explanatory_plot",
+      "caption": "Original illustrative trapezoidal integration of assumed velocity samples. The 4 m area is a benchmark, not output from Brewster coursework.",
+      "placement": "After representative numerical example or in a labeled technical-detail panel",
+      "evidence_category": "Illustrative, not personal project evidence",
+      "alt_text": "Original illustrative trapezoidal integration of assumed velocity samples. The 4 m area is a benchmark, not output from Brewster coursework."
+    }
+  ],
+  "relevant_project_links": [],
+  "source_records": [
+    {
+      "source_id": "BU_ENGR_2025",
+      "source_type": "official_university_catalog",
+      "evidence_category": "Bucknell-verified",
+      "title": "Bucknell 2025-2026 catalog - Engineering (College of Engineering, interdisciplinary)",
+      "url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/engineeringsciencesengr/",
+      "catalog_year": "2025-2026",
+      "locator": "ENGR 214 course block",
+      "claims_supported": [
+        "Official code, title, department and catalog coverage only; not enrollment or completion"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-ENGR214-01",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "University of Illinois :  Scientific Computing educational modules",
+      "url": "https://heath.cs.illinois.edu/iem/",
+      "catalog_year": null,
+      "locator": "Overview, linear equations, quadrature and ODE module categories",
+      "claims_supported": [
+        "principle 1; equation/method context only; not Bucknell course-specific"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-ENGR214-02",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "University of Illinois CS 357 :  Rounding",
+      "url": "https://cs357.cs.illinois.edu/textbook/notes/rounding.html",
+      "catalog_year": null,
+      "locator": "Rounding, finite precision and cancellation",
+      "claims_supported": [
+        "principle 2; finite-precision limitations"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-ENGR214-03",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "University of Illinois CS 357 - LU Decomposition for Solving Linear Equations",
+      "url": "https://cs357.cs.illinois.edu/textbook/notes/linsys.html",
+      "catalog_year": null,
+      "locator": "Linear-system formulation, factorization, pivoting and solving",
+      "claims_supported": [
+        "principle 3; equation 1; original linear-solve example"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-ENGR214-04",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "University of Illinois CS 357 :  Least Squares Fitting",
+      "url": "https://cs357.cs.illinois.edu/textbook/notes/linear-least-squares.html",
+      "catalog_year": null,
+      "locator": "Linear least squares; fitting versus interpolation; normal-equation conditioning",
+      "claims_supported": [
+        "principle 4; equation 2"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-ENGR214-05",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "University of Waterloo - Composite-Trapezoidal Rule",
+      "url": "https://eceweb.uwaterloo.ca/~dwharder/NumericalAnalysis/13Integration/comptrap/complete.html",
+      "catalog_year": null,
+      "locator": "Topic 13.2; composite quadrature, refinement and error assumptions",
+      "claims_supported": [
+        "principle 5; equation 4; original sampled-velocity example"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-ENGR214-06",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "University of Waterloo :  Bisection Method",
+      "url": "https://eceweb.uwaterloo.ca/~dwharder/NumericalAnalysis/10RootFinding/bisection/complete.html",
+      "catalog_year": null,
+      "locator": "Theory, iteration and error bounds",
+      "claims_supported": [
+        "equation 3; bracketing assumptions"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-ENGR214-07",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "University of Waterloo - Euler Method",
+      "url": "https://www.ece.uwaterloo.ca/~dwharder/NumericalAnalysis/14IVPs/euler/complete.html",
+      "catalog_year": null,
+      "locator": "Topic 14.1; initial values and forward Euler update",
+      "claims_supported": [
+        "principle 5; equation 5; original scalar-decay example"
+      ],
+      "accessed_date": "2026-10-30"
+    }
+  ],
+  "personal_evidence": [
+    {
+      "source_id": "P-AUDIT-ENGR214",
+      "location": "Supplied degree-audit crop image.png",
+      "supports": "Listed code only; no completion status or grade"
+    }
+  ],
+  "unverified_personal_claims": [
+    "Confirm ENGR 214 status, term and actual programming language.",
+    "Which original script and output demonstrate your best work in this course?",
+    "What bug, numerical mismatch or mistaken assumption did you actually diagnose, and what evidence shows the fix?"
+  ],
+  "review_notes": [
+    "No separate public Bucknell course-specific learning objectives located.",
+    "Numerical examples independently reproducible with values written in the reference.",
+    "No imagegen or fabricated project photograph used."
+  ],
+  "page_word_count": 753,
+  "recommended_authentic_artifact": "Actual class script/notebook with inputs,result plot and one hand-calculation or analytical check.",
+  "documented_subject_areas": [
+    "modern computer language",
+    "structured programming",
+    "algorithm design",
+    "linear algebra",
+    "statistical data analysis",
+    "elementary numerical analysis",
+    "scientific application package"
+  ],
+  "official_title": "Computational Analysis",
+  "course_specific_learning_objectives_status": "Not located in retrieved public catalog records; catalog coverage is documented, but no separate course-level learning-outcome list was found.",
+  "official_description_paraphrase": "Uses programming and algorithms for engineering calculations involving matrices, data analysis and introductory numerical methods.",
+  "student_attendance_term": null,
+  "completion_status": "not_established_from_available_records"
+}

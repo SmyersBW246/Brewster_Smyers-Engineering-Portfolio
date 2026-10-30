@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "course_code": "MECH 202",
+  "course_title": "Graphics for Design and Manufacture",
+  "official_title": "Graphics for Design and Manufacture",
+  "display_title": "Graphics for Design and Manufacture",
+  "department": "Mechanical Engineering",
+  "catalog_year": "2025-2026",
+  "official_source_url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/",
+  "official_description_paraphrase": "Covers engineering graphics, production drawings, three-dimensional digital geometry and introductory rapid-prototyping fabrication.",
+  "documented_subject_areas": [
+    "graphical communication of mechanical designs",
+    "production drawings",
+    "3-D geometric representations",
+    "software-based geometric modeling",
+    "rapid prototyping"
+  ],
+  "course_specific_learning_objectives_status": "Not located in retrieved public catalog records; catalog coverage is documented, but no separate course-level learning-outcome list was found.",
+  "academic_verification_status": "verified_official_catalog",
+  "enrollment_status": "listed_in_degree_audit_completion_unknown",
+  "content_status": "complete_draft_personal_status_unverified",
+  "publication_gate": "Confirm completed/current/planned/transfer status and personal phrasing; do not publish suggested experiences as actual coursework.",
+  "personal_evidence_status": "audit_and_resume_reported_CAD_skill; course_assignment_unverified",
+  "suggested_portfolio_category": "Design and Computation",
+  "documents": {
+    "portfolio_page": "PORTFOLIO_PAGE.md",
+    "technical_reference": "TECHNICAL_REFERENCE.md",
+    "sources": "SOURCES.md",
+    "evidence_notes": "EVIDENCE_NOTES.md"
+  },
+  "assets": [
+    {
+      "filename": "assets/MECH_202_Illustrative_Fit_Range.svg",
+      "caption": "Original illustrative limiting-size diagram; 0.03-0.08mm diametral clearance for D1 assumptions. Not a class assignment result.",
+      "evidence_category": "Original illustrative technical diagram",
+      "placement": "After representative example",
+      "alt_text": "Original illustrative limiting-size diagram; 0.03-0.08mm diametral clearance for D1 assumptions. Not a class assignment result.",
+      "asset_type": "original_explanatory_diagram"
+    },
+    {
+      "filename": "assets/MECH_202_Illustrative_Fit_Range.png",
+      "caption": "Original illustrative limiting-size diagram; 0.03-0.08mm diametral clearance for D1 assumptions. Not a class assignment result.",
+      "evidence_category": "Original illustrative technical diagram",
+      "placement": "After representative example",
+      "alt_text": "Original illustrative limiting-size diagram; 0.03-0.08mm diametral clearance for D1 assumptions. Not a class assignment result.",
+      "asset_type": "original_explanatory_diagram",
+      "format_relationship": "PNG rendering of same precise SVG diagram"
+    }
+  ],
+  "relevant_project_links": [
+    {
+      "project_key": "outdoor_landmark_chair",
+      "relationship": "independent related CAD application;not course assignment",
+      "url": null
+    },
+    {
+      "project_key": "aircraft_design_models",
+      "relationship": "related CAD application;MECH438 attribution",
+      "url": null
+    }
+  ],
+  "source_records": [
+    {
+      "source_id": "BU_MECH_2025",
+      "source_type": "official_university_catalog",
+      "evidence_category": "Bucknell-verified content",
+      "title": "Bucknell 2025-2026 catalog: Mechanical Engineering",
+      "url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/",
+      "catalog_year": "2025-2026",
+      "locator": "Courses :  MECH 202",
+      "claims_supported": [
+        "Official course code, title, department and course-description scope"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MECH202-01",
+      "source_type": "primary_technical_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "MIT OCW: Engineering Drawing and Sketching",
+      "url": "https://ocw.mit.edu/courses/2-007-design-and-manufacturing-i-spring-2009/pages/related-resources/drawing_and_sketching/",
+      "locator": "Orthographic views, dimensioning and cross-sectional views",
+      "claims_supported": [
+        "P4;D4;standard drawing conventions"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH202-02",
+      "source_type": "primary_technical_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "SOLIDWORKS Help: Recommendations for Lofts with Guide Curves",
+      "url": "https://help.solidworks.com/2022/english/SolidWorks/sldworks/c_recommendations_lofts_guide_curves.htm?format=P&value=",
+      "locator": "Guide/profile intersections, connectors and invalid guide troubleshooting; indexed vendor text retrieved, live page renderer exposed navigation only",
+      "claims_supported": [
+        "P1/P3;D2;not proof of current student resolution"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH202-03",
+      "source_type": "primary_technical_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "SOLIDWORKS Help: Boundary Surface",
+      "url": "https://help.solidworks.com/2023/english/SolidWorks/sldworks/c_boundary_surface.htm?format=P&value=",
+      "locator": "Two-direction tangent/curvature continuity; indexed vendor text; live renderer shell limitation",
+      "claims_supported": [
+        "P3;advanced standard CAD extension"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH202-04",
+      "source_type": "primary_technical_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "SOLIDWORKS Help: Fit Tolerances",
+      "url": "https://help.solidworks.com/2026/English/SolidWorks/sldworks/c_Fit_Tolerances.htm",
+      "locator": "Shaft/hole fit classifications; indexed text retrieved; numerical limit subtraction is an original example",
+      "claims_supported": [
+        "P5;E3;D1 fit interpretation;no assigned fit class"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH202-05",
+      "source_type": "primary_technical_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax Calculus Volume 2: Parametric Equations",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/7-1-parametric-equations",
+      "locator": "Parametric descriptions;ellipse expression derived directly from standard geometry",
+      "claims_supported": [
+        "E1 standard geometric context"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH202-06",
+      "source_type": "primary_technical_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "MIT Robotic Manipulation: Basic Pick and Place",
+      "url": "https://manipulation.mit.edu/pick.html",
+      "locator": "Spatial transformations/rotation and position;standard rigid-body coordinate relationship",
+      "claims_supported": [
+        "E2;coordinate consistency"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH202-07",
+      "source_type": "primary_technical_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax University Physics Volume 1: Fluids, Density and Pressure",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/14-1-fluids-density-and-pressure",
+      "locator": "Density as mass/volume",
+      "claims_supported": [
+        "P6;E4;D3 original mass example"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    }
+  ],
+  "personal_evidence": [
+    {
+      "source_id": "PE01",
+      "location": "Resume page 1 and audit image.png",
+      "supports": "PE01 resume page1 reports CAD skill/CSWA;PE02 portfolio page2 independent chair;PE07 biplane CAD;PE08 audit code;PE09 user context describes unresolved complex-curve learning goals."
+    }
+  ],
+  "unverified_personal_claims": [
+    "Course completion/semester",
+    "Specific personal difficulty and demonstrated resolution",
+    "Assignment authorship and course association for suggested artifacts"
+  ],
+  "recommended_authentic_artifact": "Actual class CAD part and production drawing paired with a prototype photo;phone stand only if course confirmed.",
+  "review_notes": [
+    "No AI-generated project image",
+    "Representative numerical examples independently recalculable"
+  ],
+  "page_word_count": 661,
+  "student_attendance_term": null,
+  "completion_status": "not_established_from_available_records"
+}

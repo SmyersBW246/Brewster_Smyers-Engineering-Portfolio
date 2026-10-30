@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0",
+  "course_code": "CHEM 203",
+  "course_title": "General Chemistry for Engineers",
+  "display_title": "General Chemistry for Engineers",
+  "department": "Chemistry",
+  "catalog_year": "2025-2026",
+  "official_source_url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/chemistrychem/",
+  "academic_verification_status": "verified_2025_2026_catalog",
+  "enrollment_status": "listed_in_degree_audit_completion_unknown",
+  "content_status": "complete_draft_personal_status_unverified",
+  "publication_gate": "Confirm completed/current/planned/transfer status and first-person framing. Do not assign unverified personal artifacts or reflections.",
+  "personal_evidence_status": "audit_only",
+  "suggested_portfolio_category": "Physical Science Foundations",
+  "documents": {
+    "portfolio_page": "PORTFOLIO_PAGE.md",
+    "technical_reference": "TECHNICAL_REFERENCE.md",
+    "sources": "SOURCES.md",
+    "evidence_notes": "EVIDENCE_NOTES.md"
+  },
+  "assets": [
+    {
+      "filename": "assets/CHEM_203_illustrative_dilution.png",
+      "asset_type": "original_explanatory_plot_png",
+      "caption": "Original illustrative dilution calculation with fixed solute amount 0.00500 mol. Final solution concentration varies with final solution volume. Not student laboratory data.",
+      "placement": "Preferred display image after representative example; SVG is an optional vector version",
+      "evidence_category": "Illustrative, not personal project evidence",
+      "alt_text": "Original illustrative dilution calculation with fixed solute amount 0.00500 mol. Final solution concentration varies with final solution volume. Not student laboratory data."
+    },
+    {
+      "filename": "assets/CHEM_203_illustrative_dilution.svg",
+      "asset_type": "original_explanatory_plot",
+      "caption": "Original illustrative dilution calculation with fixed solute amount 0.00500 mol. Final solution concentration varies with final solution volume. Not student laboratory data.",
+      "placement": "After representative numerical example or in a labeled technical-detail panel",
+      "evidence_category": "Illustrative, not personal project evidence",
+      "alt_text": "Original illustrative dilution calculation with fixed solute amount 0.00500 mol. Final solution concentration varies with final solution volume. Not student laboratory data."
+    }
+  ],
+  "relevant_project_links": [],
+  "source_records": [
+    {
+      "source_id": "BU_CHEM_2025",
+      "source_type": "official_university_catalog",
+      "evidence_category": "Bucknell-verified",
+      "title": "Bucknell 2025-2026 catalog - Chemistry",
+      "url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/chemistrychem/",
+      "catalog_year": "2025-2026",
+      "locator": "CHEM 203 course block",
+      "claims_supported": [
+        "Official code, title, department and catalog coverage only; not enrollment or completion"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-CHEM203-01",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax Chemistry 2e - Covalent Bonding",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-2-covalent-bonding",
+      "catalog_year": null,
+      "locator": "Section 7.2, bonding and polarity",
+      "claims_supported": [
+        "principle 1; structure-property framing is a standard engineering connection"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-CHEM203-02",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax Chemistry 2e - Reaction Stoichiometry",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-3-reaction-stoichiometry",
+      "catalog_year": null,
+      "locator": "Section 4.3, balanced-equation molar ratios",
+      "claims_supported": [
+        "principle 2; equation 2; original limiting-reagent problem"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-CHEM203-03",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax Chemistry 2e - Formula Mass and the Mole Concept",
+      "url": "https://openstax.org/books/chemistry-2e/pages/3-1-formula-mass-and-the-mole-concept",
+      "catalog_year": null,
+      "locator": "Section 3.1, mass/molar-mass/amount conversion",
+      "claims_supported": [
+        "principle 3; equation 1"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-CHEM203-04",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax Chemistry 2e - Molarity",
+      "url": "https://openstax.org/books/chemistry-2e/pages/3-3-molarity",
+      "catalog_year": null,
+      "locator": "Section 3.3, concentration and dilution",
+      "claims_supported": [
+        "principle 3; equation 3; original dilution problem"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-CHEM203-05",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax Chemistry 2e - The Ideal Gas Law",
+      "url": "https://openstax.org/books/chemistry-2e/pages/9-2-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law",
+      "catalog_year": null,
+      "locator": "Section 9.2",
+      "claims_supported": [
+        "principle 4; equation 4; original gas problem"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-CHEM203-06",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax Chemistry 2e - Equilibrium Constants",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-2-equilibrium-constants",
+      "catalog_year": null,
+      "locator": "Section 13.2, reaction quotients and equilibrium; activity notation is thermodynamic standard-state form",
+      "claims_supported": [
+        "principle 5; equation 5; original equilibrium example"
+      ],
+      "accessed_date": "2026-10-30"
+    }
+  ],
+  "personal_evidence": [
+    {
+      "source_id": "P-AUDIT-CHEM203",
+      "location": "Supplied degree-audit crop image(5).png",
+      "supports": "Listed code only; no completion status or grade"
+    }
+  ],
+  "unverified_personal_claims": [
+    "Confirm CHEM 203 status and term.",
+    "Which actual laboratory report or graph may be included?",
+    "What calculation or experimental discrepancy did you diagnose, and what evidence documents the correction?"
+  ],
+  "review_notes": [
+    "No separate public Bucknell course-specific learning objectives located.",
+    "Numerical examples independently reproducible with values written in the reference.",
+    "No imagegen or fabricated project photograph used."
+  ],
+  "page_word_count": 770,
+  "recommended_authentic_artifact": "Actual lab report figure or calculation with reaction/material context and measured-versus-assumed distinction.",
+  "documented_subject_areas": [
+    "aqueous reactions",
+    "atomic structure",
+    "molecular structure",
+    "coordination compounds",
+    "solids liquids and gases",
+    "basic equilibrium",
+    "qualitative laboratory experiments",
+    "quantitative laboratory experiments"
+  ],
+  "official_title": "General Chemistry for Engineers",
+  "course_specific_learning_objectives_status": "Not located in retrieved public catalog records; catalog coverage is documented, but no separate course-level learning-outcome list was found.",
+  "official_description_paraphrase": "Introduces inorganic chemical principles, matter structure, reactions and equilibrium, supported by qualitative and quantitative laboratory experiments.",
+  "student_attendance_term": null,
+  "completion_status": "not_established_from_available_records"
+}

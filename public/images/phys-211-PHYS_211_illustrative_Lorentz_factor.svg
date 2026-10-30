@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="550" viewBox="0 0 920 550">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Arial,sans-serif;fill:#243946;font-size:17px}.small{font-size:14px}.title{font-size:23px;font-weight:bold}</style>
+<text x="35" y="35" class="title">PHYS 211: Classical and Modern Physics I</text>
+<text x="35" y="61" class="small">Illustrative model. Not student coursework data or experimental results.</text>
+<line x1="105.0" y1="95" x2="105.0" y2="455" stroke="#e3e9ed"/>
+<line x1="105" y1="455.0" x2="865" y2="455.0" stroke="#e3e9ed"/>
+<text x="105.0" y="482" text-anchor="middle" class="small">0</text>
+<text x="90" y="460.0" text-anchor="end" class="small">0</text>
+<line x1="257.0" y1="95" x2="257.0" y2="455" stroke="#e3e9ed"/>
+<line x1="105" y1="383.0" x2="865" y2="383.0" stroke="#e3e9ed"/>
+<text x="257.0" y="482" text-anchor="middle" class="small">0.2</text>
+<text x="90" y="388.0" text-anchor="end" class="small">0.7</text>
+<line x1="409.0" y1="95" x2="409.0" y2="455" stroke="#e3e9ed"/>
+<line x1="105" y1="311.0" x2="865" y2="311.0" stroke="#e3e9ed"/>
+<text x="409.0" y="482" text-anchor="middle" class="small">0.4</text>
+<text x="90" y="316.0" text-anchor="end" class="small">1.4</text>
+<line x1="561.0" y1="95" x2="561.0" y2="455" stroke="#e3e9ed"/>
+<line x1="105" y1="239.0" x2="865" y2="239.0" stroke="#e3e9ed"/>
+<text x="561.0" y="482" text-anchor="middle" class="small">0.6</text>
+<text x="90" y="244.0" text-anchor="end" class="small">2.1</text>
+<line x1="713.0" y1="95" x2="713.0" y2="455" stroke="#e3e9ed"/>
+<line x1="105" y1="167.0" x2="865" y2="167.0" stroke="#e3e9ed"/>
+<text x="713.0" y="482" text-anchor="middle" class="small">0.8</text>
+<text x="90" y="172.0" text-anchor="end" class="small">2.8</text>
+<line x1="865.0" y1="95" x2="865.0" y2="455" stroke="#e3e9ed"/>
+<line x1="105" y1="95.0" x2="865" y2="95.0" stroke="#e3e9ed"/>
+<text x="865.0" y="482" text-anchor="middle" class="small">1</text>
+<text x="90" y="100.0" text-anchor="end" class="small">3.5</text>
+<line x1="105" y1="95" x2="105" y2="455" stroke="#243946" stroke-width="2"/>
+<line x1="105" y1="455" x2="865" y2="455" stroke="#243946" stroke-width="2"/>
+<polyline points="105.00,352.14 112.60,352.14 120.20,352.12 127.80,352.10 135.40,352.06 143.00,352.01 150.60,351.96 158.20,351.89 165.80,351.81 173.40,351.72 181.00,351.62 188.60,351.51 196.20,351.39 203.80,351.26 211.40,351.12 219.00,350.97 226.60,350.80 234.20,350.62 241.80,350.43 249.40,350.23 257.00,350.02 264.60,349.80 272.20,349.56 279.80,349.31 287.40,349.05 295.00,348.77 302.60,348.48 310.20,348.18 317.80,347.86 325.40,347.52 333.00,347.18 340.60,346.81 348.20,346.43 355.80,346.04 363.40,345.63 371.00,345.20 378.60,344.75 386.20,344.29 393.80,343.80 401.40,343.30 409.00,342.77 416.60,342.23 424.20,341.66 431.80,341.07 439.40,340.46 447.00,339.82 454.60,339.16 462.20,338.47 469.80,337.75 477.40,337.01 485.00,336.23 492.60,335.42 500.20,334.58 507.80,333.71 515.40,332.79 523.00,331.84 530.60,330.85 538.20,329.82 545.80,328.74 553.40,327.61 561.00,326.43 568.60,325.20 576.20,323.91 583.80,322.55 591.40,321.14 599.00,319.65 606.60,318.09 614.20,316.45 621.80,314.72 629.40,312.89 637.00,310.97 644.60,308.94 652.20,306.79 659.80,304.50 667.40,302.08 675.00,299.49 682.60,296.74 690.20,293.79 697.80,290.63 705.40,287.24 713.00,283.57 720.60,279.60 728.20,275.29 735.80,270.59 743.40,265.43 751.00,259.74 758.60,253.44 766.20,246.39 773.80,238.45 781.40,229.42 789.00,219.03 796.60,206.92 804.20,192.55 811.80,175.16 819.40,153.52 827.00,125.59" stroke="#285a73" fill="none" stroke-width="3"/>
+<line x1="115" y1="113" x2="147" y2="113" stroke="#285a73" stroke-width="3"/>
+<text x="155" y="118" class="small">Lorentz factor</text>
+<text x="485.0" y="509" text-anchor="middle">Relative speed / light speed</text>
+<text transform="translate(26 275.0) rotate(-90)" text-anchor="middle">Lorentz factor (dimensionless)</text>
+<text x="35" y="537" class="small">At v/c = 0.600, gamma = 1.25; gamma grows without bound as v/c approaches 1.</text>
+</svg>

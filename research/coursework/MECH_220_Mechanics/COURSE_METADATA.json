@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0",
+  "course_code": "MECH 220",
+  "course_title": "Mechanics",
+  "official_title": "Mechanics",
+  "display_title": "Mechanics",
+  "department": "Mechanical Engineering",
+  "catalog_year": "2025-2026",
+  "official_source_url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/",
+  "academic_verification_status": "verified_2025_2026_catalog",
+  "enrollment_status": "listed_in_degree_audit_completion_unknown",
+  "content_status": "complete_draft_personal_status_unverified",
+  "publication_gate": "Confirm completed/current/planned/transfer status and first-person framing; do not invent course assignments or challenges.",
+  "personal_evidence_status": "audit_only; independent chair available for contextual cross-link",
+  "suggested_portfolio_category": "Mechanics and Mechanical Analysis",
+  "documents": {
+    "portfolio_page": "PORTFOLIO_PAGE.md",
+    "technical_reference": "TECHNICAL_REFERENCE.md",
+    "sources": "SOURCES.md",
+    "evidence_notes": "EVIDENCE_NOTES.md"
+  },
+  "assets": [
+    {
+      "filename": "assets/MECH_220_Illustrative_Beam_Reactions.png",
+      "caption": "Original explanatory diagram: ideal 0.80 m fixture beam, 300 N point load and computed support reactions. Representative calculation, not a student assignment or chair load test.",
+      "asset_type": "original_explanatory_plot",
+      "evidence_category": "Illustrative technical content;not personal work",
+      "placement": "Beside the related representative example",
+      "alt_text": "Original explanatory diagram: ideal 0.80 m fixture beam, 300 N point load and computed support reactions. Representative calculation, not a student assignment or chair load test."
+    }
+  ],
+  "asset_captions": [
+    {
+      "filename": "MECH_220_Illustrative_Beam_Reactions.png",
+      "asset_type": "original_explanatory_plot",
+      "caption": "Original explanatory diagram: ideal 0.80 m fixture beam, 300 N point load and computed support reactions. Representative calculation, not a student assignment or chair load test.",
+      "placement": "Beside the representative numerical example; label illustrative.",
+      "provenance": "Created from explicit equations and assumed values in TECHNICAL_REFERENCE.md using Python/matplotlib; not ImageGen."
+    }
+  ],
+  "relevant_project_links": [
+    {
+      "project_key": "outdoor_landmark_chair",
+      "relationship": "independent project; subject application only",
+      "url": null
+    }
+  ],
+  "source_records": [
+    {
+      "source_id": "BU_MECH_2025",
+      "source_type": "official_university_catalog",
+      "evidence_category": "Bucknell-verified",
+      "title": "Bucknell Mechanical Engineering catalog",
+      "url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/",
+      "catalog_year": "2025-2026",
+      "locator": "Courses  |  MECH 220",
+      "claims_supported": [
+        "official code, title, department, short catalog paraphrase, documented subject areas"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MECH220-01",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "Jacob Moore et al., Mechanics Map  |  Equilibrium Analysis for a Rigid Body",
+      "url": "https://mechanicsmap.org/websites/3_equilibrium_rigid_body/3-6_equilibrium_analysis_rigid_body/equilibrium_analysis_rigid_body.html",
+      "locator": "Equilibrium equations and Finding the Equilibrium Equations",
+      "claims_supported": [
+        "P1, P2; E1, E2; D1-D3"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH220-02",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "Louis Bucciarelli, MIT OCW 1.050  |  Engineering Mechanics for Structures, chapters 2-3 and moment/centroid context",
+      "url": "https://ocw.mit.edu/courses/1-050-solid-mechanics-fall-2004/pages/readings/",
+      "locator": "Chapters 2 Static Equilibrium and 3 Internal Forces and Moments; linked textbook chapters",
+      "claims_supported": [
+        "P3, P4; E3, E5; D2"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH220-03",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "OpenStax/Rice University | University Physics Volume 1,6.2 Friction",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+      "locator": "Static friction magnitude bound and impending sliding",
+      "claims_supported": [
+        "P5; E4; D3"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    }
+  ],
+  "personal_evidence": [
+    {
+      "source_id": "PE08",
+      "location": "Audit code crops, dated2026-10-26",
+      "supports": "Listed course code only; no grade or completion status."
+    },
+    {
+      "source_id": "PE01",
+      "location": "Supplied project records as described in EVIDENCE_NOTES.md",
+      "supports": "Audit code crop image.png lists MECH 220, but the supplied crop does not establish term, grade, transfer status, or completion. No course-specific submitted calculation or laboratory artifact was reviewed. The chair is documented in the September portfolio as independent work; it is a relevant cross-link, not evidence of enrollment or a MECH 220 assignment."
+    }
+  ],
+  "unverified_personal_claims": [
+    "Term and completed/current/planned/transfer status except explicit date-qualified AUV progress",
+    "Specific class challenge and independently verified resolution",
+    "Demonstrated proficiency beyond supplied evidence"
+  ],
+  "review_notes": [
+    "No course-specific public learning-objective list located.",
+    "Representative problems are original illustrations, not submitted coursework.",
+    "No AI-generated project imagery used."
+  ],
+  "page_word_count": 688,
+  "principle_count": 5,
+  "equation_group_count": 5,
+  "representative_problem_count": 3,
+  "recommended_authentic_artifact": "Actual free-body diagram with reaction/load calculation;independent chair can be a labeled related application.",
+  "documented_subject_areas": [
+    "2-D and 3-D rigid-body equilibrium",
+    "trusses",
+    "frames and machines",
+    "friction",
+    "distributed forces and equivalent systems",
+    "internal loads"
+  ],
+  "course_specific_learning_objectives_status": "Not located in retrieved public catalog records; catalog coverage is documented, but no separate course-level learning-outcome list was found.",
+  "official_description_paraphrase": "Analyzes rigid-body equilibrium, structural force systems, friction, distributed loading and internal forces.",
+  "student_attendance_term": null,
+  "completion_status": "not_established_from_available_records"
+}

@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "course_code": "ECEG 205",
+  "course_title": "Electrical and Computer Engineering Fundamentals",
+  "display_title": "Electrical and Computer Engineering Fundamentals",
+  "department": "Electrical and Computer Engineering",
+  "catalog_year": "2025-2026",
+  "official_source_url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/computerengineeringcpeg/",
+  "academic_verification_status": "verified_2025_2026_catalog",
+  "enrollment_status": "listed_in_degree_audit_completion_unknown",
+  "content_status": "complete_draft_personal_status_unverified",
+  "publication_gate": "Confirm completed/current/planned/transfer status and first-person framing. Do not assign unverified personal artifacts or reflections.",
+  "personal_evidence_status": "audit_only",
+  "suggested_portfolio_category": "Sensors and Mechatronics",
+  "documents": {
+    "portfolio_page": "PORTFOLIO_PAGE.md",
+    "technical_reference": "TECHNICAL_REFERENCE.md",
+    "sources": "SOURCES.md",
+    "evidence_notes": "EVIDENCE_NOTES.md"
+  },
+  "assets": [
+    {
+      "filename": "assets/ECEG_205_illustrative_RC_response.png",
+      "asset_type": "original_explanatory_plot_png",
+      "caption": "Original theoretical RC low-pass magnitude response for R=1.00 kΩ, C=10.0 μF. Illustrative model; not a student measurement.",
+      "placement": "Preferred display image after representative example; SVG is an optional vector version",
+      "evidence_category": "Illustrative, not personal project evidence",
+      "alt_text": "Original theoretical RC low-pass magnitude response for R=1.00 kΩ, C=10.0 μF. Illustrative model; not a student measurement."
+    },
+    {
+      "filename": "assets/ECEG_205_illustrative_RC_response.svg",
+      "asset_type": "original_explanatory_plot",
+      "caption": "Original theoretical RC low-pass magnitude response for R=1.00 kΩ, C=10.0 μF. Illustrative model; not a student measurement.",
+      "placement": "After representative numerical example or in a labeled technical-detail panel",
+      "evidence_category": "Illustrative, not personal project evidence",
+      "alt_text": "Original theoretical RC low-pass magnitude response for R=1.00 kΩ, C=10.0 μF. Illustrative model; not a student measurement."
+    }
+  ],
+  "relevant_project_links": [],
+  "source_records": [
+    {
+      "source_id": "BU_ECEG_2025",
+      "source_type": "official_university_catalog",
+      "evidence_category": "Bucknell-verified",
+      "title": "Bucknell 2025-2026 catalog - Electrical and Computer Engineering",
+      "url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/computerengineeringcpeg/",
+      "catalog_year": "2025-2026",
+      "locator": "ECEG 205 course block",
+      "claims_supported": [
+        "Official code, title, department and catalog coverage only; not enrollment or completion"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-ECEG205-01",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "NIST :  Calibration",
+      "url": "https://www.nist.gov/publications/calibration",
+      "catalog_year": null,
+      "locator": "Overview of calibration models and range limitations",
+      "claims_supported": [
+        "principle 1; local calibration interpretation; equation 1"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-ECEG205-02",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax University Physics Vol. 2 :  Resistors in Series and Parallel",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+      "catalog_year": null,
+      "locator": "Ohmic elements and series voltage/current relationships",
+      "claims_supported": [
+        "principle 2; equations 2-3; original loading example"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-ECEG205-03",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax University Physics Vol. 2 :  RC Circuits",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/10-5-rc-circuits",
+      "catalog_year": null,
+      "locator": "Charging response and RC time constant",
+      "claims_supported": [
+        "principle 3; equation 4; sensor-response analogy labeled standard engineering model"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-ECEG205-04",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "Analog Devices University Program :  Low Pass and High Pass Filters",
+      "url": "https://wiki.analog.com/university/courses/electronics/lp_hp_filters",
+      "catalog_year": null,
+      "locator": "RC frequency response and cutoff",
+      "claims_supported": [
+        "principle 4; equation 5; illustrative filter problem"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-ECEG205-05",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "NIST TN 1297 :  Classification of Components of Uncertainty",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-2-classification-components-uncertainty",
+      "catalog_year": null,
+      "locator": "Section 2, Type A and Type B evaluations",
+      "claims_supported": [
+        "principle 5; uncertainty interpretation"
+      ],
+      "accessed_date": "2026-10-30"
+    }
+  ],
+  "personal_evidence": [
+    {
+      "source_id": "P-AUDIT-ECEG205",
+      "location": "Supplied degree-audit crop image.png",
+      "supports": "Listed code only; no completion status or grade"
+    }
+  ],
+  "unverified_personal_claims": [
+    "Confirm the status and term of ECEG 205.",
+    "Was the line-following robot in ECEG 205 or a different class?",
+    "Provide the best actual calibration/filter experiment and identify any measured mismatch and its verified correction."
+  ],
+  "review_notes": [
+    "No separate public Bucknell course-specific learning objectives located.",
+    "Numerical examples independently reproducible with values written in the reference.",
+    "No imagegen or fabricated project photograph used."
+  ],
+  "page_word_count": 754,
+  "recommended_authentic_artifact": "Line-following robot with actual circuit/code/photo if it belongs here;otherwise original sensor calibration/filter experiment.",
+  "documented_subject_areas": [
+    "electrical measurement",
+    "physical quantities",
+    "sensors",
+    "sensor dynamics",
+    "filters"
+  ],
+  "official_title": "Electrical and Computer Engineering Fundamentals",
+  "course_specific_learning_objectives_status": "Not located in retrieved public catalog records; catalog coverage is documented, but no separate course-level learning-outcome list was found.",
+  "official_description_paraphrase": "Introduces electrical quantities and measurement, sensor behavior and signal filtering.",
+  "student_attendance_term": null,
+  "completion_status": "not_established_from_available_records"
+}

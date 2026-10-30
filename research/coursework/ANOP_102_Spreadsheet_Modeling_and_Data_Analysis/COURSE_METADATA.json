@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "course_code": "ANOP 102",
+  "course_title": "Spreadsheet Modeling & Data Analysis",
+  "display_title": "Spreadsheet Modeling & Data Analysis",
+  "department": "Analytics and Operations Management (Freeman College of Management)",
+  "catalog_year": "2025-2026",
+  "official_source_url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofmanagementcurricula/areasofstudy/businessanalytics/",
+  "academic_verification_status": "verified_2025_2026_catalog",
+  "enrollment_status": "listed_in_degree_audit_completion_unknown",
+  "content_status": "complete_draft_personal_status_unverified",
+  "publication_gate": "Confirm completed/current/planned/transfer status and first-person framing. Do not assign unverified personal artifacts or reflections.",
+  "personal_evidence_status": "audit_only",
+  "suggested_portfolio_category": "Computational and Analytical Tools",
+  "documents": {
+    "portfolio_page": "PORTFOLIO_PAGE.md",
+    "technical_reference": "TECHNICAL_REFERENCE.md",
+    "sources": "SOURCES.md",
+    "evidence_notes": "EVIDENCE_NOTES.md"
+  },
+  "assets": [
+    {
+      "filename": "assets/ANOP_102_illustrative_cost_crossover.png",
+      "asset_type": "original_explanatory_plot_png",
+      "caption": "Original illustrative process-cost comparison. Assumed setup and per-part costs; not supplier quotes or Brewster project results.",
+      "placement": "Preferred display image after representative example; SVG is an optional vector version",
+      "evidence_category": "Illustrative, not personal project evidence",
+      "alt_text": "Original illustrative process-cost comparison. Assumed setup and per-part costs; not supplier quotes or Brewster project results."
+    },
+    {
+      "filename": "assets/ANOP_102_illustrative_cost_crossover.svg",
+      "asset_type": "original_explanatory_plot",
+      "caption": "Original illustrative process-cost comparison. Assumed setup and per-part costs; not supplier quotes or Brewster project results.",
+      "placement": "After representative numerical example or in a labeled technical-detail panel",
+      "evidence_category": "Illustrative, not personal project evidence",
+      "alt_text": "Original illustrative process-cost comparison. Assumed setup and per-part costs; not supplier quotes or Brewster project results."
+    }
+  ],
+  "relevant_project_links": [],
+  "source_records": [
+    {
+      "source_id": "BU_ANOP_2025",
+      "source_type": "official_university_catalog",
+      "evidence_category": "Bucknell-verified",
+      "title": "Bucknell 2025-2026 catalog - Analytics and Operations Management (Freeman College of Management)",
+      "url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofmanagementcurricula/areasofstudy/businessanalytics/",
+      "catalog_year": "2025-2026",
+      "locator": "ANOP 102 course block",
+      "claims_supported": [
+        "Official code, title, department and catalog coverage only; not enrollment or completion"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-ANOP102-01",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "Microsoft Support :  relative, absolute and mixed references",
+      "url": "https://support.microsoft.com/en-us/excel/switch-between-relative-absolute-and-mixed-references",
+      "catalog_year": null,
+      "locator": "Reference behavior and examples",
+      "claims_supported": [
+        "principle 1; formula-copying guidance"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-ANOP102-02",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "NIST IR 6969 (2019) :  statistical techniques in mass calibration",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ir/2019/NIST.IR.6969-2019.pdf",
+      "catalog_year": null,
+      "locator": "Section 8, statistics and standard-deviation estimation",
+      "claims_supported": [
+        "principle 2; equations 3-4; illustrative problem 2"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-ANOP102-03",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax :  cost behavior and break-even relationships",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-2-calculate-a-break-even-point-in-units-and-dollars",
+      "catalog_year": null,
+      "locator": "Break-even analysis and linear cost assumptions",
+      "claims_supported": [
+        "principle 3; equations 1-2; original crossover example derived by equating costs"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-ANOP102-04",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "Microsoft Support :  Introduction to What-If Analysis",
+      "url": "https://support.microsoft.com/en-us/excel/introduction-to-what-if-analysis",
+      "catalog_year": null,
+      "locator": "Scenarios, Goal Seek and Data Tables",
+      "claims_supported": [
+        "principle 4; sensitivity workflow; no claim that all tools were taught in ANOP 102"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-ANOP102-05",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "NIST/SEMATECH :  Least Squares",
+      "url": "https://www.itl.nist.gov/div898/handbook/pmd/section4/pmd431.htm",
+      "catalog_year": null,
+      "locator": "Section 4.4.3.1",
+      "claims_supported": [
+        "principle 5; equation 5; fitting assumptions"
+      ],
+      "accessed_date": "2026-10-30"
+    }
+  ],
+  "personal_evidence": [
+    {
+      "source_id": "P-AUDIT-ANOP102",
+      "location": "Supplied degree-audit crop image(1).png",
+      "supports": "Listed code only; no completion status or grade"
+    }
+  ],
+  "unverified_personal_claims": [
+    "Confirm whether ANOP 102 is completed, current, transferred, or planned.",
+    "Which submitted workbook best shows your formulas and a decision?",
+    "Identify one formula, data-cleaning or interpretation difficulty and the actual correction, if any."
+  ],
+  "review_notes": [
+    "No separate public Bucknell course-specific learning objectives located.",
+    "Numerical examples independently reproducible with values written in the reference.",
+    "No imagegen or fabricated project photograph used."
+  ],
+  "page_word_count": 718,
+  "recommended_authentic_artifact": "Actual spreadsheet model with assumptions,input/output cells,sensitivity chart and one decision.",
+  "documented_subject_areas": [
+    "quantitative modeling",
+    "basic statistical analysis",
+    "spreadsheet environment",
+    "managerial decision making"
+  ],
+  "official_title": "Spreadsheet Modeling & Data Analysis",
+  "course_specific_learning_objectives_status": "Not located in retrieved public catalog records; catalog coverage is documented, but no separate course-level learning-outcome list was found.",
+  "official_description_paraphrase": "Introduces quantitative spreadsheet models and basic statistics for managerial decisions.",
+  "student_attendance_term": null,
+  "completion_status": "not_established_from_available_records"
+}

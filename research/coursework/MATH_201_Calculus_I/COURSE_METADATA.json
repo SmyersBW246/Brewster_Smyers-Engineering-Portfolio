@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "course_code": "MATH 201",
+  "course_title": "Calculus I",
+  "display_title": "Calculus I",
+  "department": "Mathematics & Statistics",
+  "catalog_year": "2025-2026",
+  "official_source_url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/mathematicsmath/",
+  "academic_verification_status": "verified_2025_2026_catalog",
+  "enrollment_status": "listed_in_degree_audit_completion_unknown",
+  "content_status": "complete_draft_personal_status_unverified",
+  "publication_gate": "Confirm completed/current/planned or transfer-credit status;confirm first-person framing;keep illustrative examples separate from personal coursework.",
+  "personal_evidence_status": "audit_only_no_course_artifact_reviewed",
+  "suggested_portfolio_category": "Mathematics and Analysis",
+  "documents": {
+    "portfolio_page": "PORTFOLIO_PAGE.md",
+    "technical_reference": "TECHNICAL_REFERENCE.md",
+    "sources": "SOURCES.md",
+    "evidence_notes": "EVIDENCE_NOTES.md"
+  },
+  "assets": [
+    {
+      "filename": "assets/MATH_201_illustrative_position_tangent.png",
+      "caption": "Illustrative prescribed motion x=3t² in SI units, with the tangent at t=2 s. Its slope is 12 m/s. Original explanatory plot, not a student assignment result.",
+      "type": "original_explanatory_plot",
+      "evidence_category": "Illustrative standard mathematics",
+      "placement": "After representative problem example",
+      "student_project_result": false,
+      "asset_type": "original_explanatory_diagram",
+      "alt_text": "Illustrative prescribed motion x=3t² in SI units, with the tangent at t=2 s. Its slope is 12 m/s. Original explanatory plot, not a student assignment result."
+    }
+  ],
+  "relevant_project_links": [],
+  "source_records": [
+    {
+      "source_id": "BU_MATH_2025",
+      "source_type": "official_university_catalog",
+      "evidence_category": "Bucknell-verified",
+      "title": "Bucknell University 2025-2026 Mathematics & Statistics catalog",
+      "url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/mathematicsmath/",
+      "catalog_year": "2025-2026",
+      "locator": "Courses: MATH 201 entry",
+      "claims_supported": [
+        "Official code,title,department,brief course description and topic labels"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH201-01",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax/Rice University, Calculus Volume 1: Defining the Derivative",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative",
+      "catalog_year": null,
+      "locator": "Derivative definition and its kinematic interpretation",
+      "claims_supported": [
+        "P1;E1-E2;D1"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH201-02",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax/Rice University, Calculus Volume 1: The Chain Rule",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-6-the-chain-rule",
+      "catalog_year": null,
+      "locator": "Differentiation of composed functions",
+      "claims_supported": [
+        "P2;E3"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH201-03",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax/Rice University, Calculus Volume 1: Applied Optimization Problems",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/4-7-applied-optimization-problems",
+      "catalog_year": null,
+      "locator": "Feasible domains, critical values and endpoint evaluation",
+      "claims_supported": [
+        "P3;E5;D2"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH201-04",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax/Rice University, Calculus Volume 1: The Fundamental Theorem of Calculus",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/5-3-the-fundamental-theorem-of-calculus",
+      "catalog_year": null,
+      "locator": "Antiderivative evaluation of definite integrals",
+      "claims_supported": [
+        "P4-P5;E4;D3"
+      ],
+      "accessed_date": "2026-10-30"
+    }
+  ],
+  "personal_evidence": [
+    {
+      "source_id": "P-AUDIT-MATH",
+      "location": "Supplied image(2).png and image(5).png",
+      "supports": "Listed course code only;no completion status,grade or term"
+    }
+  ],
+  "unverified_personal_claims": [
+    "Completion and term",
+    "Specific original coursework or lab",
+    "Personal challenge and successful resolution"
+  ],
+  "review_notes": [
+    "Standard subject material is separated from documented Bucknell scope.",
+    "Illustrative input data must never become claimed personal results."
+  ],
+  "page_word_count": 690,
+  "overview_word_count": 119,
+  "recommended_authentic_artifact": "Original derivative/optimization or motion calculation with a small annotated graph.",
+  "official_title": "Calculus I",
+  "documented_subject_areas": [
+    "algebraic trigonometric and transcendental functions",
+    "meaning and calculation of derivatives",
+    "derivative applications",
+    "introductory integration",
+    "Fundamental Theorem of Calculus",
+    "substitution"
+  ],
+  "course_specific_learning_objectives_status": "Not located in retrieved public catalog records; catalog coverage is documented, but no separate course-level learning-outcome list was found.",
+  "official_description_paraphrase": "Introduces derivatives and their applications, followed by basic integration and the relationship between differentiation and integration.",
+  "student_attendance_term": null,
+  "completion_status": "not_established_from_available_records"
+}

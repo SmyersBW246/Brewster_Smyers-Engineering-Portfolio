@@ -1,0 +1,30 @@
+path,type,status,verification,personal_status
+src/content/projects/aerobatic-biplane.md,projects,VERIFIED,Build and route checks passed; sourced content review,In development
+src/content/projects/automotive-wheel.md,projects,VERIFIED,Build and route checks passed; sourced content review,Concept development
+src/content/projects/autonomous-underwater-vehicle.md,projects,VERIFIED,Build and route checks passed; sourced content review,In progress
+src/content/projects/backyard-ski-jump.md,projects,VERIFIED,Build and route checks passed; sourced content review,Completed
+src/content/projects/bicycle-computer-mount.md,projects,VERIFIED,Build and route checks passed; sourced content review,Concept
+src/content/projects/manufacturing-lab.md,projects,VERIFIED,Build and route checks passed; sourced content review,Laboratory activities documented
+src/content/projects/micro-drone-chassis.md,projects,VERIFIED,Build and route checks passed; sourced content review,Preliminary design study
+src/content/projects/outdoor-landmark-chair.md,projects,VERIFIED,Build and route checks passed; sourced content review,Completed
+src/content/coursework/anop-102.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation
+src/content/coursework/chem-203.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation
+src/content/coursework/eceg-205.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation
+src/content/coursework/engr-100.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation
+src/content/coursework/engr-214.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation
+src/content/coursework/engr-240.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation
+src/content/coursework/math-201.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation
+src/content/coursework/math-202.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation
+src/content/coursework/math-211.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation
+src/content/coursework/math-212.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation
+src/content/coursework/math-227.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation
+src/content/coursework/math-303.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation
+src/content/coursework/mech-202.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation
+src/content/coursework/mech-213.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation
+src/content/coursework/mech-220.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation
+src/content/coursework/mech-252.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation
+src/content/coursework/mech-313.md,coursework,VERIFIED,Build and route checks passed; sourced content review,"In progress · Fall 2026, as documented"
+src/content/coursework/mech-353.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation
+src/content/coursework/mech-355.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation
+src/content/coursework/mech-438.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation
+src/content/coursework/phys-211.md,coursework,VERIFIED,Build and route checks passed; sourced content review,Course status requires confirmation

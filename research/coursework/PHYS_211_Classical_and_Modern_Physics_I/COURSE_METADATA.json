@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "course_code": "PHYS 211",
+  "course_title": "Classical and Modern Physics I",
+  "display_title": "Classical and Modern Physics I",
+  "department": "Physics & Astronomy",
+  "catalog_year": "2025-2026",
+  "official_source_url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/physicsandastronomy/",
+  "academic_verification_status": "verified_2025_2026_catalog",
+  "enrollment_status": "listed_in_degree_audit_completion_unknown",
+  "content_status": "complete_draft_personal_status_unverified",
+  "publication_gate": "Confirm completed/current/planned/transfer status and first-person framing. Do not assign unverified personal artifacts or reflections.",
+  "personal_evidence_status": "audit_only",
+  "suggested_portfolio_category": "Physical Science Foundations",
+  "documents": {
+    "portfolio_page": "PORTFOLIO_PAGE.md",
+    "technical_reference": "TECHNICAL_REFERENCE.md",
+    "sources": "SOURCES.md",
+    "evidence_notes": "EVIDENCE_NOTES.md"
+  },
+  "assets": [
+    {
+      "filename": "assets/PHYS_211_illustrative_Lorentz_factor.png",
+      "asset_type": "original_explanatory_plot_png",
+      "caption": "Original theoretical Lorentz factor versus relative speed divided by light speed. Assumed inertial-frame model; not experimental data or student project output.",
+      "placement": "Preferred display image after representative example; SVG is an optional vector version",
+      "evidence_category": "Illustrative, not personal project evidence",
+      "alt_text": "Original theoretical Lorentz factor versus relative speed divided by light speed. Assumed inertial-frame model; not experimental data or student project output."
+    },
+    {
+      "filename": "assets/PHYS_211_illustrative_Lorentz_factor.svg",
+      "asset_type": "original_explanatory_plot",
+      "caption": "Original theoretical Lorentz factor versus relative speed divided by light speed. Assumed inertial-frame model; not experimental data or student project output.",
+      "placement": "After representative numerical example or in a labeled technical-detail panel",
+      "evidence_category": "Illustrative, not personal project evidence",
+      "alt_text": "Original theoretical Lorentz factor versus relative speed divided by light speed. Assumed inertial-frame model; not experimental data or student project output."
+    }
+  ],
+  "relevant_project_links": [],
+  "source_records": [
+    {
+      "source_id": "BU_PHYS_2025",
+      "source_type": "official_university_catalog",
+      "evidence_category": "Bucknell-verified",
+      "title": "Bucknell 2025-2026 catalog - Physics & Astronomy",
+      "url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/physicsandastronomy/",
+      "catalog_year": "2025-2026",
+      "locator": "PHYS 211 course block",
+      "claims_supported": [
+        "Official code, title, department and catalog coverage only; not enrollment or completion"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-PHYS211-01",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax University Physics Vol. 1 - Newton Second Law",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+      "catalog_year": null,
+      "locator": "Section 5.3, systems and force/acceleration",
+      "claims_supported": [
+        "principle 1; equation 1; original cart example"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-PHYS211-02",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax University Physics Vol. 1 - Work-Energy Theorem",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/7-3-work-energy-theorem",
+      "catalog_year": null,
+      "locator": "Section 7.3",
+      "claims_supported": [
+        "principle 2; equation 2; original cart example"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-PHYS211-03",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax University Physics Vol. 1 - Universal Gravitation",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/13-1-newtons-law-of-universal-gravitation",
+      "catalog_year": null,
+      "locator": "Section 13.1",
+      "claims_supported": [
+        "principle 3; equation 3; original distance-ratio problem"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-PHYS211-04",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax University Physics Vol. 2 - Molecular Model of an Ideal Gas",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas",
+      "catalog_year": null,
+      "locator": "Section 2.1",
+      "claims_supported": [
+        "principle 4; equation 4; original pressure example"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-PHYS211-05",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax University Physics Vol. 3 - Time Dilation",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/5-3-time-dilation",
+      "catalog_year": null,
+      "locator": "Section 5.3; proper and dilated intervals",
+      "claims_supported": [
+        "principle 5; equation 6; original timing example and plot"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-PHYS211-06",
+      "source_type": "primary_technical_education",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax University Physics Vol. 2 - Pressure, Temperature, and RMS Speed",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/2-2-pressure-temperature-and-rms-speed",
+      "catalog_year": null,
+      "locator": "Section 2.2; translational molecular kinetic energy",
+      "claims_supported": [
+        "principle 4; equation 5; original molecular-energy example"
+      ],
+      "accessed_date": "2026-10-30"
+    }
+  ],
+  "personal_evidence": [
+    {
+      "source_id": "P-AUDIT-PHYS211",
+      "location": "Supplied degree-audit crop image(5).png",
+      "supports": "Listed code only; no completion status or grade"
+    }
+  ],
+  "unverified_personal_claims": [
+    "Confirm PHYS 211 status and term.",
+    "Which real laboratory plot or calculation best shows your reasoning?",
+    "What concept or experimental inconsistency required revision, and what did you actually do?"
+  ],
+  "review_notes": [
+    "No separate public Bucknell course-specific learning objectives located.",
+    "Numerical examples independently reproducible with values written in the reference.",
+    "No imagegen or fabricated project photograph used."
+  ],
+  "page_word_count": 741,
+  "recommended_authentic_artifact": "One actual experiment or analytical/model comparison with raw-data context and units.",
+  "documented_subject_areas": [
+    "Newtonian mechanics",
+    "relativity",
+    "thermodynamics",
+    "statistical mechanics",
+    "gravity"
+  ],
+  "official_title": "Classical and Modern Physics I",
+  "course_specific_learning_objectives_status": "Not located in retrieved public catalog records; catalog coverage is documented, but no separate course-level learning-outcome list was found.",
+  "official_description_paraphrase": "Surveys mechanics, gravity, relativity, thermodynamics and statistical mechanics in the first introductory physics course.",
+  "student_attendance_term": null,
+  "completion_status": "not_established_from_available_records"
+}

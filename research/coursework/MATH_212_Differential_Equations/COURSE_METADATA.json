@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "course_code": "MATH 212",
+  "course_title": "Differential Equations",
+  "display_title": "Differential Equations",
+  "department": "Mathematics & Statistics",
+  "catalog_year": "2025-2026",
+  "official_source_url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/mathematicsmath/",
+  "academic_verification_status": "verified_2025_2026_catalog",
+  "enrollment_status": "listed_in_degree_audit_completion_unknown",
+  "content_status": "complete_draft_personal_status_unverified",
+  "publication_gate": "Confirm completed/current/planned or transfer-credit status;confirm first-person framing;keep illustrative examples separate from personal coursework.",
+  "personal_evidence_status": "audit_only_no_course_artifact_reviewed",
+  "suggested_portfolio_category": "Mathematics and Analysis",
+  "documents": {
+    "portfolio_page": "PORTFOLIO_PAGE.md",
+    "technical_reference": "TECHNICAL_REFERENCE.md",
+    "sources": "SOURCES.md",
+    "evidence_notes": "EVIDENCE_NOTES.md"
+  },
+  "assets": [
+    {
+      "filename": "assets/MATH_212_illustrative_cooling_transient.png",
+      "caption": "Illustrative first-order cooling model:80°C initially,20°C environment,tau=30 s. At30 s the prediction is42.073°C. Assumed model,not measured student thermal data.",
+      "type": "original_explanatory_plot",
+      "evidence_category": "Illustrative standard mathematics",
+      "placement": "After representative problem example",
+      "student_project_result": false,
+      "asset_type": "original_explanatory_diagram",
+      "alt_text": "Illustrative first-order cooling model:80°C initially,20°C environment,tau=30 s. At30 s the prediction is42.073°C. Assumed model,not measured student thermal data."
+    }
+  ],
+  "relevant_project_links": [],
+  "source_records": [
+    {
+      "source_id": "BU_MATH_2025",
+      "source_type": "official_university_catalog",
+      "evidence_category": "Bucknell-verified",
+      "title": "Bucknell University 2025-2026 Mathematics & Statistics catalog",
+      "url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/mathematicsmath/",
+      "catalog_year": "2025-2026",
+      "locator": "Courses: MATH 212 entry",
+      "claims_supported": [
+        "Official code,title,department,brief course description and topic labels"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH212-01",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "Arthur Mattuck, MIT OCW 18.03: Input-response models",
+      "url": "https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/6ac0b540ff46236e2df89da85acd6685_MIT18_03S10_ir.pdf",
+      "catalog_year": null,
+      "locator": "Input-response viewpoint and first-order linear models",
+      "claims_supported": [
+        "P1-P2;E1;D1"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH212-02",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "Arthur Mattuck, MIT OCW 18.03: Linear Differential Operators",
+      "url": "https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/3222ee53a6cb307dec118bf9311c522d_MIT18_03S10_o.pdf",
+      "catalog_year": null,
+      "locator": "Complementary plus particular solutions;constant-coefficient operators",
+      "claims_supported": [
+        "P3;E2-E3;D2"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH212-03",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "Arthur Mattuck, MIT OCW 18.03: Laplace transform",
+      "url": "https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/f8dba7fcfcc4c745e1ff88c6658b17b7_MIT18_03S10_lt.pdf",
+      "catalog_year": null,
+      "locator": "Transform conventions and derivative rule",
+      "claims_supported": [
+        "P4;E4;D4"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH212-04",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "Arthur Mattuck, MIT OCW 18.03: Linear systems of ODEs, LS1",
+      "url": "https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/791981c1011f03da368f8e21f8a3573d_MIT18_03S10_ls1.pdf",
+      "catalog_year": null,
+      "locator": "First-order systems;matrix representation and constant-coefficient response",
+      "claims_supported": [
+        "P5;E5;D3"
+      ],
+      "accessed_date": "2026-10-30"
+    }
+  ],
+  "personal_evidence": [
+    {
+      "source_id": "P-AUDIT-MATH",
+      "location": "Supplied image(2).png and image(5).png",
+      "supports": "Listed course code only;no completion status,grade or term"
+    }
+  ],
+  "unverified_personal_claims": [
+    "Completion and term",
+    "Specific original coursework or lab",
+    "Personal challenge and successful resolution"
+  ],
+  "review_notes": [
+    "Standard subject material is separated from documented Bucknell scope.",
+    "Illustrative input data must never become claimed personal results."
+  ],
+  "page_word_count": 671,
+  "overview_word_count": 122,
+  "recommended_authentic_artifact": "Actual ODE transient/vibration model comparing analytic and numerical solutions.",
+  "official_title": "Differential Equations",
+  "documented_subject_areas": [
+    "ordinary differential equation solution methods",
+    "linear differential equation systems",
+    "Laplace transform",
+    "applications",
+    "selected topics"
+  ],
+  "course_specific_learning_objectives_status": "Not located in retrieved public catalog records; catalog coverage is documented, but no separate course-level learning-outcome list was found.",
+  "official_description_paraphrase": "Develops methods for ordinary differential equations, coupled linear systems and Laplace transforms with applications.",
+  "student_attendance_term": null,
+  "completion_status": "not_established_from_available_records"
+}

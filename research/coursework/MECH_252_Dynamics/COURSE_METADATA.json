@@ -1,0 +1,168 @@
+{
+  "schema_version": "1.0",
+  "course_code": "MECH 252",
+  "course_title": "Dynamics",
+  "official_title": "Dynamics",
+  "display_title": "Dynamics",
+  "department": "Mechanical Engineering",
+  "catalog_year": "2025-2026",
+  "official_source_url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/",
+  "academic_verification_status": "verified_2025_2026_catalog",
+  "enrollment_status": "listed_in_degree_audit_completion_unknown",
+  "content_status": "complete_draft_personal_status_unverified",
+  "publication_gate": "Confirm completed/current/planned/transfer status and first-person framing; do not invent course assignments or challenges.",
+  "personal_evidence_status": "audit_and_resume; no course-specific artifact",
+  "suggested_portfolio_category": "Mechanics and Mechanical Analysis",
+  "documents": {
+    "portfolio_page": "PORTFOLIO_PAGE.md",
+    "technical_reference": "TECHNICAL_REFERENCE.md",
+    "sources": "SOURCES.md",
+    "evidence_notes": "EVIDENCE_NOTES.md"
+  },
+  "assets": [
+    {
+      "filename": "assets/MECH_252_Illustrative_Damped_Response.png",
+      "caption": "Original illustrative linear vibration response for m=0.50 kg, k=200 N/m and c=1.0 N·s/m, released from 10 mm with zero initial velocity. Analytical model, not measured student data.",
+      "asset_type": "original_explanatory_plot",
+      "evidence_category": "Illustrative technical content;not personal work",
+      "placement": "Beside the related representative example",
+      "alt_text": "Original illustrative linear vibration response for m=0.50 kg, k=200 N/m and c=1.0 N·s/m, released from 10 mm with zero initial velocity. Analytical model, not measured student data."
+    }
+  ],
+  "asset_captions": [
+    {
+      "filename": "MECH_252_Illustrative_Damped_Response.png",
+      "asset_type": "original_explanatory_plot",
+      "caption": "Original illustrative linear vibration response for m=0.50 kg, k=200 N/m and c=1.0 N·s/m, released from 10 mm with zero initial velocity. Analytical model, not measured student data.",
+      "placement": "Beside the representative numerical example; label illustrative.",
+      "provenance": "Created from explicit equations and assumed values in TECHNICAL_REFERENCE.md using Python/matplotlib; not ImageGen."
+    }
+  ],
+  "relevant_project_links": [
+    {
+      "project_key": "backyard_ski_jump",
+      "relationship": "independent early project; qualitative application only",
+      "url": null
+    }
+  ],
+  "source_records": [
+    {
+      "source_id": "BU_MECH_2025",
+      "source_type": "official_university_catalog",
+      "evidence_category": "Bucknell-verified",
+      "title": "Bucknell Mechanical Engineering catalog",
+      "url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/",
+      "catalog_year": "2025-2026",
+      "locator": "Courses  |  MECH 252",
+      "claims_supported": [
+        "official code, title, department, short catalog paraphrase, documented subject areas"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MECH252-01",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "MIT OCW 2.003SC  |  Velocity, Acceleration, and Rotational Motion",
+      "url": "https://ocw.mit.edu/courses/2-003sc-engineering-dynamics-fall-2011/pages/velocity-acceleration-and-rotational-motion/",
+      "locator": "Lecture 3-4 and Planar Motion recitation",
+      "claims_supported": [
+        "P1; E2; D2"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH252-02",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "MIT OCW 2.003SC  |  Finding Equations of Motion for Rigid Body Rotation",
+      "url": "https://ocw.mit.edu/courses/2-003sc-engineering-dynamics-fall-2011/pages/finding-equations-of-motion-for-rigid-body-rotation/",
+      "locator": "Equations of motion and selection of torque reference",
+      "claims_supported": [
+        "P2; E1; D1"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH252-03",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "OpenStax/Rice University  |  University Physics Volume 1, Rolling Motion",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion",
+      "locator": "Kinetic energy of translation and rotation",
+      "claims_supported": [
+        "P3; E3; D1 work check"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH252-04",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "Jacob Moore et al., Mechanics Map  |  Impulse Momentum Theorem for a Rigid Body",
+      "url": "https://mechanicsmap.psu.edu/websites/15_impulse_momentum_rigid_body/15-2_impulse_momentum_theorem_rigid_body/impulse_momentum_theorem_rigid_body.html",
+      "locator": "Linear and angular impulse-momentum",
+      "claims_supported": [
+        "P4; E4; D3"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH252-05",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "MIT OCW 2.003SC  |  Mechanical Vibration",
+      "url": "https://ocw.mit.edu/courses/2-003sc-engineering-dynamics-fall-2011/pages/mechanical-vibration/",
+      "locator": "Lectures 19-20, SDOF free response and damping",
+      "claims_supported": [
+        "P5; E5; D4; illustrative response plot"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    }
+  ],
+  "personal_evidence": [
+    {
+      "source_id": "PE08",
+      "location": "Audit code crops, dated2026-10-26",
+      "supports": "Listed course code only; no grade or completion status."
+    },
+    {
+      "source_id": "PE01",
+      "location": "Supplied project records as described in EVIDENCE_NOTES.md",
+      "supports": "MECH 252 appears in image.png and Dynamics is listed in the résumé. Neither establishes the term or completion date. No course assignment, motion trace or vibration measurement was reviewed. The ski-jump page documents an independent March 2020 build with practical adjustments; it cannot be presented as university coursework or quantitative dynamics testing."
+    }
+  ],
+  "unverified_personal_claims": [
+    "Term and completed/current/planned/transfer status except explicit date-qualified AUV progress",
+    "Specific class challenge and independently verified resolution",
+    "Demonstrated proficiency beyond supplied evidence"
+  ],
+  "review_notes": [
+    "No course-specific public learning-objective list located.",
+    "Representative problems are original illustrations, not submitted coursework.",
+    "No AI-generated project imagery used."
+  ],
+  "page_word_count": 690,
+  "principle_count": 5,
+  "equation_group_count": 5,
+  "representative_problem_count": 4,
+  "recommended_authentic_artifact": "Actual mechanism/vehicle motion analysis,simulation plot or measured motion example with assumptions.",
+  "documented_subject_areas": [
+    "planar rigid-body kinematics and kinetics",
+    "absolute and relative displacement velocity acceleration",
+    "force methods",
+    "energy methods",
+    "momentum methods",
+    "mechanical vibrations",
+    "analytical and computer-simulated solutions"
+  ],
+  "course_specific_learning_objectives_status": "Not located in retrieved public catalog records; catalog coverage is documented, but no separate course-level learning-outcome list was found.",
+  "official_description_paraphrase": "Studies planar rigid-body motion using kinematics, force, energy and momentum approaches, including vibration and computational solutions.",
+  "student_attendance_term": null,
+  "completion_status": "not_established_from_available_records"
+}

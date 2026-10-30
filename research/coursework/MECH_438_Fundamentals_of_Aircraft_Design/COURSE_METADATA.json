@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.0",
+  "course_code": "MECH 438",
+  "course_title": "Fundamentals of Aircraft Dsgn",
+  "official_title": "Fundamentals of Aircraft Dsgn",
+  "display_title": "Fundamentals of Aircraft Design",
+  "department": "Mechanical Engineering",
+  "catalog_year": "2025-2026",
+  "official_source_url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/",
+  "academic_verification_status": "verified_2025_2026_catalog",
+  "enrollment_status": "user_confirmed_course_project_completion_status_unknown",
+  "content_status": "complete_draft_personal_status_unverified",
+  "publication_gate": "Confirm current project/status dates and first-person framing; retain all preliminary/unverified results qualifications.",
+  "personal_evidence_status": "direct_user_course_mapping; models_reported; latest_code_reviewed_statically; final_execution_unverified",
+  "suggested_portfolio_category": "Aerospace Design and Simulation",
+  "documents": {
+    "portfolio_page": "PORTFOLIO_PAGE.md",
+    "technical_reference": "TECHNICAL_REFERENCE.md",
+    "sources": "SOURCES.md",
+    "evidence_notes": "EVIDENCE_NOTES.md"
+  },
+  "assets": [
+    {
+      "filename": "assets/MECH_438_Illustrative_Drag_Power.png",
+      "caption": "Original illustrative drag/power curves for an assumed 7000 N aircraft, S=12 m², CD0=0.035, k=0.055, and density 1.225 kg/m³. Not the biplane MATLAB output or a validated aircraft design.",
+      "asset_type": "original_explanatory_plot",
+      "evidence_category": "Illustrative technical content;not personal work",
+      "placement": "Beside the related representative example",
+      "alt_text": "Original illustrative drag/power curves for an assumed 7000 N aircraft, S=12 m², CD0=0.035, k=0.055, and density 1.225 kg/m³. Not the biplane MATLAB output or a validated aircraft design."
+    },
+    {
+      "filename": "assets/MECH_438_Biplane_Original_CAD_Views.png",
+      "caption": "Student-supplied SOLIDWORKS views of the aerobatic biplane concept. CAD geometry is work in progress; these views do not demonstrate aerodynamic, structural, or flight validation.",
+      "asset_type": "authentic_supplied_work",
+      "evidence_category": "Personal project evidence",
+      "placement": "Beside the verified course-project summary",
+      "alt_text": "Student-supplied SOLIDWORKS views of the aerobatic biplane concept. CAD geometry is work in progress; these views do not demonstrate aerodynamic, structural, or flight validation."
+    }
+  ],
+  "asset_captions": [
+    {
+      "filename": "MECH_438_Illustrative_Drag_Power.png",
+      "asset_type": "original_explanatory_plot",
+      "caption": "Original illustrative drag/power curves for an assumed 7000 N aircraft, S=12 m², CD0=0.035, k=0.055, and density 1.225 kg/m³. Not the biplane MATLAB output or a validated aircraft design.",
+      "placement": "Beside the representative numerical example; label illustrative.",
+      "provenance": "Created from explicit equations and assumed values in TECHNICAL_REFERENCE.md using Python/matplotlib; not ImageGen."
+    },
+    {
+      "filename": "MECH_438_Biplane_Original_CAD_Views.png",
+      "source": "image(7).png",
+      "caption": "Student-supplied SOLIDWORKS views of the aerobatic biplane concept. CAD geometry is work in progress; these views do not demonstrate aerodynamic, structural, or flight validation.",
+      "asset_type": "authentic_supplied_work",
+      "extraction": "Original screenshot copied without modification.",
+      "placement": "Project connection section; preserve preliminary status in caption."
+    }
+  ],
+  "relevant_project_links": [
+    {
+      "project_key": "aerobatic_biplane",
+      "relationship": "documented MECH 438 model/report and supplied CAD concept",
+      "url": null
+    },
+    {
+      "project_key": "spitfire_matlab_model",
+      "relationship": "user-confirmed MECH 438 model/report; original files not reviewed",
+      "url": null
+    }
+  ],
+  "source_records": [
+    {
+      "source_id": "BU_MECH_2025",
+      "source_type": "official_university_catalog",
+      "evidence_category": "Bucknell-verified",
+      "title": "Bucknell Mechanical Engineering catalog",
+      "url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/",
+      "catalog_year": "2025-2026",
+      "locator": "Courses  |  MECH 438",
+      "claims_supported": [
+        "official code, title, department, short catalog paraphrase, documented subject areas"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MECH438-01",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "NASA Glenn Research Center, Range Summary",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/range-summary/",
+      "locator": "Fuel expenditure, changing weight, and variation of required forces through flight; phase summation is original accounting formulation",
+      "claims_supported": [
+        "P1; E5; D3"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH438-02",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "NASA Glenn Research Center, Lift Equation",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/lift-equation/",
+      "locator": "Lift force normalization; stall expression is an algebraic derivation assuming L=W at CLmax",
+      "claims_supported": [
+        "P2; E1, E3; D1, D2"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH438-03",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "NASA Glenn Research Center, Induced Drag Coefficient",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/induced-drag-coefficient/",
+      "locator": "Lifting-line induced coefficient and aspect ratio; parabolic-polar approximation limits stated",
+      "claims_supported": [
+        "P3; E2; illustrative drag polar"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH438-04",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "NASA Glenn Research Center, Forces in a Climb",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/forces-in-a-climb/",
+      "locator": "Steady climb force balance; multiplying tangential balance by airspeed gives excess-power rate-of-climb relation",
+      "claims_supported": [
+        "P4; E4; D1, D4"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH438-05",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "MIT OCW16.333, Aircraft Stability and Control, lecture2",
+      "url": "https://ocw.mit.edu/courses/16-333-aircraft-stability-and-control-fall-2004/resources/lecture_2/",
+      "locator": "Longitudinal static stability and wing/tail contributions; common aft-positive datum convention declared in this reference",
+      "claims_supported": [
+        "P5; E6; D4"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH438-06",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "NASA Glenn Research Center, Drag Equation",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/drag-equation/",
+      "locator": "Reference-area force normalization and coefficient dependence",
+      "claims_supported": [
+        "E2 drag definition; D1"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH438-07",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "Embry-Riddle Aeronautical University, Introduction to Aerospace Flight Vehicles, Aircraft Stability and Control",
+      "url": "https://eaglepubs.erau.edu/introductiontoaerospaceflightvehicles/chapter/aircraft-stability-control/",
+      "locator": "Static Margin and Neutral Point subsection; nondimensional CG-to-neutral-point separation",
+      "claims_supported": [
+        "E6 explicit static-margin definition"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    }
+  ],
+  "personal_evidence": [
+    {
+      "source_id": "PE09",
+      "location": "Explicit user confirmation of MECH 438 model/report work",
+      "supports": "Course-project association; not audit enrollment or course completion."
+    },
+    {
+      "source_id": "PE03",
+      "location": "Supplied biplane MATLAB archive, static code review",
+      "supports": "Documented modeling methods and revision; no execution proof."
+    },
+    {
+      "source_id": "PE07",
+      "location": "Supplied biplane CAD screenshot",
+      "supports": "Concept geometry only; not validation."
+    }
+  ],
+  "unverified_personal_claims": [
+    "Term and completed/current/planned/transfer status except explicit date-qualified AUV progress",
+    "Specific class challenge and independently verified resolution",
+    "Demonstrated proficiency beyond supplied evidence"
+  ],
+  "review_notes": [
+    "No course-specific public learning-objective list located.",
+    "Representative problems are original illustrations, not submitted coursework.",
+    "No AI-generated project imagery used."
+  ],
+  "page_word_count": 796,
+  "principle_count": 5,
+  "equation_group_count": 6,
+  "representative_problem_count": 4,
+  "recommended_authentic_artifact": "Original biplane CAD plus selected final MATLAB output/report;Spitfire and biplane comparison if actual results supplied.",
+  "documented_subject_areas": [
+    "aircraft design elements and theory",
+    "computer modeling",
+    "commercial and electric aircraft",
+    "aircraft performance evaluation",
+    "small-scale aircraft design build and fly"
+  ],
+  "course_specific_learning_objectives_status": "Not located in retrieved public catalog records; catalog coverage is documented, but no separate course-level learning-outcome list was found.",
+  "official_description_paraphrase": "Introduces aircraft configuration and performance through computational models and a small-aircraft design, construction and flight component.",
+  "student_attendance_term": null,
+  "completion_status": "models_reports_user_confirmed_course_completion_not_established"
+}

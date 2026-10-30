@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "course_code": "MATH 211",
+  "course_title": "Calculus III",
+  "display_title": "Calculus III",
+  "department": "Mathematics & Statistics",
+  "catalog_year": "2025-2026",
+  "official_source_url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/mathematicsmath/",
+  "academic_verification_status": "verified_2025_2026_catalog",
+  "enrollment_status": "listed_in_degree_audit_completion_unknown",
+  "content_status": "complete_draft_personal_status_unverified",
+  "publication_gate": "Confirm completed/current/planned or transfer-credit status;confirm first-person framing;keep illustrative examples separate from personal coursework.",
+  "personal_evidence_status": "audit_only_no_course_artifact_reviewed",
+  "suggested_portfolio_category": "Mathematics and Analysis",
+  "documents": {
+    "portfolio_page": "PORTFOLIO_PAGE.md",
+    "technical_reference": "TECHNICAL_REFERENCE.md",
+    "sources": "SOURCES.md",
+    "evidence_notes": "EVIDENCE_NOTES.md"
+  },
+  "assets": [
+    {
+      "filename": "assets/MATH_211_illustrative_temperature_gradient.png",
+      "caption": "Illustrative prescribed field T=300+2x²+3y² in SI units, with gradient at(1 m,2 m). The arrow indicates direction and is scaled for visibility; no student thermal-test data or simulation is represented.",
+      "type": "original_explanatory_plot",
+      "evidence_category": "Illustrative standard mathematics",
+      "placement": "After representative problem example",
+      "student_project_result": false,
+      "asset_type": "original_explanatory_diagram",
+      "alt_text": "Illustrative prescribed field T=300+2x²+3y² in SI units, with gradient at(1 m,2 m). The arrow indicates direction and is scaled for visibility; no student thermal-test data or simulation is represented."
+    }
+  ],
+  "relevant_project_links": [],
+  "source_records": [
+    {
+      "source_id": "BU_MATH_2025",
+      "source_type": "official_university_catalog",
+      "evidence_category": "Bucknell-verified",
+      "title": "Bucknell University 2025-2026 Mathematics & Statistics catalog",
+      "url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/mathematicsmath/",
+      "catalog_year": "2025-2026",
+      "locator": "Courses: MATH 211 entry",
+      "claims_supported": [
+        "Official code,title,department,brief course description and topic labels"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH211-01",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax/Rice University, Calculus Volume 3: Directional Derivatives and the Gradient",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/4-6-directional-derivatives-and-the-gradient",
+      "catalog_year": null,
+      "locator": "Gradient definition and directional interpretation",
+      "claims_supported": [
+        "P1;E1;D1"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH211-02",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax/Rice University, Calculus Volume 3: Double Integrals in Polar Coordinates",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/5-3-double-integrals-in-polar-coordinates",
+      "catalog_year": null,
+      "locator": "Polar integration element and circular domains",
+      "claims_supported": [
+        "P2-P3;E2-E3;D2"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH211-03",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax/Rice University, Calculus Volume 3: Line Integrals",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals",
+      "catalog_year": null,
+      "locator": "Vector line integrals and work",
+      "claims_supported": [
+        "P4;E4"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH211-04",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax/Rice University, Calculus Volume 3: The Divergence Theorem",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/6-8-the-divergence-theorem",
+      "catalog_year": null,
+      "locator": "Closed-surface flux, orientation and divergence theorem conditions",
+      "claims_supported": [
+        "P5;E5;D3"
+      ],
+      "accessed_date": "2026-10-30"
+    }
+  ],
+  "personal_evidence": [
+    {
+      "source_id": "P-AUDIT-MATH",
+      "location": "Supplied image(2).png and image(5).png",
+      "supports": "Listed course code only;no completion status,grade or term"
+    }
+  ],
+  "unverified_personal_claims": [
+    "Completion and term",
+    "Specific original coursework or lab",
+    "Personal challenge and successful resolution"
+  ],
+  "review_notes": [
+    "Standard subject material is separated from documented Bucknell scope.",
+    "Illustrative input data must never become claimed personal results."
+  ],
+  "page_word_count": 685,
+  "overview_word_count": 120,
+  "recommended_authentic_artifact": "Actual multivariable geometry/volume/field integral and corresponding annotated plot.",
+  "official_title": "Calculus III",
+  "documented_subject_areas": [
+    "vector-valued functions",
+    "functions of several variables",
+    "multiple integrals",
+    "line integrals",
+    "surface integrals",
+    "extrema",
+    "Green’s theorem",
+    "Stokes’ theorem",
+    "Divergence theorem"
+  ],
+  "course_specific_learning_objectives_status": "Not located in retrieved public catalog records; catalog coverage is documented, but no separate course-level learning-outcome list was found.",
+  "official_description_paraphrase": "Extends calculus to vectors and multiple variables, with optimization, multidimensional integration and major vector-calculus theorems.",
+  "student_attendance_term": null,
+  "completion_status": "not_established_from_available_records"
+}

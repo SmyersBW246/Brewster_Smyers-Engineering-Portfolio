@@ -1,0 +1,1 @@
+Historical migration script retained for provenance only. Do not run: it targets the prior workspace and would overwrite reviewed content, including removed concept imagery. Edit the current Markdown directly.

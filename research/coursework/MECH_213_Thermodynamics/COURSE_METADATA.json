@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0",
+  "course_code": "MECH 213",
+  "course_title": "Thermodynamics",
+  "official_title": "Thermodynamics",
+  "display_title": "Thermodynamics",
+  "department": "Mechanical Engineering",
+  "catalog_year": "2025-2026",
+  "official_source_url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/",
+  "academic_verification_status": "verified_2025_2026_catalog",
+  "enrollment_status": "listed_in_degree_audit_completion_unknown",
+  "content_status": "complete_draft_personal_status_unverified",
+  "publication_gate": "Confirm completed/current/planned/transfer status and first-person framing; do not invent course assignments or challenges.",
+  "personal_evidence_status": "audit_and_resume; no reviewed course-specific artifact",
+  "suggested_portfolio_category": "Thermal and Fluid Systems",
+  "documents": {
+    "portfolio_page": "PORTFOLIO_PAGE.md",
+    "technical_reference": "TECHNICAL_REFERENCE.md",
+    "sources": "SOURCES.md",
+    "evidence_notes": "EVIDENCE_NOTES.md"
+  },
+  "assets": [
+    {
+      "filename": "assets/MECH_213_Illustrative_Energy_Flow.png",
+      "caption": "Original illustrative turbine energy-flow diagram for 0.20 kg/s air cooling from 600 K to 450 K, with constant cp=1005 J/(kg·K). Calculated shaft power 30.15 kW; not a student test result.",
+      "asset_type": "original_explanatory_plot",
+      "evidence_category": "Illustrative technical content;not personal work",
+      "placement": "Beside the related representative example",
+      "alt_text": "Original illustrative turbine energy-flow diagram for 0.20 kg/s air cooling from 600 K to 450 K, with constant cp=1005 J/(kg·K). Calculated shaft power 30.15 kW; not a student test result."
+    }
+  ],
+  "asset_captions": [
+    {
+      "filename": "MECH_213_Illustrative_Energy_Flow.png",
+      "asset_type": "original_explanatory_plot",
+      "caption": "Original illustrative turbine energy-flow diagram for 0.20 kg/s air cooling from 600 K to 450 K, with constant cp=1005 J/(kg·K). Calculated shaft power 30.15 kW; not a student test result.",
+      "placement": "Beside the representative numerical example; label illustrative.",
+      "provenance": "Created from explicit equations and assumed values in TECHNICAL_REFERENCE.md using Python/matplotlib; not ImageGen."
+    }
+  ],
+  "relevant_project_links": [],
+  "source_records": [
+    {
+      "source_id": "BU_MECH_2025",
+      "source_type": "official_university_catalog",
+      "evidence_category": "Bucknell-verified",
+      "title": "Bucknell Mechanical Engineering catalog",
+      "url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/",
+      "catalog_year": "2025-2026",
+      "locator": "Courses  |  MECH 213",
+      "claims_supported": [
+        "official code, title, department, short catalog paraphrase, documented subject areas"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MECH213-01",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "OpenStax/Rice University, University Physics Volume2,3.3 First Law of Thermodynamics",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+      "locator": "Closed-system energy conservation and sign convention",
+      "claims_supported": [
+        "P1; E1"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH213-02",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "MIT Unified Engineering, Thermodynamics chapter4",
+      "url": "https://ocw.mit.edu/ans7870/16/16.unified/thermoF03/chapter_4.htm",
+      "locator": "First-law formulations and ideal-gas energy/property context",
+      "claims_supported": [
+        "P2; E3"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH213-03",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "MIT Unified Engineering, Thermodynamics chapter6",
+      "url": "https://ocw.mit.edu/ans7870/16/16.unified/thermoF03/chapter_6.htm",
+      "locator": "Control-volume rates, enthalpy and steady-flow energy equation",
+      "claims_supported": [
+        "P3; E2; D1"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH213-04",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "OpenStax/Rice University, University Physics Volume2,4.6 Entropy",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+      "locator": "Entropy change, irreversibility and heat transfer between reservoirs; balance notation is standard synthesis",
+      "claims_supported": [
+        "P4; E4; D4"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH213-05",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "OpenStax/Rice University, University Physics Volume2,4.2 Heat Engines",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-2-heat-engines",
+      "locator": "Cyclic heat/work accounting and thermal efficiency; Carnot benchmark also chapter4.5",
+      "claims_supported": [
+        "P5; E5; D2"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH213-06",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "OpenStax/Rice University, University Physics Volume2,4.3 Refrigerators and Heat Pumps",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+      "locator": "Definitions of refrigerator/heat-pump coefficient of performance",
+      "claims_supported": [
+        "E6; D3"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH213-07",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "OpenStax/Rice University, University Physics Volume2,4.5 The Carnot Cycle",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+      "locator": "Reversible engine efficiency between two reservoirs; absolute-temperature limit",
+      "claims_supported": [
+        "E5 reversible bound; D2"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    },
+    {
+      "source_id": "STD-MECH213-08",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering",
+      "title": "MIT Unified Engineering, Thermodynamics chapter7",
+      "url": "https://ocw.mit.edu/ans7870/16/16.unified/thermoF03/chapter_7.htm",
+      "locator": "Entropy as a measure of irreversibility and irreversible versus reversible processes",
+      "claims_supported": [
+        "P4; E4 entropy-generation interpretation"
+      ],
+      "accessed_date": "2026-10-30",
+      "catalog_year": null
+    }
+  ],
+  "personal_evidence": [
+    {
+      "source_id": "PE08",
+      "location": "Audit code crops, dated2026-10-26",
+      "supports": "Listed course code only; no grade or completion status."
+    },
+    {
+      "source_id": "PE01",
+      "location": "Supplied project records as described in EVIDENCE_NOTES.md",
+      "supports": "MECH 213 is listed in image.png and Thermodynamics is named in the supplied résumé. These establish relevance/listing but not term, grade, or completion. No original thermal-storage mockup report or course assignment was reviewed; its class association remains unresolved."
+    }
+  ],
+  "unverified_personal_claims": [
+    "Term and completed/current/planned/transfer status except explicit date-qualified AUV progress",
+    "Specific class challenge and independently verified resolution",
+    "Demonstrated proficiency beyond supplied evidence"
+  ],
+  "review_notes": [
+    "No course-specific public learning-objective list located.",
+    "Representative problems are original illustrations, not submitted coursework.",
+    "No AI-generated project imagery used."
+  ],
+  "page_word_count": 734,
+  "principle_count": 5,
+  "equation_group_count": 6,
+  "representative_problem_count": 4,
+  "recommended_authentic_artifact": "Actual thermodynamic cycle or energy-balance report/plot;thermal-storage mockup only if the course is confirmed.",
+  "documented_subject_areas": [
+    "properties of substances",
+    "first law of thermodynamics",
+    "second law of thermodynamics",
+    "efficiencies",
+    "power cycles",
+    "refrigeration cycles"
+  ],
+  "course_specific_learning_objectives_status": "Not located in retrieved public catalog records; catalog coverage is documented, but no separate course-level learning-outcome list was found.",
+  "official_description_paraphrase": "Applies thermodynamic laws and substance properties to efficiency and to power-generation and refrigeration cycles.",
+  "student_attendance_term": null,
+  "completion_status": "not_established_from_available_records"
+}

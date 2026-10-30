@@ -1,0 +1,227 @@
+{
+  "schema_version": "1.0",
+  "course_code": "MATH 303",
+  "course_title": "Probability",
+  "display_title": "Probability",
+  "department": "Mathematics & Statistics",
+  "catalog_year": "2025-2026",
+  "official_source_url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/mathematicsmath/",
+  "academic_verification_status": "verified_2025_2026_catalog",
+  "enrollment_status": "listed_in_degree_audit_completion_unknown",
+  "content_status": "complete_draft_personal_status_unverified",
+  "publication_gate": "Confirm completed/current/planned or transfer-credit status;confirm first-person framing;keep illustrative examples separate from personal coursework.",
+  "personal_evidence_status": "audit_only_no_course_artifact_reviewed",
+  "suggested_portfolio_category": "Mathematics and Analysis",
+  "documents": {
+    "portfolio_page": "PORTFOLIO_PAGE.md",
+    "technical_reference": "TECHNICAL_REFERENCE.md",
+    "sources": "SOURCES.md",
+    "evidence_notes": "EVIDENCE_NOTES.md"
+  },
+  "assets": [
+    {
+      "filename": "assets/MATH_303_illustrative_binomial_probability.png",
+      "caption": "Illustrative binomial model:10 independent trials with assumed defect probability0.01. Bar heights are analytic probabilities,not observed defect counts or product reliability results.",
+      "type": "original_explanatory_plot",
+      "evidence_category": "Illustrative standard mathematics",
+      "placement": "After representative problem example",
+      "student_project_result": false,
+      "asset_type": "original_explanatory_diagram",
+      "alt_text": "Illustrative binomial model:10 independent trials with assumed defect probability0.01. Bar heights are analytic probabilities,not observed defect counts or product reliability results."
+    }
+  ],
+  "relevant_project_links": [],
+  "source_records": [
+    {
+      "source_id": "BU_MATH_2025",
+      "source_type": "official_university_catalog",
+      "evidence_category": "Bucknell-verified",
+      "title": "Bucknell University 2025-2026 Mathematics & Statistics catalog",
+      "url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/mathematicsmath/",
+      "catalog_year": "2025-2026",
+      "locator": "Courses: MATH 303 entry",
+      "claims_supported": [
+        "Official code,title,department,brief course description and topic labels"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH303-01",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "MIT OCW 18.05 Reading3:Conditional Probability,Independence and Bayes",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class03-prep.pdf",
+      "catalog_year": null,
+      "locator": "Conditional definition,total probability,Bayes and independence",
+      "claims_supported": [
+        "P1-P2;E1;D2"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH303-02",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "MIT OCW 18.05 Reading4b:Expected Value",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class04-prep-b.pdf",
+      "catalog_year": null,
+      "locator": "Discrete expectation and weighting",
+      "claims_supported": [
+        "P3;E2;D4"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH303-03",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "MIT OCW 18.05 Reading5a:Variance",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class05-prep-a.pdf",
+      "catalog_year": null,
+      "locator": "Variance and its interpretation",
+      "claims_supported": [
+        "P3;E2,E5;D3"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH303-04",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "MIT OCW 18.05 Reading6a:Continuous Expectation and Variance",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class06-prep-a.pdf",
+      "catalog_year": null,
+      "locator": "Continuous moments and units",
+      "claims_supported": [
+        "E2"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH303-05",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "MIT OCW 18.05 Reading6b:CLT and Law of Large Numbers",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class06-prep-b.pdf",
+      "catalog_year": null,
+      "locator": "IID finite-variance limit behavior and standardization",
+      "claims_supported": [
+        "P5;E6;D3"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH303-06",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "MIT OCW 18.05 Reading7a:Joint Distributions and Independence",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class07-prep-a.pdf",
+      "catalog_year": null,
+      "locator": "Joint distributions and independence of random variables",
+      "claims_supported": [
+        "P1;joint-model context forP4"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH303-07",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "NIST/SEMATECH e-Handbook:Binomial Distribution",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda366i.htm",
+      "catalog_year": null,
+      "locator": "Fixed-trial common-probability binomial mass function",
+      "claims_supported": [
+        "E3;D1"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH303-08",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "NIST/SEMATECH e-Handbook:Chi-Square Distribution",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda3666.htm",
+      "catalog_year": null,
+      "locator": "Independent squared-standard-normal construction",
+      "claims_supported": [
+        "P6"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH303-09",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "NIST/SEMATECH e-Handbook:t Distribution",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda3664.htm",
+      "catalog_year": null,
+      "locator": "Student-t tail behavior and inference uses",
+      "claims_supported": [
+        "P6"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH303-10",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "MIT OCW18.05 Reading7b:Covariance and Correlation",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class07-prep-b.pdf",
+      "catalog_year": null,
+      "locator": "Variance of a sum,covariance and independence caveat",
+      "claims_supported": [
+        "P3;E5;D3"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH303-11",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "MIT OCW6.041SC Quiz1 Review:Conditional and Total Expectation",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/337c2b848282f31191196653a3fd7a45_MIT6_041SCF13_quiz01_revi.pdf",
+      "catalog_year": null,
+      "locator": "Conditional expectation and total expectation theorem",
+      "claims_supported": [
+        "P4;E4;D4"
+      ],
+      "accessed_date": "2026-10-30"
+    }
+  ],
+  "personal_evidence": [
+    {
+      "source_id": "P-AUDIT-MATH",
+      "location": "Supplied image(2).png and image(5).png",
+      "supports": "Listed course code only;no completion status,grade or term"
+    }
+  ],
+  "unverified_personal_claims": [
+    "Completion and term",
+    "Specific original coursework or lab",
+    "Personal challenge and successful resolution"
+  ],
+  "review_notes": [
+    "Standard subject material is separated from documented Bucknell scope.",
+    "Illustrative input data must never become claimed personal results."
+  ],
+  "page_word_count": 662,
+  "overview_word_count": 119,
+  "recommended_authentic_artifact": "Actual probability model or MonteCarlo simulation with comparison to an analytical result.",
+  "official_title": "Probability",
+  "documented_subject_areas": [
+    "elementary probability",
+    "random variables",
+    "moments",
+    "central limit theorem",
+    "conditional expectation",
+    "distributions derived from normal distribution",
+    "history of probability",
+    "probability simulation",
+    "applications"
+  ],
+  "course_specific_learning_objectives_status": "Not located in retrieved public catalog records; catalog coverage is documented, but no separate course-level learning-outcome list was found.",
+  "official_description_paraphrase": "Develops probability models, moments, conditioning and limiting behavior, with simulation, historical context and applications.",
+  "student_attendance_term": null,
+  "completion_status": "not_established_from_available_records"
+}

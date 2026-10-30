@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0",
+  "course_code": "MATH 202",
+  "course_title": "Calculus II",
+  "display_title": "Calculus II",
+  "department": "Mathematics & Statistics",
+  "catalog_year": "2025-2026",
+  "official_source_url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/mathematicsmath/",
+  "academic_verification_status": "verified_2025_2026_catalog",
+  "enrollment_status": "listed_in_degree_audit_completion_unknown",
+  "content_status": "complete_draft_personal_status_unverified",
+  "publication_gate": "Confirm completed/current/planned or transfer-credit status;confirm first-person framing;keep illustrative examples separate from personal coursework.",
+  "personal_evidence_status": "audit_only_no_course_artifact_reviewed",
+  "suggested_portfolio_category": "Mathematics and Analysis",
+  "documents": {
+    "portfolio_page": "PORTFOLIO_PAGE.md",
+    "technical_reference": "TECHNICAL_REFERENCE.md",
+    "sources": "SOURCES.md",
+    "evidence_notes": "EVIDENCE_NOTES.md"
+  },
+  "assets": [
+    {
+      "filename": "assets/MATH_202_illustrative_small_angle_error.png",
+      "caption": "Illustrative errors of theta and theta-theta³/6 as approximations to sin(theta), with theta in radians. Assumed mathematical benchmark, not student experimental data.",
+      "type": "original_explanatory_plot",
+      "evidence_category": "Illustrative standard mathematics",
+      "placement": "After representative problem example",
+      "student_project_result": false,
+      "asset_type": "original_explanatory_diagram",
+      "alt_text": "Illustrative errors of theta and theta-theta³/6 as approximations to sin(theta), with theta in radians. Assumed mathematical benchmark, not student experimental data."
+    }
+  ],
+  "relevant_project_links": [],
+  "source_records": [
+    {
+      "source_id": "BU_MATH_2025",
+      "source_type": "official_university_catalog",
+      "evidence_category": "Bucknell-verified",
+      "title": "Bucknell University 2025-2026 Mathematics & Statistics catalog",
+      "url": "https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/mathematicsmath/",
+      "catalog_year": "2025-2026",
+      "locator": "Courses: MATH 202 entry",
+      "claims_supported": [
+        "Official code,title,department,brief course description and topic labels"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH202-01",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax/Rice University, Calculus Volume 2: Integration by Parts",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/3-1-integration-by-parts",
+      "catalog_year": null,
+      "locator": "Product-rule integration identity",
+      "claims_supported": [
+        "P1;E1;D4"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH202-02",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax/Rice University, Calculus Volume 2: Numerical Integration",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/3-6-numerical-integration",
+      "catalog_year": null,
+      "locator": "Composite trapezoidal rule and approximation errors",
+      "claims_supported": [
+        "P2;E2;D1"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH202-03",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax/Rice University, Calculus Volume 2: Taylor and Maclaurin Series",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/6-3-taylor-and-maclaurin-series",
+      "catalog_year": null,
+      "locator": "Taylor polynomials, remainder and convergence",
+      "claims_supported": [
+        "P3-P4;E3;D2"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH202-04",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax/Rice University, Calculus Volume 2: Calculus of Parametric Curves",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/7-2-calculus-of-parametric-curves",
+      "catalog_year": null,
+      "locator": "Parametric arc length",
+      "claims_supported": [
+        "P5;E4;D3"
+      ],
+      "accessed_date": "2026-10-30"
+    },
+    {
+      "source_id": "STD-MATH202-05",
+      "source_type": "primary_educational_reference",
+      "evidence_category": "Standard engineering content",
+      "title": "OpenStax/Rice University, Calculus Volume 2: Area and Arc Length in Polar Coordinates",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/7-4-area-and-arc-length-in-polar-coordinates",
+      "catalog_year": null,
+      "locator": "Polar area integral",
+      "claims_supported": [
+        "E5"
+      ],
+      "accessed_date": "2026-10-30"
+    }
+  ],
+  "personal_evidence": [
+    {
+      "source_id": "P-AUDIT-MATH",
+      "location": "Supplied image(2).png and image(5).png",
+      "supports": "Listed course code only;no completion status,grade or term"
+    }
+  ],
+  "unverified_personal_claims": [
+    "Completion and term",
+    "Specific original coursework or lab",
+    "Personal challenge and successful resolution"
+  ],
+  "review_notes": [
+    "Standard subject material is separated from documented Bucknell scope.",
+    "Illustrative input data must never become claimed personal results."
+  ],
+  "page_word_count": 684,
+  "overview_word_count": 123,
+  "recommended_authentic_artifact": "Original integration/series approximation notebook with an error or convergence plot.",
+  "official_title": "Calculus II",
+  "documented_subject_areas": [
+    "integration by parts",
+    "numerical integration",
+    "improper integrals",
+    "sequences and series",
+    "Taylor series",
+    "polar coordinates",
+    "parametric functions",
+    "differential equations"
+  ],
+  "course_specific_learning_objectives_status": "Not located in retrieved public catalog records; catalog coverage is documented, but no separate course-level learning-outcome list was found.",
+  "official_description_paraphrase": "Extends integration techniques and approximation, then develops series, polar and parametric representations, and elementary differential equations.",
+  "student_attendance_term": null,
+  "completion_status": "not_established_from_available_records"
+}
