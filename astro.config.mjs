@@ -9,6 +9,8 @@ const base = process.env.SITE_BASE || (name && name !== `${owner}.github.io` ? `
 
 export default defineConfig({
   output: 'static',
+  // Keep layout styles with their HTML during GitHub Pages cache/deployment changes.
+  build: { inlineStylesheets: 'always' },
   markdown: { processor: unified({ remarkPlugins: [math] }) },
   site: process.env.SITE_URL || (owner ? `https://${owner}.github.io` : undefined),
   base,

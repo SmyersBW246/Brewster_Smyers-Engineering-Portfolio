@@ -10,7 +10,7 @@ const nav = [['Projects','projects/'],['Coursework','coursework/'],['About','abo
 ---
 <!doctype html>
 <html lang="en">
-<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content={description}/><meta name="robots" content="noindex,nofollow"/><meta name="theme-color" content="#182d3b"/><title>{title}</title><link rel="icon" href={url('favicon.svg')} type="image/svg+xml"/></head>
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content={description}/><meta name="robots" content="noindex,nofollow"/><meta name="portfolio-revision" content={import.meta.env.GITHUB_SHA || process.env.GITHUB_SHA || 'local'}/><meta name="theme-color" content="#182d3b"/><title>{title}</title><link rel="icon" href={url('favicon.svg')} type="image/svg+xml"/></head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header wrap"><a class="brand" href={url()} aria-label="Brewster Smyers home"><span class="monogram" aria-hidden="true">BS<span>.</span></span><span>Brewster Smyers<small>Mechanical Engineering</small></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">Menu <span aria-hidden="true">+</span></button><nav id="primary-nav" aria-label="Main navigation">{nav.map(([label,path])=><a href={url(path)} aria-current={current.startsWith(url(path)) ? 'page' : undefined}>{label}</a>)}</nav></header>
