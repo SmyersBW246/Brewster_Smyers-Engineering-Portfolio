@@ -10,7 +10,6 @@ documented: true
 connection: My lab activities include bronze casting, a ring formed from a quarter, composite pressing and bonding, welding, and CNC work for injection-molding tooling. Visits to Lycoming Engines and a metalworking facility added industrial context.
 relatedProjects:
 - micro-drone-chassis
-- bicycle-computer-mount
 topics:
 - deformation processing
 - solidification
@@ -95,6 +94,6 @@ The available notes confirm the activities, not a specific casting defect, weldi
 
 ## Skills and engineering applications
 
-The work supports practical exposure to casting, forming, composite pressing/bonding, welding, CNC tooling and comparing manufacturing routes. It does not establish independent machine qualification or a measured tolerance capability. These subjects apply to aircraft component production, automotive cast or formed parts, and injection-molded product tooling. My carbon-drone and bicycle-mount documents provide related preliminary design ideas; their class assignment and physical completion are unconfirmed, so they are identified as separate developing projects.
+The work supports practical exposure to casting, forming, composite pressing/bonding, welding, CNC tooling and comparing manufacturing routes. It does not establish independent machine qualification or a measured tolerance capability. These subjects apply to aircraft component production, automotive cast or formed parts, and injection-molded product tooling. My carbon-drone document provides a related preliminary design idea; its class assignment and physical completion are unconfirmed, so it is identified as a separate developing project.
 
 The cooling-size plot uses an idealized casting model to explain size effects. It is a teaching illustration, separate from the reported laboratory activities.

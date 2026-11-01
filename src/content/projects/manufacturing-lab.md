@@ -49,5 +49,5 @@ I toured Lycoming Engines and a separate metalworking facility with large forgin
 
 Original photographs of the bronze object and quarter ring should lead this page. A pattern-to-part sequence would make the manufacturing decisions visible. A brief account of one actual difficulty, what changed, and the resulting part would strengthen the case study.
 
-My micro-drone chassis and bicycle-computer mount are related preliminary design projects. Their manufacturing comparison remains planned, and their class assignment is unconfirmed.
+My micro-drone chassis is a related preliminary design project. Its manufacturing comparison remains planned, and its class assignment is unconfirmed.
 

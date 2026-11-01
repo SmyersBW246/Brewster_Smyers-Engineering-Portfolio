@@ -1,0 +1,74 @@
+[
+  {
+    "label": "desktop",
+    "route": "",
+    "overflow": false,
+    "offenders": [],
+    "brokenImages": [],
+    "h1": "Brewster\nSmyers."
+  },
+  {
+    "label": "desktop",
+    "route": "about/",
+    "overflow": false,
+    "offenders": [],
+    "brokenImages": [],
+    "h1": "Always making\nsomething."
+  },
+  {
+    "label": "desktop",
+    "route": "projects/",
+    "overflow": false,
+    "offenders": [],
+    "brokenImages": [],
+    "h1": "Built on\ncuriosity."
+  },
+  {
+    "label": "mobile",
+    "route": "",
+    "overflow": false,
+    "offenders": [],
+    "brokenImages": [],
+    "h1": "Brewster\nSmyers."
+  },
+  {
+    "label": "mobile",
+    "route": "about/",
+    "overflow": false,
+    "offenders": [],
+    "brokenImages": [],
+    "h1": "Always making\nsomething."
+  },
+  {
+    "label": "mobile",
+    "route": "projects/",
+    "overflow": false,
+    "offenders": [],
+    "brokenImages": [],
+    "h1": "Built on\ncuriosity."
+  },
+  {
+    "label": "small",
+    "route": "",
+    "overflow": false,
+    "offenders": [],
+    "brokenImages": [],
+    "h1": "Brewster\nSmyers."
+  },
+  {
+    "label": "small",
+    "route": "about/",
+    "overflow": false,
+    "offenders": [],
+    "brokenImages": [],
+    "h1": "Always making\nsomething."
+  },
+  {
+    "label": "small",
+    "route": "projects/",
+    "overflow": false,
+    "offenders": [],
+    "brokenImages": [],
+    "h1": "Built on\ncuriosity."
+  }
+]

@@ -1,11 +1,9 @@
 # Exact next action
 
-State: working unpublished Astro portfolio. 36 pages, eight projects, 21 subject notes, three PDF briefs, resume and MATLAB download. Root and /portfolio builds pass with 602 local references and no errors. UI content checkpoint 1160f21; later commit preserves final QA/recovery files.
+Refinement complete. Extract the v2 checkpoint and run START_PREVIEW.cmd on Windows (Node24+) to review Home/About. Other systems: node scripts/serve-build.mjs; open http://127.0.0.1:4321. No dependency install required for the included dist preview.
 
-Last finished milestone: M23–M24 functional/responsive QA; M26 portable deployment configuration prepared. Latest recoverable artifact: Brewster_Smyers_Portfolio_Checkpoint_2026-10-30_v1.zip, containing source, dist preview, docs and checkpoints/portfolio-history.bundle.
+Before edits, read PROJECT_MASTER.md, PROGRESS.md, DECISIONS.md and docs/REFINEMENT_QA.md. Preserve current source. About copy: src/data/about.ts and docs/ABOUT_NARRATIVE.md. Photo provenance: docs/PHOTO_SELECTION.json. Recover Git source history with git clone checkpoints/portfolio-history.bundle recovered-portfolio.
 
-Next: read docs/REVIEW_QUESTIONS.md and obtain the grouped evidence/status/launch details. Update confirmed course terms, resume and authentic media. M08 robot is blocked on evidence; keep ski jump featured until supplied. Do not repeat course research or overwrite reviewed source.
+Next content work: confirm subjects in selected photos, exact AT segment if desired, resume/course terms; obtain original robot photo/code/report plus role and result before replacing ski-jump tile. See docs/REVIEW_QUESTIONS.md for earlier evidence gaps.
 
-Before editing: npm ci (Node24+), npm run build, npm run verify. Preview via node scripts/serve-build.mjs. Check docs/QA_REPORT.md for exact validation and limits.
-
-GitHub: no remote connected. Prepare private repository when authorized connection available. Public site/public repository require explicit approval. Manual workflow cannot launch from a push. No public URL exists.
+Next GitHub work: identify actual repository URL and inspect current state before integrating; do not overwrite unseen changes. No remote configured. Never publish, deploy or make a repository public without explicit approval. Use portable ZIP checkpoints until repository access exists.

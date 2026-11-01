@@ -2,11 +2,15 @@
 
 A complete private-review Astro static website, recovered and extended from the earlier portfolio work. This source has not been published or connected to a GitHub account.
 
+## Refinement checkpoint v2
+
+Homepage and About are refined, six personal photographs integrated, bicycle mount removed. See docs/REFINEMENT_QA.md for changes and validation, NEXT_ACTION.md for continuation.
+
 ## Open the finished draft
 
 Install Node.js 24 or later from https://nodejs.org/ if needed. The ZIP includes a finished `dist/` build, so no dependency installation is needed to review it.
 
-On Windows, double-click `START_PREVIEW.cmd`. Otherwise run `node scripts/serve-build.mjs` from this folder. Open http://localhost:4321. Keep the terminal open while reviewing. The server listens only on your own computer. Opening `dist/index.html` directly as a file does not resolve website links correctly.
+On Windows, double-click `START_PREVIEW.cmd`. Otherwise run `node scripts/serve-build.mjs` from this folder. Open http://127.0.0.1:4321. Keep the terminal open while reviewing. The server listens only on your own computer. Opening `dist/index.html` directly as a file does not resolve website links correctly.
 
 ## Edit and rebuild
 
@@ -27,7 +31,7 @@ Project copy lives in `src/content/projects/`; subject notes live in `src/conten
 
 ## Included
 
-- Home, project index, eight case studies, coursework index and 21 course notes, About, Resume, Contact and a 404 page.
+- Home, project index, seven case studies, coursework index and 21 course notes, About, Resume, Contact and a 404 page.
 - Four authentic featured projects: chair, biplane, AUV and ski jump. Robot deferred pending evidence.
 - 110 governing-equation cards plus equations in the teaching prose, rendered with KaTeX and accessible MathML.
 - Three concise project PDF briefs, the supplied MATLAB archive and supplied resume PDF.
