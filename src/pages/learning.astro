@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import {intro,uses,rules,limits,portfolio,ending} from '../data/learning';
+import {url} from '../lib/urls';
+---
+<Base title="Learning with AI | Brewster Smyers" description="How Brewster Smyers, a Bucknell Mechanical Engineering student, uses AI as a study tool and tutor, and the ground rules that keep the learning his own.">
+<section class="page-heading learn-heading wrap"><p class="eyebrow">How I learn / AI as a tutor</p><h1>Using AI to learn,<br/><span>not to skip it.</span></h1><p class="lead">{intro}</p></section>
+<section class="section learn-uses wrap" aria-labelledby="uses-title"><div class="section-heading"><div><p class="eyebrow">In practice</p><h2 id="uses-title">How I use it.</h2></div></div><div class="learn-grid">{uses.map(u=><article class="learn-card"><span class="learn-number" aria-hidden="true">{u.label}</span><h3>{u.title}</h3><p>{u.body}</p></article>)}</div></section>
+<section class="section learn-rules wrap" aria-labelledby="rules-title"><div class="learn-rules-heading"><p class="eyebrow">Ground rules</p><h2 id="rules-title">Keeping the learning <span>mine.</span></h2></div><ol class="learn-rule-list">{rules.map(([title,body])=><li><strong>{title}</strong><p>{body}</p></li>)}</ol></section>
+<section class="section learn-limits wrap" aria-labelledby="limits-title"><div class="story-copy"><p class="eyebrow">Knowing the limits</p><h2 id="limits-title">A tool, not a substitute.</h2>{limits.map(p=><p>{p}</p>)}</div><aside class="learn-aside"><p class="eyebrow">Beyond the classroom</p><p>{portfolio}</p><a class="text-link" href={url('projects/')}>See the projects <span aria-hidden="true">↗</span></a></aside></section>
+<section class="story-ending wrap"><p class="eyebrow">Looking ahead / Summer 2027</p><h2>Learn faster.<br/>Own the work.</h2><p>{ending}</p><div class="actions"><a class="button" href={url('contact/')}>Get in touch <span aria-hidden="true">↗</span></a><a class="text-link" href={url('coursework/')}>Explore my coursework <span aria-hidden="true">↗</span></a></div></section>
+</Base>

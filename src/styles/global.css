@@ -20,3 +20,22 @@
 @media(max-width:720px){.story-contents{flex-direction:row}.story-contents a{width:auto}}
 .project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.project-grid>*{min-width:0}.process-art strong{overflow-wrap:anywhere}
 @media(max-width:720px){.project-grid{grid-template-columns:minmax(0,1fr)}}
+
+.learn-heading .lead{max-width:760px}
+.learn-uses{border-top:1px solid var(--line)}
+.learn-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.learn-card{background:var(--paper);padding:38px 40px 42px;min-width:0;transition:background .18s}.learn-card:hover{background:var(--soft)}
+.learn-number{display:block;font-family:var(--display);font-size:.8rem;font-weight:600;color:var(--accent);letter-spacing:.08em;margin-bottom:34px}
+.learn-card h3{font-size:1.45rem;letter-spacing:-.03em;line-height:1.2;margin-bottom:14px}
+.learn-card p{font-size:.86rem;line-height:1.85;color:var(--muted)}
+.learn-rules{border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:80px;align-items:start}
+.learn-rule-list{list-style:none;margin:0;padding:0;counter-reset:rule}
+.learn-rule-list li{counter-increment:rule;display:grid;grid-template-columns:44px 1fr;column-gap:10px;padding:22px 0;border-bottom:1px solid var(--line)}.learn-rule-list li:first-child{border-top:1px solid var(--line)}
+.learn-rule-list li::before{content:counter(rule,decimal-leading-zero);grid-row:span 2;font-family:var(--display);font-size:.8rem;font-weight:600;color:var(--accent);padding-top:3px}
+.learn-rule-list strong{font-family:var(--display);font-weight:500;font-size:1.15rem;letter-spacing:-.02em}
+.learn-rule-list p{font-size:.86rem;line-height:1.8;color:var(--muted);margin-top:6px}
+.learn-limits{border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.learn-limits h2{margin-bottom:26px}
+.learn-aside{padding:50px;background:var(--soft)}.learn-aside>p:not(.eyebrow){font-size:.88rem;line-height:1.85;color:var(--muted);margin-bottom:25px}
+@media(max-width:1000px){.learn-rules,.learn-limits{grid-template-columns:1fr;gap:40px}}
+@media(max-width:720px){.learn-grid{grid-template-columns:minmax(0,1fr)}.learn-card{padding:28px 24px 30px}.learn-number{margin-bottom:20px}.learn-card h3{font-size:1.25rem}.learn-aside{padding:30px}}
