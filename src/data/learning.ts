@@ -38,4 +38,6 @@ export const limits = [
 
 export const portfolio = "This site is a small example of the same approach. I used AI coding assistants to help build and maintain it, while I decided what belongs here and checked that each project page matches the evidence I actually have: what is finished, what is preliminary and what is still in progress.";
 
+export const desk = "Outside of class, I built a personal dashboard with AI coding tools. It pulls my classes, homework and three inboxes into one screen, dims into a sleep display and a bedside clock, screens my email and writes me a newspaper every morning at 7:00. It is new, it is still changing, and it has taught me a lot about where AI helps and where a person should stay in charge.";
+
 export const ending = "Engineering teams are starting to use these tools every day. I want to bring good habits with me into an internship: use AI to learn faster, stay honest about what it can and cannot tell you, and own the work.";

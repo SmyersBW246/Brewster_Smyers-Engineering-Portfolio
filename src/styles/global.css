@@ -39,3 +39,16 @@
 .learn-aside{padding:50px;background:var(--soft)}.learn-aside>p:not(.eyebrow){font-size:.88rem;line-height:1.85;color:var(--muted);margin-bottom:25px}
 @media(max-width:1000px){.learn-rules,.learn-limits{grid-template-columns:1fr;gap:40px}}
 @media(max-width:720px){.learn-grid{grid-template-columns:minmax(0,1fr)}.learn-card{padding:28px 24px 30px}.learn-number{margin-bottom:20px}.learn-card h3{font-size:1.25rem}.learn-aside{padding:30px}}
+/* Brewster's Desk: three screenshot modes, the morning pipeline and the open questions. */
+.desk-contents{max-width:760px}
+.desk-mode{border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:70px;align-items:center}.desk-mode.is-flipped>.desk-shot{order:2}.desk-mode .eyebrow{display:flex;align-items:baseline;gap:14px}.desk-mode .learn-number{display:inline;margin:0}
+.desk-shot img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;border:1px solid var(--line);box-shadow:0 24px 60px -30px rgba(24,45,59,.45)}.desk-mode.is-dark .desk-shot img{border-color:#0d1820}.desk-shot figcaption{font-size:.66rem;color:var(--muted);margin-top:12px}
+.desk-edition{border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:80px;align-items:start}.desk-note{grid-column:1/-1;padding:34px 40px;background:var(--soft);font-family:var(--display);font-size:1.2rem;line-height:1.5;letter-spacing:-.02em;margin:0}
+.desk-steps li::before{content:none}.desk-steps li{grid-template-columns:1fr}
+.desk-cando{list-style:none;margin:0;padding:0;font-size:.86rem;line-height:1.7}.desk-cando li{padding:11px 0;border-top:1px solid var(--line)}.desk-cando b{font-family:var(--display);font-weight:600;color:var(--accent);margin-right:6px}
+.desk-unknowns{border-top:1px solid var(--line)}.desk-unknowns .story-copy{max-width:760px}
+.learn-aside .text-link+.text-link{margin-left:24px}
+@media(max-width:1000px){.desk-mode,.desk-edition{grid-template-columns:1fr;gap:36px}.desk-mode.is-flipped>.desk-shot{order:0}}
+@media(max-width:720px){.desk-note{padding:24px;font-size:1.02rem}.learn-aside .text-link+.text-link{margin-left:0;margin-top:14px;display:inline-flex}}
+.desk-teaser img{width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid #0d1820;box-shadow:0 24px 60px -30px rgba(24,45,59,.45);transition:transform .25s}.desk-teaser:hover img{transform:translateY(-4px)}
+.desk-teaser img{width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid #0d1820;box-shadow:0 24px 60px -30px rgba(24,45,59,.45);transition:transform .25s}.desk-teaser:hover img{transform:translateY(-4px)}
