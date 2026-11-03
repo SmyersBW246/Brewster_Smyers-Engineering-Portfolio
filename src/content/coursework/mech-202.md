@@ -74,15 +74,15 @@ Clearance uses matching length units. Mass requires the material density and the
 
 ## Representative engineering problem
 
-Consider a hypothetical shaft of 9.98-10.00 mm and a mating hole of 10.03-10.06 mm. The minimum diametral clearance is 0.03 mm and the maximum is 0.08 mm. The nominal CAD fit alone would conceal this range. Checking the limiting dimensions before producing a drawing makes the intended assembly behavior visible. This is an illustrative calculation, not a documented class submission or a wheel-interface specification.
+Consider a hypothetical shaft of 9.98-10.00 mm and a mating hole of 10.03-10.06 mm. The minimum diametral clearance is 0.03 mm and the maximum is 0.08 mm. The nominal CAD fit alone would conceal this range. Checking the limiting dimensions before producing a drawing makes the intended assembly behavior visible. This is an illustrative calculation, not a documented class submission or a part specification.
 
 ## Related independent work
 
-My supplied résumé reports SOLIDWORKS CSWA and structural-modeling experience. The independent outdoor chair and the biplane CAD views provide actual examples of my modeling work. Their course association is not established, so they belong primarily on their project pages. The current wheel work is another application of these modeling methods. Its status remains concept development, separate from a manufactured or qualified wheel.
+My supplied résumé reports SOLIDWORKS CSWA and structural-modeling experience. The independent outdoor chair and the biplane CAD views provide actual examples of my modeling work. Their course association is not established, so they belong primarily on their project pages. The drone chassis and its compression mold are a more recent application of the same methods.
 
 ## Technical challenge in progress
 
-I have identified complex nonplanar curves and transitions as an area I want to improve. My recent wheel and aircraft questions concern guide-curve intersections, reference planes and joining geometry. This remains a learning goal rather than a documented, completed correction. A useful troubleshooting sequence is to inspect the original profiles, check the guide-curve and plane intersections, then rebuild after one justified constraint or feature change. Comparing the before-and-after geometry helps explain whether that change addressed the intended problem.
+I have identified complex nonplanar curves and transitions as an area I want to improve. My recent aircraft questions concern guide-curve intersections, reference planes and joining geometry. This remains a learning goal rather than a documented, completed correction. A useful troubleshooting sequence is to inspect the original profiles, check the guide-curve and plane intersections, then rebuild after one justified constraint or feature change. Comparing the before-and-after geometry helps explain whether that change addressed the intended problem.
 
 ## Skills and applications
 

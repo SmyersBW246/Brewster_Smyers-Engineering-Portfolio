@@ -109,7 +109,7 @@ Limit theorems explain why averages can become stable and approximately normal u
 
 Representative tasks include calculating the probability of at least one fault in a small independent batch, updating the probability of a defect after an alert, and estimating the spread of an average. The detailed reference also treats conditional expectation and the role of distributions derived from normal random variables. All example probabilities are assumed rather than inferred from student projects.
 
-With an assumed independent one-percent defect probability for each of ten items, the chance of at least one defect is about nine point five six percent. The calculation uses the complement of the no-defect event. It is not a measured defect rate or a reliability claim for a drone, wheel or other designed component.
+With an assumed independent one-percent defect probability for each of ten items, the chance of at least one defect is about nine point five six percent. The calculation uses the complement of the no-defect event. It is not a measured defect rate or a reliability claim for a drone or other designed component.
 
 ## Engineering applications
 
