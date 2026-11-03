@@ -4,7 +4,7 @@ category: Design & build
 order: 7
 featured: false
 hero: /images/pipe-brace-stress.webp
-role: Independent CAD, FEA setup and hand verification
+role: Independent CAD, FEA and hand calculations
 period: November 2026 · Completed
 tools:
 - SolidWorks
@@ -29,33 +29,34 @@ courses:
 - mech-353
 - mech-220
 title: 90° Pipe Brace Bracket
-summary: I modeled a welded steel pipe brace in SolidWorks and ran a static FEA study. Then I checked the results by hand and wrote a short engineering report with assumptions, a load rating and design changes.
+summary: I modeled a bent steel pipe bracket in SolidWorks, ran a static FEA study on it and checked the numbers by hand. The write-up covers my assumptions, where the part is weakest and what I would change.
 status: Completed
 concept: false
 heroAlt: SolidWorks von Mises stress plot of the 90 degree pipe brace bracket.
-heroCaption: von Mises stress under a 1,000 N load. The bend carries smooth bending stress that rises toward the base.
+heroCaption: von Mises stress under a 1,000 N load. Stress builds along the bend and peaks near the base plate.
 ---
-
 ## What it is
 
-The bracket is a metal support. A 90° bent pipe connects two bolted plates, so a load on one plate travels back into a floor, wall or frame.
+The part is a simple metal support: a 90° bent pipe welded between two bolted plates. Whatever bolts to the end plate gets its load carried back into the floor, wall or frame the base is bolted to. I wanted to know how much load it could actually take and where it would fail first.
 
 | Feature | Dimension |
 | --- | --- |
 | Pipe | 1 in NPS Schedule 40 (1.315 in OD, 0.133 in wall), 90° bend on a 12 in centerline radius |
 | Plates | Two 4 × 4 × 3/8 in plates with 0.10 in corner radii |
-| Bolt holes | Ø0.531 in (17/32 in), four per plate on a 2.5 in square, for 1/2 in bolts |
+| Bolt holes | Ø0.531 in (17/32 in), four per plate on a 2.5 in square, sized for 1/2 in bolts |
 | Pipe bore | Ø1.330 in through the end plate |
 | Material and mass | Plain carbon steel (yield 220.6 MPa), 2.54 kg total |
 
-## Study setup
+## How I set it up
 
-I fixed the four base-plate bolt holes, put a roller on the plate's bearing face and applied 1,000 N to the end plate. The mesh was a high-quality, curvature-based solid mesh: 41,720 nodes and 23,845 elements, with 93.5% of elements under an aspect ratio of 3. The reactions summed to 999.999 N, which confirms the model is in equilibrium.
+I fixed the four bolt holes in the base plate, added a roller on its underside so it could bear against the surface, and put 1,000 N on the end plate. The mesh came out to 41,720 nodes and 23,845 elements, with 93.5% of elements under an aspect ratio of 3. The reactions added up to 999.999 N, so the model was in equilibrium.
 
-## Results and hand check
+## What I found
 
-The FEA shows 110 to 190 MPa along the bend. My hand calculation (M = F·R, S = 0.1328 in³) gives 140 MPa at the base. That puts the factor of safety on yield at about 1.6 for the pipe itself. The 376 MPa peak is a small hot spot at the sharp pipe-to-plate corner. It is a stress concentration rather than the nominal stress, but it marks the weld toe as the critical location.
+The FEA shows 110 to 190 MPa along the bend. To check it, I treated the bend as a curved cantilever with a 12 in moment arm and got 140 MPa at the base, which lands right in that range. That works out to a factor of safety of about 1.6 against yield.
 
-## Conclusion
+The plot also shows a 376 MPa peak, but it is a tiny spot at the sharp corner where the pipe meets the plate. Sharp corners in FEA create artificially high stress, so I did not take that number at face value. It still told me something useful: in a real welded part, that weld is where it would crack first.
 
-The plates and 1/2 in bolts have large margin; the bend governs. I recommended rating this version at 700 N or less for a safety factor of at least 1.67. To keep 1,000 N, the options are Schedule 80 pipe (FOS about 1.9) or 1-1/4 in Schedule 40 (FOS about 2.8), plus a full fillet weld or gusset at the base. The full report lists the modeling assumptions: idealized welds, no bolts modeled, and linear static behavior.
+## What I would change
+
+The plates and bolts have plenty of margin, so the pipe is the weak link. At 1,000 N the safety factor is lower than I would want, so I would either keep this version under about 700 N or move to Schedule 80 or 1-1/4 in pipe. I would also add a proper fillet weld or a gusset at the base. The full report lists my assumptions. The biggest ones are that the welds are idealized and the bolts are not modeled.
