@@ -1,7 +1,7 @@
 ---
 shortTitle: 90° Pipe Brace Bracket
 category: Design & build
-order: 7
+order: 8
 featured: false
 hero: /images/pipe-brace-stress.webp
 role: Independent CAD, FEA and hand calculations

@@ -1,8 +1,9 @@
 {
-  "pages": 35,
-  "internalReferences": 601,
-  "imageReferences": 48,
+  "pages": 38,
+  "internalReferences": 3250,
+  "imageReferences": 71,
   "renderedMathExpressions": 185,
+  "embeddedStylePages": 38,
   "deploymentBase": "/",
   "errors": []
 }

@@ -4,7 +4,7 @@ category: Composite concepts
 order: 5
 featured: false
 hero: /images/drone-mold-assembly.webp
-role: Independent chassis CAD, mold design and test planning
+role: Personal project, with the mold developed alongside MECH 355
 period: Fall 2026 · In development
 tools:
 - SolidWorks part + assembly modeling

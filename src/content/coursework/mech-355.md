@@ -9,6 +9,8 @@ order: 1
 documented: true
 connection: My lab activities include bronze casting, a ring formed from a quarter, composite pressing and bonding, welding, and CNC work for injection-molding tooling. Visits to Lycoming Engines and a metalworking facility added industrial context.
 relatedProjects:
+- ack-coaster-mold
+- bronze-cast-rook
 - micro-drone-chassis
 topics:
 - deformation processing

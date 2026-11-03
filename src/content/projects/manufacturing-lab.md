@@ -1,9 +1,9 @@
 ---
 shortTitle: Manufacturing Lab
 category: Materials & manufacturing
-order: 8
+order: 9
 featured: false
-hero: ''
+hero: /images/rook-gating-tree.webp
 role: Course laboratory participation
 period: Course activities documented; term unconfirmed
 tools:
@@ -25,15 +25,15 @@ title: Manufacturing Processes and Lab Work
 summary: My manufacturing activities span bronze casting, forming a ring from a quarter, composite pressing and bonding, welding, and CNC work associated with plastic injection-molding tooling. Together they connect part geometry with material behavior and the process used to make it.
 status: Laboratory activities documented
 concept: false
-heroAlt: ''
-heroCaption: ''
+heroAlt: Raw bronze casting tree with a cast rook and runners, fresh out of the investment mold.
+heroCaption: A bronze casting tree from the MECH 355 casting lab, before the parts were cut free.
 ---
 
 ## From starting material to a part
 
-The bronze activity used wax and clay/plaster work. The quarter-ring activity changed an existing piece of metal into a new shape. These are the strongest candidates for a short, physical process story: starting material or pattern, the intermediate stages, and the resulting object.
+The bronze casting lab has its own case study, [Bronze Cast Rook](../bronze-cast-rook/). It covers the printed pattern, the gating, the defects, and how the casting measured against the CAD. The quarter-ring activity changed an existing piece of metal into a new shape.
 
-The available record establishes these activities through my descriptions. It does not contain process photographs, the exact bronze alloy, a casting temperature, dimensional inspection or a measured material result. Those details will be added from the original lab records rather than reconstructed.
+The CNC and injection-molding work is written up in [Nantucket Coaster Injection Mold](../ack-coaster-mold/), covering the mold design, process plan and Mastercam toolpaths. The compression mold for my [micro-drone chassis](../micro-drone-chassis/) takes the composite pressing work into a personal project.
 
 ## Comparing manufacturing routes
 
@@ -47,7 +47,4 @@ I toured Lycoming Engines and a separate metalworking facility with large forgin
 
 ## Documentation to add
 
-Original photographs of the bronze object and quarter ring should lead this page. A pattern-to-part sequence would make the manufacturing decisions visible. A brief account of one actual difficulty, what changed, and the resulting part would strengthen the case study.
-
-My micro-drone chassis is a related preliminary design project. Its manufacturing comparison remains planned, and its class assignment is unconfirmed.
-
+Photos of the quarter ring and the composite and welding work would round out this page, along with one real difficulty from each, what changed and the resulting part.
