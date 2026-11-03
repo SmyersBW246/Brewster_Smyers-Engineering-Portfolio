@@ -18,8 +18,8 @@ facts:
   label: 1/2 in down to 1/16 in cutters
 - value: 0.020 in
   label: Raised island relief in the mold
-- value: 6 ops
-  label: Rough, finish, island, rest, lip, vents
+- value: Machined
+  label: Mold complete; coasters not yet molded
 figures:
 - src: /images/coaster-section.webp
   alt: SolidWorks drawing of the coaster mold showing the mirrored Nantucket outline in a circular cavity and a section view with depths.
@@ -33,8 +33,8 @@ figures:
 courses:
 - mech-355
 title: Nantucket Coaster Injection Mold
-summary: I designed a drink coaster with an outline of Nantucket, modeled the aluminum injection mold that makes it, and programmed the CNC toolpaths in Mastercam. This was my first real CAM project, going from a SolidWorks model to G-code ready for the lab's Haas mill.
-status: Mold CAD + G-code complete
+summary: I designed a drink coaster with an outline of Nantucket, modeled the aluminum injection mold that makes it, and programmed the CNC toolpaths in Mastercam. The mold has been machined from my G-code on the lab's Haas mill. Injection molding the coasters comes next.
+status: Mold machined · Coasters next
 concept: false
 heroAlt: Top-view plot of every cutting move in the coaster mold G-code, colored by tool, showing raster pocketing, the island outline and the lip ring.
 heroCaption: Every cutting move in my final G-code, plotted from the .NC file and colored by tool. The horizontal raster is the 1/8 in bull nose clearing the base around the island, and the outer ring is the 1/4 in ball cutting the lip.
@@ -72,6 +72,10 @@ The finished program uses five tools and runs to 880 lines of G-code. I checked 
 <video controls muted playsinline preload="metadata" src="../../videos/coaster-mastercam-verify.mp4" aria-label="Mastercam Verify simulation of the coaster mold toolpaths cutting the aluminum block"></video>
 
 *Mastercam Verify running my toolpaths on the 4 × 4 in block.*
+
+## Machined, and what comes next
+
+Once the toolpaths were approved, the mold was cut from my G-code on the Haas. The aluminum block is finished and ready to use as the injection mold. The next step in the course is shooting plastic into it to make a set of coasters. That run will show whether the 0.004 in vents let the air out, whether the drafted lip releases cleanly, and how well the island detail survives at 0.02 in deep.
 
 ## Takeaways
 
