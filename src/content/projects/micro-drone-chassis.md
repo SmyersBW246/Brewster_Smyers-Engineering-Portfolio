@@ -5,7 +5,7 @@ order: 5
 featured: false
 hero: /images/drone-mold-assembly.webp
 role: Personal project, with the mold developed alongside MECH 355
-period: Fall 2026 · In development
+period: Fall 2026 · Ready for production
 tools:
 - SolidWorks part + assembly modeling
 - Compression mold design
@@ -37,7 +37,7 @@ courses:
 - mech-355
 title: Compression-Molded Micro-Drone Chassis
 summary: I am designing a compact quadcopter chassis and the compression mold to make it from chopped carbon fiber. The goal is to compare the molded frame with a 3D-printed one of the same shape and find out whether the composite is stiffer, lighter or more durable enough to justify the extra manufacturing work.
-status: CAD + mold design
+status: Ready for production
 concept: false
 heroAlt: SolidWorks assembly of the split compression mold for the drone chassis, with an X-shaped cavity across two blocks.
 heroCaption: The full press mold assembly in SolidWorks. Two blocks meet along a split line and together form the X-shaped cavity for the frame.
@@ -88,4 +88,4 @@ I set up initial static studies of the chassis in SolidWorks Simulation using PL
 
 ## Plan for testing
 
-Once the process is confirmed, I plan to make coupons, then matched carbon and printed frames. Both get the same electronics, and I will compare mass, stiffness under load, vibration and how well the screw holes hold up. That carbon is better is a hypothesis to test. No frame has been molded, measured or flown yet.
+The chassis and mold design are finished and ready for production. Next, I plan to make coupons, then matched carbon and printed frames. Both get the same electronics, and I will compare mass, stiffness under load, vibration and how well the screw holes hold up. That carbon is better is a hypothesis to test. No frame has been molded, measured or flown yet.

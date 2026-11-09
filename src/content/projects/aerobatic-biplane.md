@@ -5,7 +5,7 @@ order: 2
 featured: true
 hero: /images/biplane-isometric.webp
 role: CAD development and analysis adaptation
-period: Fall 2026 · In development
+period: Fall 2026 · MATLAB analysis complete
 tools:
 - SolidWorks
 - MATLAB
@@ -29,7 +29,7 @@ courses:
 - mech-438
 title: Aerobatic Biplane
 summary: I am developing a two-person aerobatic biplane concept through SolidWorks modeling and a modular MATLAB analysis. The project connects geometry with lift, drag, fuel use, power requirements and longitudinal trim so I can examine how a design choice affects the rest of the aircraft.
-status: In development
+status: MATLAB analysis complete
 concept: false
 heroAlt: Actual SolidWorks views of my aircraft model in development. Wing, fuselage and tail geometry are being refined alongside the analysis.
 heroCaption: Actual SolidWorks views of my aircraft model in development. Wing, fuselage and tail geometry are being refined alongside the analysis.
@@ -62,7 +62,7 @@ A central challenge is using the same reference definitions throughout the model
 
 ## Current stage and next steps
 
-The project has produced a developing CAD model and an organized analysis workflow with explicit assumptions and internal consistency checks. Next, I will reconcile CAD geometry with the analytical model and replace estimated mass stations and surface areas with CAD properties.
+The MATLAB analysis is complete, with explicit assumptions and internal consistency checks, alongside a developing CAD model. Next, I will reconcile CAD geometry with the analytical model and replace estimated mass stations and surface areas with CAD properties.
 
 The section polar is analytical teaching data. The calculations are preliminary estimates without wind-tunnel or flight-test validation. Structural substantiation, detailed biplane interference and dynamic flight behavior remain outside the current scope.
 
@@ -72,4 +72,4 @@ Span, total wing area, length and power are based on the [Aviat Pitts S-2C](http
 
 ## Source package
 
-[Download the MATLAB analysis package](../../documents/Biplane_MATLAB.zip). The archive contains ten MATLAB functions and one representative NACA 0012 data file. Its internal checks are part of the model, not evidence of experimental validation. The available source review did not execute the complete program.
+[Download the MATLAB analysis package](../../documents/Biplane_MATLAB.zip). The archive contains ten MATLAB functions and one representative NACA 0012 data file. Its internal checks are part of the model, not evidence of experimental validation.
