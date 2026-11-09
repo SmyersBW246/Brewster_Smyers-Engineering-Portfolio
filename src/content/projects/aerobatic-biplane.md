@@ -44,7 +44,7 @@ document: /documents/Biplane_Model_Notes.pdf
 courses:
 - mech-438
 title: Aerobatic Biplane
-summary: I am developing a two-person aerobatic biplane concept through SolidWorks modeling and a modular MATLAB analysis. The project connects geometry with lift, drag, fuel use, power requirements and longitudinal trim so I can examine how a design choice affects the rest of the aircraft.
+summary: I have developed a two-person aerobatic biplane concept through SolidWorks modeling and a modular MATLAB analysis. The project connects geometry with lift, drag, fuel use, power requirements and longitudinal trim so I can examine how a design choice affects the rest of the aircraft.
 status: MATLAB analysis complete
 concept: false
 heroAlt: Actual SolidWorks views of my aircraft model in development. Wing, fuselage and tail geometry are being refined alongside the analysis.
@@ -79,18 +79,6 @@ A central challenge is using the same reference definitions throughout the model
 ## Results
 
 The finished MATLAB model runs the full mission and passes all 12 of its internal checks. Best lift-to-drag ratio is 7.2. Minimum drag is 222 lb at 97 knots, and 75% power gives a 153-knot cruise at 6,000 ft. The upset-recovery mission burns about 96 lb of fuel, taking the aircraft from 1,611 lb to 1,515 lb, under the 1,625 lb aerobatic limit throughout. The plots are under Design evidence below.
-
-## Changes that I developed
-
-I started from a single-seat Spitfire homework model and converted it into a two-seat aerobatic biplane.
-
-- **Mission:** Replaced the Mach 0.32, 30,000 ft fighter mission with an upset-recovery lesson flown at 3,000–6,000 ft.
-- **Fuel:** Replaced the jet-style Breguet range equation with a propeller fuel build-up, using a brake-specific fuel consumption calibrated to the published 84 lb/hr at 75% power.
-- **Weight:** Replaced the empty-weight regression with an explicit build-up of empty weight, two 180 lb occupants, fuel and the 1,625 lb aerobatic limit.
-- **Airfoil and wings:** Replaced the NACA 2412 data with a symmetric NACA 0012 section, so the aircraft behaves the same upright and inverted. Added a finite-biplane lift and drag model that uses the area of both wings.
-- **Thrust:** Replaced the Mach-based thrust-to-weight equation with thrust from engine power and propeller efficiency at each mission speed.
-- **Geometry:** Replaced the Spitfire wing and tail with constant-chord biplane wings and tails sized by volume coefficients.
-- **Outputs and checks:** Added the mission-profile, drag-polar, drag-versus-speed and mission-stage plots, plus a 12-point self-check that stops the run if a result breaks a published value or a mission limit.
 
 ## Reference configuration
 
