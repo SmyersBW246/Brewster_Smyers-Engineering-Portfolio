@@ -80,11 +80,17 @@ A central challenge is using the same reference definitions throughout the model
 
 The finished MATLAB model runs the full mission and passes all 12 of its internal checks. Best lift-to-drag ratio is 7.2. Minimum drag is 222 lb at 97 knots, and 75% power gives a 153-knot cruise at 6,000 ft. The upset-recovery mission burns about 96 lb of fuel, taking the aircraft from 1,611 lb to 1,515 lb, under the 1,625 lb aerobatic limit throughout. The plots are under Design evidence below.
 
-## Current stage and next steps
+## Changes that I developed
 
-The MATLAB analysis is complete, with explicit assumptions and internal consistency checks, alongside a developing CAD model. Next, I will reconcile CAD geometry with the analytical model and replace estimated mass stations and surface areas with CAD properties.
+I started from a single-seat Spitfire homework model and converted it into a two-seat aerobatic biplane.
 
-The section polar is analytical teaching data. The calculations are preliminary estimates without wind-tunnel or flight-test validation. Structural substantiation, detailed biplane interference and dynamic flight behavior remain outside the current scope.
+- **Mission:** Replaced the Mach 0.32, 30,000 ft fighter mission with an upset-recovery lesson flown at 3,000–6,000 ft.
+- **Fuel:** Replaced the jet-style Breguet range equation with a propeller fuel build-up, using a brake-specific fuel consumption calibrated to the published 84 lb/hr at 75% power.
+- **Weight:** Replaced the empty-weight regression with an explicit build-up of empty weight, two 180 lb occupants, fuel and the 1,625 lb aerobatic limit.
+- **Airfoil and wings:** Replaced the NACA 2412 data with a symmetric NACA 0012 section, so the aircraft behaves the same upright and inverted. Added a finite-biplane lift and drag model that uses the area of both wings.
+- **Thrust:** Replaced the Mach-based thrust-to-weight equation with thrust from engine power and propeller efficiency at each mission speed.
+- **Geometry:** Replaced the Spitfire wing and tail with constant-chord biplane wings and tails sized by volume coefficients.
+- **Outputs and checks:** Added the mission-profile, drag-polar, drag-versus-speed and mission-stage plots, plus a 12-point self-check that stops the run if a result breaks a published value or a mission limit.
 
 ## Reference configuration
 
