@@ -16,3 +16,4 @@
 - Six personal photos with neutral captions where occasion/place is unconfirmed; no group/party images.
 - Remove bicycle mount from active portfolio; retain mountain biking as an interest.
 - Retain ski jump until original robot evidence is supplied.
+- 2026-11-08: Wheel project returns as the Mach-E GT Sunburst Wheel page at Brewster's request, using real CAD renders (v1 5-spoke, v2 sunburst) plus one labeled concept render of the wheel on the car. The body in that render is a simplified drawing; captions say so.
