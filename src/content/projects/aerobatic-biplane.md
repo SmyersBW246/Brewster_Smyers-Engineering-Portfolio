@@ -4,6 +4,15 @@ category: Aircraft & fluids
 order: 2
 featured: true
 hero: /images/biplane-isometric.webp
+heroGallery:
+- src: /images/biplane-isometric.webp
+  alt: Isometric view of my SolidWorks model of the two-seat aerobatic biplane.
+- src: /images/biplane-matlab-geometry.webp
+  alt: MATLAB top, front and side views of the biplane geometry, 17.75 ft long with a 20 ft span.
+- src: /images/biplane-matlab-drag.webp
+  alt: MATLAB plot of parasite, induced and total drag against airspeed, with 75 percent power thrust crossing total drag at 153 knots.
+- src: /images/biplane-matlab-mission.webp
+  alt: MATLAB mission profile of altitude and aircraft weight over an upset-recovery lesson flight.
 role: CAD development and analysis adaptation
 period: Fall 2026 · MATLAB analysis complete
 tools:
@@ -48,7 +57,7 @@ summary: I have developed a two-person aerobatic biplane concept through SolidWo
 status: MATLAB analysis complete
 concept: false
 heroAlt: Actual SolidWorks views of my aircraft model in development. Wing, fuselage and tail geometry are being refined alongside the analysis.
-heroCaption: Actual SolidWorks views of my aircraft model in development. Wing, fuselage and tail geometry are being refined alongside the analysis.
+heroCaption: My SolidWorks model (top left) next to three outputs from my MATLAB analysis, the geometry the model works from, drag against thrust at 6,000 ft and the design mission profile. Click any panel for full size.
 ---
 
 ## My work and modeling approach

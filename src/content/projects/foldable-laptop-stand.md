@@ -3,6 +3,7 @@ shortTitle: Foldable Laptop Stand
 category: Design & build
 order: 9
 featured: false
+hidden: true
 hero: /images/laptop-stand-photo-laptop.webp
 role: Design, SolidWorks modeling, printing and fit testing
 period: November 2026 · Version 2 in progress

@@ -4,7 +4,7 @@ import Base from '../../layouts/Base.astro';
 import ProjectCard from '../../components/ProjectCard.astro';
 import { getCollection } from 'astro:content';
 
-const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+const projects = (await getCollection('projects', (p) => !p.data.hidden)).sort((a, b) => a.data.order - b.data.order);
 
 // Each category once, in the order it first appears; these become the filter buttons.
 const categories = [...new Set(projects.map((p) => p.data.category))];

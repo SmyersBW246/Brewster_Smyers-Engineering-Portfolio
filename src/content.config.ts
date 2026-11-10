@@ -9,6 +9,10 @@ const projects = defineCollection({
     title: z.string(), shortTitle: z.string(), summary: z.string(),
     status: z.string(), category: z.string(), order: z.number(), featured: z.boolean(),
     hero: z.string(), heroAlt: z.string(), heroCaption: z.string(), concept: z.boolean(),
+    // Optional 2 x 2 collage shown in place of the single hero image (tile and project page).
+    heroGallery: z.array(z.object({ src: z.string(), alt: z.string() })).max(4).optional(),
+    // Hidden projects stay in the source but are not built or listed on the site.
+    hidden: z.boolean().optional(),
     role: z.string(), period: z.string(), tools: z.array(z.string()),
     facts: z.array(z.object({ value: z.string(), label: z.string() })),
     figures: z.array(figure), document: z.string().optional(),

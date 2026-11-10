@@ -7,8 +7,12 @@ const { project, number } = Astro.props;
 const p = project.data;
 ---
 <a class:list={['project-card', { 'no-image': !p.hero }]} href={url(`projects/${project.id}/`)}>
-  <div class="card-image">
-    {p.hero ? (
+  <div class:list={['card-image', { collage: p.heroGallery?.length }]}>
+    {p.heroGallery?.length ? (
+      <div class="hero-collage">
+        {p.heroGallery.map((g) => <img src={url(g.src)} alt={g.alt} width="900" height="640" loading="lazy"/>)}
+      </div>
+    ) : p.hero ? (
       <img src={url(p.hero)} alt={p.heroAlt} width="1000" height="720" loading="lazy"/>
     ) : (
       <div class="process-art">

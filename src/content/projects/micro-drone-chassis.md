@@ -86,6 +86,28 @@ I set up initial static studies of the chassis in SolidWorks Simulation using PL
 - Whether a printed mold could survive the process or the tool has to be machined from metal.
 - Final fit of the purchased motors and flight controller against the CAD hole patterns.
 
+## Next iteration: how much can it carry?
+
+The parts list sets the starting point. Four BETAFPV LAVA 1104 7200KV motors, 2.2 in three-blade props and a 3S 580 mAh battery put the drone at about 112 g on paper. With a 15% margin for wiring and small parts, I plan around 129 g.
+
+A common rule for a small quad that still flies with control is a thrust-to-weight ratio of at least 2 to 1. That means the four motors together need to make twice the takeoff weight:
+
+| Step | Value |
+|---|---|
+| Planning weight | 129 g |
+| Total thrust needed at 2:1 | 258 g |
+| Thrust needed per motor | about 65 g |
+| Extra thrust per motor for every 10 g of payload | 5 g |
+
+Put another way, the most payload I can carry is **2T − 129 g**, where T is the measured thrust of one motor in grams. I have not measured T yet. The vendor only lists current draw for these motors, not a thrust I can trust, so the first bench test is a single motor on a thrust stand with the real prop and battery. Until then, the plan is no more than 10 g of passive payload, and only after thrust, motor temperature and balance are measured.
+
+Other changes I would look at once I have real numbers:
+
+- **Bigger props.** With 80 mm between motors, the 2.2 in props leave about 24 mm between neighboring tips. A 2.5 in prop would still leave about 16 mm and should make more thrust at the same speed, if the motors stay cool.
+- **Lighter arms.** If the stiffness test shows extra margin, I can taper the arms further or add lightening cutouts. Every gram saved on the frame is a gram of payload.
+- **Battery position.** The battery is about 42 g, the heaviest single part. Moving its mount to keep the center of gravity right under the hub matters more than small frame savings.
+- **Another power setup.** My design study also looked at a smaller 2S build and a larger 4S build with 3 in props. If the 1104 setup cannot carry what I need, the 4S route is the next step up.
+
 ## Plan for testing
 
 The chassis and mold design are finished and ready for production. Next, I plan to make coupons, then matched carbon and printed frames. Both get the same electronics, and I will compare mass, stiffness under load, vibration and how well the screw holes hold up. That carbon is better is a hypothesis to test. No frame has been molded, measured or flown yet.

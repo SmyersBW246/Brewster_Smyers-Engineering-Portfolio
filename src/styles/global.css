@@ -378,6 +378,51 @@ figcaption {
   transform: scale(1.035);
 }
 
+/* 2 x 2 collage: CAD view plus analysis plots, used on the tile and project page */
+.hero-collage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px;
+  width: 100%;
+  height: 100%;
+  background: var(--paper);
+}
+
+.hero-collage img,
+.hero-collage a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  background: #fff;
+}
+
+.hero-collage img {
+  object-fit: contain;
+  padding: 6px;
+  transition: transform .4s;
+}
+
+.hero-collage img:first-child,
+.hero-collage a:first-child img {
+  background: #edece6;
+}
+
+.project-card:hover .hero-collage img {
+  transform: scale(1.02);
+}
+
+.project-hero .hero-collage {
+  aspect-ratio: 1.45;
+  max-height: 900px;
+  gap: 8px;
+}
+
+.project-hero .hero-collage img {
+  padding: 14px;
+}
+
 .card-number {
   position: absolute;
   top: 17px;
@@ -2115,6 +2160,11 @@ input[type=search] {
   font-size: .85rem;
   color: var(--muted);
   margin-block: 25px;
+}
+
+.story-aside .text-link {
+  display: table;
+  margin-top: 12px;
 }
 
 .build-images {

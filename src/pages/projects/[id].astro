@@ -6,7 +6,7 @@ import { url } from '../../lib/urls';
 
 // Tells Astro which pages to build: one per project, at /projects/<file name>/.
 export async function getStaticPaths() {
-  return (await getCollection('projects')).map((project) => ({
+  return (await getCollection('projects', (p) => !p.data.hidden)).map((project) => ({
     params: { id: project.id },
     props: { project },
   }));
@@ -44,7 +44,18 @@ const related = all.filter((c) => p.courses.includes(c.id));
   </section>
 
   {/* Main image, only when the project has one */}
-  {p.hero && (
+  {p.heroGallery?.length ? (
+    <figure class="project-hero wrap">
+      <div class="hero-collage">
+        {p.heroGallery.map((g) => (
+          <a href={url(g.src)} aria-label={`Open full size: ${g.alt}`}>
+            <img src={url(g.src)} alt={g.alt} width="900" height="640" fetchpriority="high"/>
+          </a>
+        ))}
+      </div>
+      <figcaption>{p.heroCaption}</figcaption>
+    </figure>
+  ) : p.hero && (
     <figure class="project-hero wrap">
       <img src={url(p.hero)} alt={p.heroAlt} width="1600" height="1100" fetchpriority="high"/>
       <figcaption>{p.heroCaption}</figcaption>

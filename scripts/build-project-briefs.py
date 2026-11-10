@@ -3,16 +3,22 @@ Requires reportlab, PyYAML and Pillow. No private contact details are included.
 """
 from pathlib import Path
 from xml.sax.saxutils import escape
-import re,yaml
-from reportlab.pdfgen import canvas
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, Table, TableStyle, KeepTogether
+import yaml
+from PIL import Image as PILImage
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, KeepTogether
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.colors import HexColor
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 ROOT=Path(__file__).resolve().parents[1]
-FONT='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
-BOLD='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
+# Regular and bold body fonts: DejaVu on Linux, Segoe UI or Arial on Windows. The first pair found is used.
+FONT_PAIRS=[
+ ('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf','/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'),
+ ('C:/Windows/Fonts/segoeui.ttf','C:/Windows/Fonts/segoeuib.ttf'),
+ ('C:/Windows/Fonts/arial.ttf','C:/Windows/Fonts/arialbd.ttf'),
+]
+FONT,BOLD=next((pair for pair in FONT_PAIRS if all(Path(f).exists() for f in pair)),(None,None))
+if not FONT:raise SystemExit('No usable font found. Add a regular/bold .ttf pair to FONT_PAIRS.')
 pdfmetrics.registerFont(TTFont('DejaVu',FONT));pdfmetrics.registerFont(TTFont('DejaVuBold',BOLD))
 styles=getSampleStyleSheet()
 styles.add(ParagraphStyle(name='Title2',fontName='DejaVuBold',fontSize=23,leading=28,textColor=HexColor('#142a35'),spaceAfter=12))
@@ -42,11 +48,10 @@ def footer(c,doc):
  c.drawRightString(564,29,f'{doc.page}')
 
 for slug,(name,sections) in records.items():
- text=(ROOT/'src/content/projects'/f'{slug}.md').read_text();_,head,_=text.split('---',2);d=yaml.safe_load(head)
+ text=(ROOT/'src/content/projects'/f'{slug}.md').read_text(encoding='utf-8');_,head,_=text.split('---',2);d=yaml.safe_load(head)
  path=ROOT/'public/documents'/name
  story=[Paragraph('BREWSTER SMYERS / PROJECT BRIEF',styles['Caption2']),Paragraph(escape(d['title']),styles['Title2']),Paragraph(escape(d['period']+' · '+d['role']),styles['Caption2']),Paragraph(escape(d['summary']),styles['Deck2'])]
  image=ROOT/'public'/d['hero'].lstrip('/')
- from PIL import Image as PILImage
  with PILImage.open(image) as im:w,h=im.size
  iw=min(516, w*170/h); ih=iw*h/w
  story.extend([Image(str(image),width=iw,height=ih),Spacer(1,7),Paragraph(escape(d['heroCaption']),styles['Caption2'])])

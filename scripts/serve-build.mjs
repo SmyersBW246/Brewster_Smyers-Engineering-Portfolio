@@ -1,3 +1,38 @@
-import http from 'node:http';import fs from 'node:fs';import path from 'node:path';
-const root=path.resolve('dist');const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.webp':'image/webp','.png':'image/png','.jpg':'image/jpeg','.svg':'image/svg+xml','.woff2':'font/woff2','.woff':'font/woff','.ttf':'font/ttf','.pdf':'application/pdf','.zip':'application/zip','.mp4':'video/mp4'};
-http.createServer((req,res)=>{let p;try{p=path.resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://localhost').pathname))}catch{res.writeHead(400);res.end('Bad request');return}if(p!==root&&!p.startsWith(root+path.sep)){res.writeHead(403);res.end();return}if(fs.existsSync(p)&&fs.statSync(p).isDirectory())p=path.join(p,'index.html');if(!fs.existsSync(p)){res.writeHead(404,{'Content-Type':'text/html'});res.end(fs.readFileSync(path.join(root,'404.html')));return}res.writeHead(200,{'Content-Type':mime[path.extname(p)]||'application/octet-stream'});fs.createReadStream(p).pipe(res)}).listen(4321,'127.0.0.1',()=>console.log('Open http://127.0.0.1:4321 in your browser. Press Ctrl+C to stop.'));
+// Serves the finished build in dist/ at http://127.0.0.1:4321 for local review (this computer only).
+// Usage: node scripts/serve-build.mjs   (or double-click START_PREVIEW.cmd). Run npm run build first.
+import http from 'node:http';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const root = path.resolve('dist');
+const PORT = 4321;
+const MIME = {
+  '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript',
+  '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.svg': 'image/svg+xml',
+  '.woff2': 'font/woff2', '.woff': 'font/woff', '.ttf': 'font/ttf',
+  '.pdf': 'application/pdf', '.zip': 'application/zip', '.mp4': 'video/mp4',
+};
+
+if (!fs.existsSync(path.join(root, 'index.html'))) {
+  console.error('No build found in dist/. Run "npm run build" first.');
+  process.exit(1);
+}
+
+http.createServer((req, res) => {
+  let file;
+  try {
+    file = path.resolve(root, '.' + decodeURIComponent(new URL(req.url, 'http://localhost').pathname));
+  } catch {
+    res.writeHead(400); res.end('Bad request'); return;
+  }
+  // Never serve anything outside dist/.
+  if (file !== root && !file.startsWith(root + path.sep)) { res.writeHead(403); res.end(); return; }
+  if (fs.existsSync(file) && fs.statSync(file).isDirectory()) file = path.join(file, 'index.html');
+  if (!fs.existsSync(file)) {
+    res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
+    res.end(fs.readFileSync(path.join(root, '404.html')));
+    return;
+  }
+  res.writeHead(200, { 'Content-Type': MIME[path.extname(file).toLowerCase()] || 'application/octet-stream' });
+  fs.createReadStream(file).pipe(res);
+}).listen(PORT, '127.0.0.1', () => console.log(`Open http://127.0.0.1:${PORT} in your browser. Press Ctrl+C to stop.`));

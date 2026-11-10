@@ -3,7 +3,7 @@ shortTitle: Mach-E GT Sunburst Wheel
 category: Design & build
 order: 10
 featured: false
-hero: /images/wheel-on-mache-gt.webp
+hero: /images/wheel-sunburst-iso.webp
 role: Styling concept, requirements, scripted CAD and design checks
 period: November 2026 · Version 2 in CAD
 tools:
@@ -36,9 +36,6 @@ figures:
 - src: /images/wheel-sunburst-back.webp
   alt: CAD render of the back of version 2, showing ten hidden lightening pockets behind the closed face and the flat hub mounting ring.
   caption: The back of version 2. Ten hidden pockets with ribs on the lug lines take weight out without showing from the front.
-- src: /images/wheel-on-mache-gt-close.webp
-  alt: Close-up render of the front wheel on the black car, showing the stainless-finish sunburst rays against a dark wheel well and tire.
-  caption: Close-up of the concept render. The wheel is the real version 2 CAD mesh. The body is a simplified drawing, not a model of the car.
 - src: /images/wheel-ray-section.webp
   alt: Half cross-section through one ray, showing the hub mounting face, the 47.5 mm offset, the open windows beginning at a 160 mm radius and the assumed brake caliper keep-out zone.
   caption: Section through a ray. The dashed box is the brake caliper keep-out. It is still an assumption until I measure the car.
@@ -50,8 +47,8 @@ title: Back to the Future Sunburst Wheel for My Mach-E GT
 summary: I designed a one-piece, CNC-machinable 20 inch wheel for my black 2023 Mustang Mach-E GT to give it an iconic Back to the Future feel. It has a 72-ray stainless-look sunburst face on a rim and hub that match the factory fitment.
 status: Version 2 in CAD · Car measurements next
 concept: true
-heroAlt: Side-view concept render of a black Mustang Mach-E GT on a dark studio floor, fitted with brushed stainless sunburst wheels that have 72 thin rays.
-heroCaption: Concept render of the version 2 sunburst wheels in a brushed stainless finish on my black Mach-E GT. The wheels come from the real CAD mesh. The car body is a simplified drawing at true scale.
+heroAlt: Angled CAD render of version 2 of my 20 inch sunburst wheel, showing the 72 rays and the full rim profile.
+heroCaption: Version 2 of the wheel in CAD, a 72-ray sunburst face on a 20 × 8.0J rim and hub that match the factory fitment.
 ---
 ## Why I wanted it
 
@@ -83,7 +80,7 @@ For version 2 I kept the rim and hub and replaced the spokes with 72 pyramid-sha
 
 ## The finish
 
-The render shows the finish I am going for, a brushed stainless look. The wheel itself is designed in forged 6061-T6 aluminum, the standard wheel alloy. It is lighter, well documented for fatigue and machines well. I would get the stainless effect with a brushed, clear-coated aluminum finish, not by making the wheel out of steel.
+The finish I am going for is a brushed stainless look. The wheel itself is designed in forged 6061-T6 aluminum, the standard wheel alloy. It is lighter, well documented for fatigue and machines well. I would get the stainless effect with a brushed, clear-coated aluminum finish, not by making the wheel out of steel.
 
 ## Where it stands
 

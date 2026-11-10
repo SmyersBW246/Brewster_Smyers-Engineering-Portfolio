@@ -7,7 +7,7 @@ import { url } from '../lib/urls';
 
 // The four featured projects, in their set order.
 const projects = (await getCollection('projects'))
-  .filter((p) => p.data.featured)
+  .filter((p) => p.data.featured && !p.data.hidden)
   .sort((a, b) => a.data.order - b.data.order)
   .slice(0, 4);
 ---
