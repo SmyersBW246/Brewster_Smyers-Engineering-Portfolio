@@ -4,6 +4,15 @@ category: Aircraft & fluids
 order: 3
 featured: true
 hero: /images/auv-hull.webp
+heroGallery:
+- src: /images/auv-hull.webp
+  alt: Side profile of my proposed underwater-vehicle hull, with a rounded nose, cylindrical middle and tapered tail.
+- src: /images/auv-flow.webp
+  alt: Qualitative predicted streamlines around the underwater hull.
+- src: /images/auv-flow-channel-front.webp
+  alt: Isometric SolidWorks view of the water tunnel flow channel, a narrow inlet widening into a wider test section.
+- src: /images/auv-flow-channel-rear.webp
+  alt: Isometric SolidWorks view of the flow channel from the back, showing the test section dividers and a round port in the end wall.
 role: Hull concept and water tunnel design, then team testing
 period: Fall 2026 · In progress
 tools:
@@ -21,6 +30,9 @@ facts:
 - value: 267 N
   label: Buoyant force on the full-size hull
 figures:
+- src: /images/auv-matlab-geometry.webp
+  alt: Four MATLAB panels of the proposed underwater-vehicle hull. Side view with nose, body and tail sections, circular front view, predicted flow pattern, and a summary giving length 1.10 m, diameter 0.20 m, L/D 5.5, frontal area 0.0314 square meters and wetted area 0.616 square meters.
+  caption: MATLAB geometry sheet for my hull. The side view, front view and predicted streamlines all come from one set of hull dimensions. The flow pattern is a prediction, not CFD or a measurement.
 - src: /images/auv-flow.webp
   alt: Qualitative predicted streamlines around the underwater hull.
   caption: My predicted flow pattern around the hull, drawn from the hull outline. It is a prediction to check against the tunnel, not CFD or a measurement.
@@ -41,7 +53,7 @@ summary: For Fluid Dynamics, I designed the hull of an unmanned underwater vehic
 status: In progress
 concept: false
 heroAlt: Side profile of my proposed underwater-vehicle hull, with a rounded nose, cylindrical middle and tapered tail.
-heroCaption: Side profile of my hull concept, 1.10 m long with a 0.20 m maximum diameter at full size.
+heroCaption: My hull concept (top left) and its predicted flow pattern, then two isometric SolidWorks views of the water tunnel flow channel, from the front and from the back. Click any panel for full size.
 ---
 
 ## The project
