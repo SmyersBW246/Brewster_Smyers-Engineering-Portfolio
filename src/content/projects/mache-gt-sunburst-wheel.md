@@ -21,6 +21,9 @@ facts:
 - value: 81 MPa
   label: Peak ray stress vs. 96.5 MPa endurance
 figures:
+- src: /images/mache-gt-render.webp
+  alt: Rendering of a black Mustang Mach-E GT in a dark concrete tunnel fitted with the 72-ray sunburst wheels, with red brake calipers visible behind the rays.
+  caption: Rendering of my sunburst wheel design on a black Mach-E GT. It is a visualization of the design, not a photo of a finished wheel on the car.
 - src: /images/wheel-iterations.webp
   alt: Side-by-side CAD renders of the two wheel versions. On the left, version 1 with five lofted spokes, labeled 12.9 kg. On the right, version 2 with a 72-ray sunburst face, labeled 17.4 kg.
   caption: Version 1 and version 2 on the same rim and hub. The 5-spoke version is lighter, but the sunburst is the look I was after.

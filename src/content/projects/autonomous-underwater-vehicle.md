@@ -24,6 +24,15 @@ figures:
 - src: /images/auv-flow.webp
   alt: Qualitative predicted streamlines around the underwater hull.
   caption: My predicted flow pattern around the hull, drawn from the hull outline. It is a prediction to check against the tunnel, not CFD or a measurement.
+- src: /images/auv-flow-channel-front.webp
+  alt: Isometric SolidWorks view of the water tunnel flow channel, a long narrow inlet channel that widens into a wider test section with a hooked bracket hanging over it.
+  caption: My SolidWorks model of the water tunnel flow channel. The narrow inlet runs into the wider test section where the model sits.
+- src: /images/auv-flow-channel-rear.webp
+  alt: Second isometric SolidWorks view of the flow channel from the opposite side, showing the test section dividers and a round port in the end wall.
+  caption: The same channel from the other side, with the dividers in the test section and a round port in the end wall.
+- src: /images/auv-flow-channel-top.webp
+  alt: Top view of the flow channel in SolidWorks, a narrow inlet channel that flares out into a wide test section, with a round port near the inlet end.
+  caption: Top view of the channel, showing the narrow inlet flaring out into the test section.
 document: /documents/AUV_Project_Brief.pdf
 courses:
 - mech-313
