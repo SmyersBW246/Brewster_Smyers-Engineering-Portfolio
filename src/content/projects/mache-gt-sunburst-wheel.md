@@ -3,7 +3,7 @@ shortTitle: Mach-E GT Sunburst Wheel
 category: Design & build
 order: 10
 featured: false
-hero: /images/wheel-sunburst-iso.webp
+hero: /images/mache-gt-render.webp
 role: Styling concept, requirements, SolidWorks modeling and design checks
 period: November 2026 · Version 2 in CAD
 tools:
@@ -50,8 +50,8 @@ title: Back to the Future Sunburst Wheel for My Mach-E GT
 summary: I designed a one-piece, CNC-machinable 20 inch wheel for my black 2023 Mustang Mach-E GT to give it an iconic Back to the Future feel. It has a 72-ray stainless-look sunburst face on a rim and hub that match the factory fitment.
 status: Version 2 in CAD · Car measurements next
 concept: true
-heroAlt: Angled CAD render of version 2 of my 20 inch sunburst wheel, showing the 72 rays and the full rim profile.
-heroCaption: Version 2 of the wheel in CAD, a 72-ray sunburst face on a 20 × 8.0J rim and hub that match the factory fitment.
+heroAlt: Rendering of a black Mustang Mach-E GT in a dark concrete tunnel fitted with the 72-ray sunburst wheels, with red brake calipers visible behind the rays.
+heroCaption: Rendering of my sunburst wheel design on a black Mach-E GT. It is a visualization of the design, not a photo of a finished wheel on the car.
 ---
 ## Why I wanted it
 
