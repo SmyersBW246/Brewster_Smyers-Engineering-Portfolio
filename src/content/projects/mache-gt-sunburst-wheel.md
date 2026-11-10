@@ -4,10 +4,10 @@ category: Design & build
 order: 10
 featured: false
 hero: /images/wheel-sunburst-iso.webp
-role: Styling concept, requirements, scripted CAD and design checks
+role: Styling concept, requirements, SolidWorks modeling and design checks
 period: November 2026 · Version 2 in CAD
 tools:
-- build123d (Python CAD)
+- SolidWorks
 - ISO 4000-2 rim standard
 - Beam FEA, cornering fatigue
 - 6061-T6 forged blank, lathe + 5-axis mill
@@ -63,7 +63,7 @@ A sunburst face gets that effect best. With dozens of thin rays fanning out from
 
 I set one hard rule first: the wheel has to fit my car exactly like the factory wheel. That means 20 × 8.0J with ET47.5 offset, the 5 × 108 bolt pattern, a 63.4 mm hub-centric bore, 60° conical lug seats and room for the OE 245/45R20 tire and TPMS valve. Steering, fenders and tire stay the same, and only the face changes.
 
-I modeled it as a Python script in build123d, with every key dimension as a named variable, so I could rebuild and recheck the whole wheel in seconds. The rim is a revolve that follows ISO 4000-2 for a 20 × 8.0J rim, including the bead seats, safety humps and drop-centre well. I wrote 18 requirements and checked each one by measuring the CAD directly. Fitment, rim contour, brake clearance, clamp face, cornering fatigue, mass and whether one CNC workpiece can make it are all on that list.
+I modeled it in SolidWorks, with every key dimension driven by a named parameter, so I could rebuild and recheck the whole wheel quickly. The rim is a revolve that follows ISO 4000-2 for a 20 × 8.0J rim, including the bead seats, safety humps and drop-centre well. I wrote 18 requirements and checked each one by measuring the CAD directly. Fitment, rim contour, brake clearance, clamp face, cornering fatigue, mass and whether one CNC workpiece can make it are all on that list.
 
 ## Version 1: five spokes
 
