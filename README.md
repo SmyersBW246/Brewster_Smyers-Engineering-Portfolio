@@ -1,6 +1,6 @@
 # Brewster Smyers · Engineering portfolio
 
-A complete private-review Astro static website, recovered and extended from the earlier portfolio work. This source has not been published or connected to a GitHub account.
+An Astro static website, recovered and extended from the earlier portfolio work. The source is connected to GitHub at https://github.com/SmyersBW246/Brewster_Smyers-Engineering-Portfolio and is published to GitHub Pages only when the manual workflow is run (see `docs/DEPLOYMENT.md`).
 
 ## Refinement checkpoint v2
 
@@ -31,7 +31,7 @@ Project copy lives in `src/content/projects/`; subject notes live in `src/conten
 
 ## Included
 
-- Home, project index, seven case studies, coursework index and 21 course notes, About, Resume, Contact and a 404 page.
+- 40 pages: Home, project index, ten case studies, coursework index and 21 course notes, Learning with AI, Brewster's Desk, About, Resume, Contact and a 404 page.
 - Four authentic featured projects: chair, biplane, AUV and ski jump. Robot deferred pending evidence.
 - 110 governing-equation cards plus equations in the teaching prose, rendered with KaTeX and accessible MathML.
 - Three concise project PDF briefs, the supplied MATLAB archive and supplied resume PDF.
@@ -46,6 +46,6 @@ Publication requires explicit approval. The workflow is manual-only, requires it
 
 ## Resume in a new Work session
 
-Upload this ZIP and say: “Continue from NEXT_ACTION.md. Preserve finished work, validate the current build, and finish the next unresolved milestone. Keep the website unpublished.”
+Upload this ZIP and say: “Continue from NEXT_ACTION.md. Preserve finished work, validate the current build, and finish the next unresolved milestone. Do not publish or push without my approval.”
 
 Use `WORK_RECOVERY_PROMPT.md` for a fuller restart. Recovered git history can optionally be restored with `git clone checkpoints/portfolio-history.bundle portfolio-restored`. The provided working tree includes the ready-made `dist/` preview; it is intentionally not tracked in Git.

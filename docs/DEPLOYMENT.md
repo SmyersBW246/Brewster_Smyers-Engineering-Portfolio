@@ -2,9 +2,13 @@
 
 ## Current state
 
-No GitHub repository or live public site has been created. This portable repository is ready for account-specific setup. The site is static and does not require a paid database or backend.
+The source is in the GitHub repository https://github.com/SmyersBW246/Brewster_Smyers-Engineering-Portfolio (git remote `origin`). The site is published to GitHub Pages only when the manual workflow "Publish approved portfolio" is run with its approval box checked; pushing source never publishes. The site is static and does not require a paid database or backend.
 
-## Straightforward first setup
+To publish an update: push the source, then do steps 8 and 9 below.
+
+## First setup (kept for reference)
+
+The repository already exists, under the name above rather than the one suggested in step 3.
 
 1. Review the local draft using README instructions. Confirm the resume, coursework statuses, email/LinkedIn and desired public contact details.
 2. Sign into your own GitHub account securely. Use GitHub Desktop (https://desktop.github.com/) if you prefer a graphical app; no password or verification code belongs in a chat.

@@ -1,19 +1,104 @@
 ---
+// About page. The wording lives in src/data/about; this file only arranges it with the photos.
 import Base from '../layouts/Base.astro';
 import StoryPhoto from '../components/StoryPhoto.astro';
-import {intro,chapters,ending} from '../data/about';
-import {url} from '../lib/urls';
-const [coast,school,outside,bucknell,building]=chapters;
+import { intro, chapters, ending } from '../data/about';
+import { url } from '../lib/urls';
+
+// The five chapters, in page order.
+const [coast, school, outside, bucknell, building] = chapters;
 ---
 <Base title="About Brewster Smyers" description="From New England coasts and mountains to hands-on Mechanical Engineering at Bucknell. Meet Brewster Smyers.">
-<header class="story-opening wrap">
-<div><p class="eyebrow">About / Brewster Smyers</p><h1>Always making<br/><span>something.</span></h1><p class="lead">{intro}</p><nav class="story-contents" aria-label="About page chapters">{chapters.map(c=><a href={`#${c.id}`}>{c.label.split(' / ')[1]}</a>)}</nav></div>
-<StoryPhoto name="portrait" priority caption="Brewster Smyers · Bucknell University, Class of 2028"/>
-</header>
-<section id={coast.id} class="story-section coast-section wrap" aria-labelledby="coast-title"><div class="story-copy"><p class="eyebrow">{coast.label}</p><h2 id="coast-title">{coast.title}</h2>{coast.paragraphs.map(p=><p>{p}</p>)}</div><div class="coast-photos"><StoryPhoto name="on-the-water" caption="Time on the water."/><StoryPhoto name="coastal-evening" caption="A coastal evening, from my photo archive."/></div></section>
-<section id={school.id} class="story-section reverse wrap" aria-labelledby="school-title"><StoryPhoto name="alpine-racing" caption="Alpine racing, from my photo archive."/><div class="story-copy"><p class="eyebrow">{school.label}</p><h2 id="school-title">{school.title}</h2>{school.paragraphs.map(p=><p>{p}</p>)}</div></section>
-<section id={outside.id} class="trail-section wrap" aria-labelledby="trail-title"><div class="trail-heading"><p class="eyebrow">{outside.label}</p><h2 id="trail-title">{outside.title}</h2></div><StoryPhoto name="mountain-hike" caption="A view worth stopping for. Hiking photograph from my archive."/><div class="trail-copy">{outside.paragraphs.map(p=><p>{p}</p>)}</div></section>
-<section id={bucknell.id} class="story-section campus-section wrap" aria-labelledby="bucknell-title"><div class="story-copy"><p class="eyebrow">{bucknell.label}</p><h2 id="bucknell-title">{bucknell.title}</h2>{bucknell.paragraphs.map(p=><p>{p}</p>)}</div><aside class="story-aside"><p class="eyebrow">A different kind of project</p><p class="distance">70.3<span>miles, indoors</span></p><p>An indoor triathlon fundraiser.<br/>More than $500 raised for men’s mental-health awareness.</p><a class="text-link" href={url('resume/')}>More of my experience <span aria-hidden="true">↗</span></a></aside></section>
-<section id={building.id} class="story-section building-section wrap" aria-labelledby="building-title"><div class="build-images"><figure class="story-photo chair-model"><a href={url('projects/outdoor-landmark-chair/')}><img src={url('images/chair-cad.webp')} width="1052" height="1046" alt="My SolidWorks model of the timber chair I built" loading="lazy"/></a><figcaption>From a SolidWorks model to a chair people use.</figcaption></figure><StoryPhoto name="early-bicycle" caption="An earlier chapter, from my photo archive." class="early-photo"/></div><div class="story-copy"><p class="eyebrow">{building.label}</p><h2 id="building-title">{building.title}</h2>{building.paragraphs.map(p=><p>{p}</p>)}<a class="text-link" href={url('projects/')}>See the projects <span aria-hidden="true">↗</span></a></div></section>
-<section class="story-ending wrap"><p class="eyebrow">What comes next / Summer 2027</p><h2>More to figure out.<br/>More to build.</h2><p>{ending}</p><div class="actions"><a class="button" href={url('contact/')}>Get in touch <span aria-hidden="true">↗</span></a><a class="text-link" href={url('resume/')}>View my résumé <span aria-hidden="true">↗</span></a></div></section>
+  {/* Opening: headline, introduction, chapter links and portrait */}
+  <header class="story-opening wrap">
+    <div>
+      <p class="eyebrow">About / Brewster Smyers</p>
+      <h1>Always making<br/><span>something.</span></h1>
+      <p class="lead">{intro}</p>
+      <nav class="story-contents" aria-label="About page chapters">
+        {chapters.map((c) => <a href={`#${c.id}`}>{c.label.split(' / ')[1]}</a>)}
+      </nav>
+    </div>
+    <StoryPhoto name="portrait" priority caption="Brewster Smyers · Bucknell University, Class of 2028"/>
+  </header>
+
+  {/* Chapter 1: New England coast */}
+  <section id={coast.id} class="story-section coast-section wrap" aria-labelledby="coast-title">
+    <div class="story-copy">
+      <p class="eyebrow">{coast.label}</p>
+      <h2 id="coast-title">{coast.title}</h2>
+      {coast.paragraphs.map((p) => <p>{p}</p>)}
+    </div>
+    <div class="coast-photos">
+      <StoryPhoto name="on-the-water" caption="Time on the water."/>
+      <StoryPhoto name="coastal-evening" caption="A coastal evening, from my photo archive."/>
+    </div>
+  </section>
+
+  {/* Chapter 2: school */}
+  <section id={school.id} class="story-section reverse wrap" aria-labelledby="school-title">
+    <StoryPhoto name="alpine-racing" caption="Alpine racing, from my photo archive."/>
+    <div class="story-copy">
+      <p class="eyebrow">{school.label}</p>
+      <h2 id="school-title">{school.title}</h2>
+      {school.paragraphs.map((p) => <p>{p}</p>)}
+    </div>
+  </section>
+
+  {/* Chapter 3: outside */}
+  <section id={outside.id} class="trail-section wrap" aria-labelledby="trail-title">
+    <div class="trail-heading">
+      <p class="eyebrow">{outside.label}</p>
+      <h2 id="trail-title">{outside.title}</h2>
+    </div>
+    <StoryPhoto name="mountain-hike" caption="A view worth stopping for. Hiking photograph from my archive."/>
+    <div class="trail-copy">
+      {outside.paragraphs.map((p) => <p>{p}</p>)}
+    </div>
+  </section>
+
+  {/* Chapter 4: Bucknell, with the triathlon fundraiser panel */}
+  <section id={bucknell.id} class="story-section campus-section wrap" aria-labelledby="bucknell-title">
+    <div class="story-copy">
+      <p class="eyebrow">{bucknell.label}</p>
+      <h2 id="bucknell-title">{bucknell.title}</h2>
+      {bucknell.paragraphs.map((p) => <p>{p}</p>)}
+    </div>
+    <aside class="story-aside">
+      <p class="eyebrow">A different kind of project</p>
+      <p class="distance">70.3<span>miles, indoors</span></p>
+      <p>An indoor triathlon fundraiser.<br/>More than $500 raised for men’s mental-health awareness.</p>
+      <a class="text-link" href={url('resume/')}>More of my experience <span aria-hidden="true">↗</span></a>
+    </aside>
+  </section>
+
+  {/* Chapter 5: building things */}
+  <section id={building.id} class="story-section building-section wrap" aria-labelledby="building-title">
+    <div class="build-images">
+      <figure class="story-photo chair-model">
+        <a href={url('projects/outdoor-landmark-chair/')}>
+          <img src={url('images/chair-cad.webp')} width="1052" height="1046" alt="My SolidWorks model of the timber chair I built" loading="lazy"/>
+        </a>
+        <figcaption>From a SolidWorks model to a chair people use.</figcaption>
+      </figure>
+      <StoryPhoto name="early-bicycle" caption="An earlier chapter, from my photo archive." class="early-photo"/>
+    </div>
+    <div class="story-copy">
+      <p class="eyebrow">{building.label}</p>
+      <h2 id="building-title">{building.title}</h2>
+      {building.paragraphs.map((p) => <p>{p}</p>)}
+      <a class="text-link" href={url('projects/')}>See the projects <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+
+  {/* Closing call to action */}
+  <section class="story-ending wrap">
+    <p class="eyebrow">What comes next / Summer 2027</p>
+    <h2>More to figure out.<br/>More to build.</h2>
+    <p>{ending}</p>
+    <div class="actions">
+      <a class="button" href={url('contact/')}>Get in touch <span aria-hidden="true">↗</span></a>
+      <a class="text-link" href={url('resume/')}>View my résumé <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
 </Base>

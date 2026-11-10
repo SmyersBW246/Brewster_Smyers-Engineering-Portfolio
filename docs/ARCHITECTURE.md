@@ -6,6 +6,6 @@ Astro 7.4.4 static output; Node 24+; locked npm dependencies. A small custom rem
 
 There is no server backend, form service, analytics, account system or database. JavaScript supports only the menu, project filters and course search; all content/navigation is prerendered. Reduced-motion and print styles are included.
 
-Only public/ content and rendered pages become dist/. Research and private progress records are source-only. The source repository must remain private until explicitly approved otherwise.
+Only public/ content and rendered pages become dist/. Research and private progress records are source-only. The source lives in the GitHub repository SmyersBW246/Brewster_Smyers-Engineering-Portfolio; GitHub Pages is updated only by the manual workflow in `.github/workflows/deploy.yml`. The source repository must remain private until explicitly approved otherwise.
 
 Source ZIP includes the compiled root-path build for local review and a Git bundle. node_modules, scratch QA harnesses, temporary browser screenshots, credentials and original private academic records are excluded.

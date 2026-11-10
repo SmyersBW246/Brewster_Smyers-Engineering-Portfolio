@@ -6,4 +6,4 @@ Before edits, read PROJECT_MASTER.md, PROGRESS.md, DECISIONS.md and docs/REFINEM
 
 Next content work: confirm subjects in selected photos, exact AT segment if desired, resume/course terms; obtain original robot photo/code/report plus role and result before replacing ski-jump tile. See docs/REVIEW_QUESTIONS.md for earlier evidence gaps.
 
-Next GitHub work: identify actual repository URL and inspect current state before integrating; do not overwrite unseen changes. No remote configured. Never publish, deploy or make a repository public without explicit approval. Use portable ZIP checkpoints until repository access exists.
+GitHub: the git remote `origin` is https://github.com/SmyersBW246/Brewster_Smyers-Engineering-Portfolio. Inspect its current state before integrating; do not overwrite unseen changes. Publishing happens only through the manual workflow. Never publish, deploy, push or change repository visibility without explicit approval.

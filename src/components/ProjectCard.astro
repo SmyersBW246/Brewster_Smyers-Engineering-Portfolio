@@ -1,8 +1,28 @@
 ---
+// One project tile: image (or a text panel when there is no image), number, category, status and summary.
+// Used on the home page and on the Projects page.
 import { url } from '../lib/urls';
-const { project, number } = Astro.props; const p=project.data;
+
+const { project, number } = Astro.props;
+const p = project.data;
 ---
 <a class:list={['project-card', { 'no-image': !p.hero }]} href={url(`projects/${project.id}/`)}>
-<div class="card-image">{p.hero ? <img src={url(p.hero)} alt={p.heroAlt} width="1000" height="720" loading="lazy"/> : <div class="process-art"><span>{p.category}</span><strong>{p.status}<span>.</span></strong></div>}<span class="card-number">{String(number).padStart(2,'0')}</span><span class="card-arrow" aria-hidden="true">↗</span></div>
-<div class="card-meta"><span>{p.category}</span><span>{p.status}</span></div><h3>{p.shortTitle}</h3><p>{p.summary}</p>
+  <div class="card-image">
+    {p.hero ? (
+      <img src={url(p.hero)} alt={p.heroAlt} width="1000" height="720" loading="lazy"/>
+    ) : (
+      <div class="process-art">
+        <span>{p.category}</span>
+        <strong>{p.status}<span>.</span></strong>
+      </div>
+    )}
+    <span class="card-number">{String(number).padStart(2, '0')}</span>
+    <span class="card-arrow" aria-hidden="true">↗</span>
+  </div>
+  <div class="card-meta">
+    <span>{p.category}</span>
+    <span>{p.status}</span>
+  </div>
+  <h3>{p.shortTitle}</h3>
+  <p>{p.summary}</p>
 </a>
