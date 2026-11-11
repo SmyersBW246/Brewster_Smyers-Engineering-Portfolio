@@ -3,10 +3,10 @@ shortTitle: Aerobatic Biplane
 category: Aircraft & fluids
 order: 2
 featured: true
-hero: /images/biplane-isometric.webp
+hero: /images/biplane-isometric-v2.webp
 heroGallery:
-- src: /images/biplane-isometric.webp
-  alt: Isometric view of my SolidWorks model of the two-seat aerobatic biplane.
+- src: /images/biplane-isometric-v2.webp
+  alt: Isometric view of my SolidWorks model of the two-seat aerobatic biplane, with landing gear and interplane struts.
 - src: /images/biplane-matlab-geometry.webp
   alt: MATLAB top, front and side views of the biplane geometry, 17.75 ft long with a 20 ft span.
 - src: /images/biplane-matlab-drag.webp
@@ -27,12 +27,15 @@ facts:
 - value: 153 knots
   label: Modeled cruise at 75% power, 6,000 ft
 figures:
-- src: /images/biplane-side.webp
-  alt: Actual side view of the SolidWorks biplane concept.
-  caption: Side view of my SolidWorks model. The geometry is still in development.
-- src: /images/biplane-front.webp
-  alt: Actual front view of the SolidWorks biplane concept.
-  caption: Front view showing the biplane configuration. The CAD has not been structurally or aerodynamically validated.
+- src: /images/biplane-drawing.webp
+  alt: SolidWorks drawing sheet titled 2Pax Aerobatic BiPlane, with dimensioned top, front and side views in inches and an isometric view.
+  caption: SolidWorks drawing of the current model, with top, front and side views dimensioned in inches. The 240-inch span matches the 20 ft span used in the MATLAB model.
+- src: /images/biplane-side-v2.webp
+  alt: Side view of the SolidWorks biplane model showing the fuselage, both wings, the tail, landing gear and interplane and cabane struts.
+  caption: Side view of my SolidWorks model, now with landing gear and cabane struts. The geometry is still in development.
+- src: /images/biplane-front-v2.webp
+  alt: Front view of the SolidWorks biplane model showing the two wings, interplane struts, propeller and main landing gear.
+  caption: Front view showing the biplane configuration and main gear. The CAD has not been structurally or aerodynamically validated.
 - src: /images/biplane-matlab-geometry.webp
   alt: MATLAB plot of the Bison UT-2 conceptual geometry in top, front and side views, with length 17.75 ft, span 20 ft, total wing area 127.5 square feet, wing gap 3.75 ft and stagger 0.5 ft.
   caption: Geometry the MATLAB model works from. Both wings, the tail surfaces and the fuselage share one set of reference dimensions.
@@ -56,7 +59,7 @@ title: Aerobatic Biplane
 summary: I developed a two-seat aerobatic biplane concept in SolidWorks and a modular MATLAB analysis of it. The model ties geometry to lift, drag, fuel use, power and trim, so I can see how one design choice affects the rest of the aircraft.
 status: MATLAB analysis complete
 concept: false
-heroAlt: Actual SolidWorks views of my aircraft model in development. Wing, fuselage and tail geometry are being refined alongside the analysis.
+heroAlt: Actual SolidWorks views of my aircraft model in development. The model now includes landing gear and strut geometry, and is being refined alongside the analysis.
 heroCaption: My SolidWorks model (top left) next to three outputs from my MATLAB analysis, the geometry the model works from, drag against thrust at 6,000 ft and the design mission profile. Click any panel for full size.
 ---
 
