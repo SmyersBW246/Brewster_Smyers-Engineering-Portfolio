@@ -3,9 +3,12 @@ code: CHEM 203
 title: General Chemistry for Engineers
 summary: Introduces inorganic chemical principles, matter structure, reactions and equilibrium, supported by qualitative and quantitative laboratory experiments.
 category: Engineering foundations
+tier: foundation
+term: Fall 2025
+skills: Reactions, atomic and molecular structure, equilibrium, with lab
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/chemistrychem/
 catalogYear: 2025-2026
-order: 10
+order: 19
 documented: false
 connection: ''
 relatedProjects: []
@@ -86,7 +89,7 @@ sources:
 - title: OpenStax Chemistry 2e - Formula Mass and the Mole Concept
   url: https://openstax.org/books/chemistry-2e/pages/3-1-formula-mass-and-the-mole-concept
 officialTitle: General Chemistry for Engineers
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: Completed · Fall 2025
 evidenceStatus: Catalog scope and illustrative technical examples
 contentStatus: Private review draft
 technicalReference: research/coursework/CHEM_203_General_Chemistry_for_Engineers/TECHNICAL_REFERENCE.md

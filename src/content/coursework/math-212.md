@@ -3,9 +3,12 @@ code: MATH 212
 title: Differential Equations
 summary: Develops methods for ordinary differential equations, coupled linear systems and Laplace transforms with applications.
 category: Mathematics & analysis
+tier: foundation
+term: Spring 2026
+skills: Ordinary differential equations, linear systems, Laplace transforms
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/mathematicsmath/
 catalogYear: 2025-2026
-order: 10
+order: 15
 documented: false
 connection: ''
 relatedProjects: []
@@ -75,7 +78,7 @@ sources:
 - title: 'Arthur Mattuck, MIT OCW 18.03: Laplace transform'
   url: https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/f8dba7fcfcc4c745e1ff88c6658b17b7_MIT18_03S10_lt.pdf
 officialTitle: Differential Equations
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: Completed · Spring 2026
 evidenceStatus: Catalog scope and illustrative technical examples
 contentStatus: Private review draft
 technicalReference: research/coursework/MATH_212_Differential_Equations/TECHNICAL_REFERENCE.md

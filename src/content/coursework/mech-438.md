@@ -3,11 +3,18 @@ code: MECH 438
 title: Fundamentals of Aircraft Design
 summary: Introduces aircraft configuration and performance through computational models and a small-aircraft design, construction and flight component.
 category: Aircraft design
+tier: featured
+term: In progress · Fall 2026
+skills: Aircraft sizing, performance and trim modeling in MATLAB, SolidWorks
+keyEquations:
+- Dynamic pressure and lift
+- Preliminary drag polar
+- Required power and steady rate of climb
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/
 catalogYear: 2025-2026
 order: 2
 documented: true
-connection: My course work includes Spitfire and aerobatic-biplane mathematical models and reports. The biplane connects my SolidWorks geometry with a developing MATLAB analysis.
+connection: Built a SolidWorks biplane concept and a MATLAB model of its lift, drag, fuel and trim.
 relatedProjects:
 - aerobatic-biplane
 topics:
@@ -85,52 +92,26 @@ sources:
 - title: NASA Glenn Research Center, Induced Drag Coefficient
   url: https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/induced-drag-coefficient/
 officialTitle: Fundamentals of Aircraft Dsgn
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: In progress · Fall 2026
 evidenceStatus: Documented project or laboratory connection
 contentStatus: Private review draft
 technicalReference: research/coursework/MECH_438_Fundamentals_of_Aircraft_Design/TECHNICAL_REFERENCE.md
 ---
 
-## Course overview
+## The course
 
-My aircraft-design work includes a Supermarine Spitfire mathematical model and report, followed by a two-person aerobatic biplane model and report. I connect aircraft geometry to mass, aerodynamic forces, propulsion, and the mission the airplane is expected to perform. Changing the configuration means more than changing dimensions: reference area, wing loading, fuel accounting, and available power must remain consistent across the calculation. The supplied biplane files bring these relationships together in MATLAB, alongside CAD development of the concept. I treat their outputs as model predictions that depend on assumptions and verification. A useful aircraft study should explain both why a configuration may work and which uncertainties still prevent it from being considered a validated design.
+Bucknell's aircraft design course: configuration, performance and computational modeling, with a small-aircraft design, build and fly component.
 
-**Bucknell scope:** Aircraft configuration and performance, computational modeling, and a small-aircraft design/build/fly component. The catalog's official abbreviated title is **Fundamentals of Aircraft Dsgn**; the page heading expands it for readability. [2025-2026 catalog](https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/).
+## What I did
 
-## Core principles
+- **Spitfire model.** A mathematical model and report of the Supermarine Spitfire.
+- **Aerobatic biplane.** A two-seat aerobatic biplane concept in SolidWorks, sized from the span, wing area and power of an Aviat Pitts S-2C.
+- **MATLAB analysis.** Adapted an earlier aircraft workflow into four modules that share one set of inputs: geometry, aerodynamics, mission fuel and performance, and longitudinal trim. Fuel burn updates the weight and center of gravity through every phase of the mission.
 
-- **Coupled sizing:** Payload, fuel, structure, and propulsion contribute to total mass, which then changes the lift and power required.
-- **Aerodynamic reference conventions:** A coefficient is meaningful only with its declared area and flight condition. A biplane's interference and geometry require care when using simplified finite-wing models.
-- **Lift and speed:** Lift depends on dynamic pressure and coefficient. A stall estimate also requires an appropriate maximum lift coefficient and loading condition.
-- **Drag and power:** Both parasite and lift-related drag affect required propulsive power. Engine shaft power must be converted through propeller efficiency before comparison.
-- **Mission and trim:** Fuel changes mass through the mission, while force balance and pitching-moment balance both matter at each flight condition.
+## What I learned
 
-These are standard technical principles; the evidence supports computational and CAD work, not a built or flown aircraft.
+On an aircraft, one change moves everything else. The hard part was consistency: every module has to work from the same dimensions, weights and mission, or the answers stop agreeing with each other.
 
-## Core equations
+## Skills and tools
 
-$$
-L=\tfrac12\rho V^2SC_L,\qquad
-C_D\simeq C_{D0}+kC_L^2,\qquad
-P_{\rm req}=DV
-$$
-
-Lift and drag are in newtons, airspeed in m/s, area in m², and power in watts. Lift and drag coefficients are dimensionless. The simplified drag polar requires a suitable model for (k); an isolated-wing formula is not automatic validation for a biplane.
-
-## My models and development evidence
-
-The supplied MATLAB package contains aircraft sizing, phase-by-phase mission fuel accounting, wing and tail geometry, lift, drag, and longitudinal trim calculations. It also separates protected reserve from trip burn and includes explicit checks of fuel capacity, loading, lift, and power. The current wrapper describes a local sortie with 30 nautical miles outbound and return, 15 minutes of aerobatics, and a 3,000 ft operating altitude. These are modeling assumptions, not flight-test results.
-
-The original development problem was keeping lift and fuel sufficient after converting the earlier aircraft model. The supplied revision documents a technical response through phase-specific fuel rates and weight updates. Final output verification remains part of the work in progress, so earlier performance summaries should not be treated as results of the current version. A calibration adjustment in the code also needs to remain identified as calibration, rather than independent validation.
-
-CAD development adds another consistency question: airfoil coordinates, station planes, guide curves, and tail location must describe the same geometry used by the aerodynamic model. The supplied exterior views show the concept, but do not prove every geometric constraint is solved. The main biplane project brings the code, assumptions, and revisions together.
-
-## Representative problems and applications
-
-For an original illustrative aircraft with weight 7,000 N, area 12 m², speed 45 m/s, and density 1.225 kg/m³, level flight requires (C_L=0.470). With an assumed (C_D=0.047), drag is approximately 700 N and required propulsive power is 31.5 kW. This calculation is separate from my biplane model and does not establish stall margin, structural adequacy, or achievable engine power.
-
-Other common tasks include estimating stall speed, comparing phase fuel budgets, checking excess power for climb, and solving trim at a stated center-of-gravity position. These methods support preliminary aircraft configuration studies, small UAV sizing, and propulsion matching.
-
-## Technical skills and next evidence
-
-The documented work connects MATLAB modeling, configuration definition, mass/fuel accounting, aerodynamic calculations, CAD reference geometry, and explicit constraint checking. The strongest next addition is a final execution log with a checked output table and an explanation of which assumptions I changed or verified myself.
+MATLAB · SolidWorks · Lift, drag and power estimates · Mission fuel accounting · Trim and static margin

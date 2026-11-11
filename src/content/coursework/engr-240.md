@@ -3,9 +3,12 @@ code: ENGR 240
 title: Science of Materials
 summary: Connects material structure, properties, selection and modification through study of metals, ceramics and polymers with laboratory work.
 category: Materials & manufacturing
+tier: core
+term: Spring 2026
+skills: Structure-property links in metals, ceramics and polymers; materials selection
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/engineeringsciencesengr/
 catalogYear: 2025-2026
-order: 10
+order: 9
 documented: false
 connection: ''
 relatedProjects: []
@@ -86,7 +89,7 @@ sources:
 - title: MIT OCW 3.091SC - Diffusion
   url: https://ocw.mit.edu/courses/3-091sc-introduction-to-solid-state-chemistry-fall-2010/pages/reactions-and-kinetics/24-diffusion/
 officialTitle: Science of Materials
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: Completed · Spring 2026
 evidenceStatus: Catalog scope and illustrative technical examples
 contentStatus: Private review draft
 technicalReference: research/coursework/ENGR_240_Science_of_Materials/TECHNICAL_REFERENCE.md

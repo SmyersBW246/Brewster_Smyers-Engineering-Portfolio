@@ -3,9 +3,12 @@ code: MATH 202
 title: Calculus II
 summary: Extends integration techniques and approximation, then develops series, polar and parametric representations, and elementary differential equations.
 category: Mathematics & analysis
+tier: foundation
+term: Fall 2024
+skills: Integration methods, sequences and Taylor series, polar and parametric forms
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/mathematicsmath/
 catalogYear: 2025-2026
-order: 10
+order: 13
 documented: false
 connection: ''
 relatedProjects: []
@@ -76,7 +79,7 @@ sources:
 - title: 'OpenStax/Rice University, Calculus Volume 2: Taylor and Maclaurin Series'
   url: https://openstax.org/books/calculus-volume-2/pages/6-3-taylor-and-maclaurin-series
 officialTitle: Calculus II
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: Completed · Fall 2024
 evidenceStatus: Catalog scope and illustrative technical examples
 contentStatus: Private review draft
 technicalReference: research/coursework/MATH_202_Calculus_II/TECHNICAL_REFERENCE.md

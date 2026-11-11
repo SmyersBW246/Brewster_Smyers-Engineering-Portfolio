@@ -3,9 +3,12 @@ code: MECH 252
 title: Dynamics
 summary: Studies planar rigid-body motion using kinematics, force, energy and momentum approaches, including vibration and computational solutions.
 category: Design & mechanics
+tier: core
+term: Spring 2026
+skills: Planar rigid-body kinematics and kinetics, vibrations, simulation
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/
 catalogYear: 2025-2026
-order: 10
+order: 6
 documented: false
 connection: ''
 relatedProjects: []
@@ -76,7 +79,7 @@ sources:
 - title: OpenStax/Rice University  |  University Physics Volume 1, Rolling Motion
   url: https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion
 officialTitle: Dynamics
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: Completed · Spring 2026
 evidenceStatus: Catalog scope and illustrative technical examples
 contentStatus: Private review draft
 technicalReference: research/coursework/MECH_252_Dynamics/TECHNICAL_REFERENCE.md

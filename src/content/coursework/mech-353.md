@@ -3,9 +3,12 @@ code: MECH 353
 title: Solid Mechanics
 summary: Evaluates stress, deformation and failure across load types, with compression-member stability, energy approaches and computational connections.
 category: Design & mechanics
+tier: core
+term: Fall 2025
+skills: Stress, strain and failure under combined loads; buckling; energy methods
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/
 catalogYear: 2025-2026
-order: 10
+order: 7
 documented: false
 connection: ''
 relatedProjects: []
@@ -85,7 +88,7 @@ sources:
 - title: University of Illinois, Introductory Solid Mechanics  |  Torsion
   url: https://mechref.engr.illinois.edu/sol/torsion.html
 officialTitle: Solid Mechanics
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: Completed · Fall 2025
 evidenceStatus: Catalog scope and illustrative technical examples
 contentStatus: Private review draft
 technicalReference: research/coursework/MECH_353_Solid_Mechanics/TECHNICAL_REFERENCE.md

@@ -3,9 +3,12 @@ code: ANOP 102
 title: Spreadsheet Modeling & Data Analysis
 summary: Introduces quantitative spreadsheet models and basic statistics for managerial decisions.
 category: Computing & data
+tier: foundation
+term: Summer 2026
+skills: Spreadsheet models and statistics for decision making
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofmanagementcurricula/areasofstudy/businessanalytics/
 catalogYear: 2025-2026
-order: 10
+order: 21
 documented: false
 connection: ''
 relatedProjects: []
@@ -84,7 +87,7 @@ sources:
 - title: 'OpenStax :  cost behavior and break-even relationships'
   url: https://openstax.org/books/principles-managerial-accounting/pages/3-2-calculate-a-break-even-point-in-units-and-dollars
 officialTitle: Spreadsheet Modeling & Data Analysis
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: Completed · Summer 2026
 evidenceStatus: Catalog scope and illustrative technical examples
 contentStatus: Private review draft
 technicalReference: research/coursework/ANOP_102_Spreadsheet_Modeling_and_Data_Analysis/TECHNICAL_REFERENCE.md

@@ -3,9 +3,12 @@ code: MATH 227
 title: Statistics and Engineering
 summary: Builds probability and random-variable foundations for inference, regression and analysis of variance using software.
 category: Mathematics & analysis
+tier: foundation
+term: Spring 2026
+skills: Probability, statistical inference, regression and ANOVA with software
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/mathematicsmath/
 catalogYear: 2025-2026
-order: 10
+order: 16
 documented: false
 connection: ''
 relatedProjects: []
@@ -85,7 +88,7 @@ sources:
 - title: 'NIST/SEMATECH e-Handbook: One-way ANOVA model and assumptions'
   url: https://www.itl.nist.gov/div898/handbook/prc/section4/prc432.htm
 officialTitle: Statistics and Engineering
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: Completed · Spring 2026
 evidenceStatus: Catalog scope and illustrative technical examples
 contentStatus: Private review draft
 technicalReference: research/coursework/MATH_227_Statistics_and_Engineering/TECHNICAL_REFERENCE.md

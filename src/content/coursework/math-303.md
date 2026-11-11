@@ -3,9 +3,12 @@ code: MATH 303
 title: Probability
 summary: Develops probability models, moments, conditioning and limiting behavior, with simulation, historical context and applications.
 category: Mathematics & analysis
+tier: foundation
+term: Fall 2025
+skills: Random variables, moments, central limit theorem, conditional expectation
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/mathematicsmath/
 catalogYear: 2025-2026
-order: 10
+order: 17
 documented: false
 connection: ''
 relatedProjects: []
@@ -85,7 +88,7 @@ sources:
 - title: MIT OCW 18.05 Reading5a:Variance
   url: https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class05-prep-a.pdf
 officialTitle: Probability
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: Completed · Fall 2025
 evidenceStatus: Catalog scope and illustrative technical examples
 contentStatus: Private review draft
 technicalReference: research/coursework/MATH_303_Probability/TECHNICAL_REFERENCE.md

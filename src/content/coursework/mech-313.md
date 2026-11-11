@@ -3,11 +3,18 @@ code: MECH 313
 title: Fluid Dynamics
 summary: Develops conservation-based fluid models, dimensional reasoning and analysis of inviscid and viscous internal and external flows.
 category: Fluids & energy
+tier: featured
+term: In progress · Fall 2026
+skills: Control volumes, buoyancy, similarity scaling, test design
+keyEquations:
+- Constant-density hydrostatics and buoyancy
+- Ideal Bernoulli equation
+- Reynolds number and drag estimate
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/
 catalogYear: 2025-2026
 order: 3
 documented: true
-connection: My individual AUV study applies literature review, hull idealization, hydrostatics and buoyancy reasoning. The team phase is in progress in Fall 2026.
+connection: Leading a team designing an underwater vehicle hull and the water tunnel to test it.
 relatedProjects:
 - autonomous-underwater-vehicle
 topics:
@@ -86,53 +93,29 @@ sources:
 - title: MIT OCW1.060, lecture9 Reynolds Transport Theorem
   url: https://ocw.mit.edu/courses/1-060-engineering-mechanics-ii-spring-2006/resources/lecture9/
 officialTitle: Fluid Dynamics
-enrollmentStatus: In progress · Fall 2026, as documented
+enrollmentStatus: In progress · Fall 2026
 evidenceStatus: Documented project or laboratory connection
 contentStatus: Private review draft
 technicalReference: research/coursework/MECH_313_Fluid_Dynamics/TECHNICAL_REFERENCE.md
 ---
 
-## Course overview
+## The course
 
-I connect fluid mechanics to the design of an underwater vehicle, where pressure, buoyancy, motion, and available equipment space all interact. My individual Phase 1 work included a literature review, a preliminary hull concept, hydrostatics calculations, and a qualitative prediction of the flow. The broader subject gives me a framework for extending that early design: conservation of mass constrains flow rates, momentum relates flow changes to forces, and energy balances distinguish useful pressure changes from losses. I separate a physically reasonable prediction from a validated result. A streamlined shape may be a useful starting point, but propulsion demand and maneuvering performance need supporting calculations or tests. The supplied portfolio identifies the project as continuing into a team phase in Fall 2026.
+Bucknell's fluid dynamics course: control-volume conservation laws, dimensional analysis, and inviscid and viscous flows, both internal and external.
 
-**Bucknell scope:** Conservation-based control-volume models, dimensional analysis, inviscid flow and viscous internal/external flow. [2025-2026 catalog](https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/).
+## What I did
 
-## Core principles
+- **Team lead.** I lead a team designing the hull of an unmanned underwater vehicle and a small water tunnel to test it in. I own the tunnel design.
+- **Hull concept.** Compared torpedo hulls, multi-thruster vehicles and gliders, then proposed a 1.10 m by 0.20 m torpedo hull: a rounded nose, a cylindrical middle for equipment and a long tapered tail to delay flow separation.
+- **Hand calculations.** About 267 N of buoyancy and 49 kPa of gauge pressure at 5 m depth, with the center of gravity below the center of buoyancy so the hull rights itself.
+- **Water tunnel.** An acrylic open-channel flume in SolidWorks, no longer than 400 mm and holding under 2 L of water, fed by a variable-speed pump. We will test a model no longer than 100 mm and scale the results up.
 
-- **Hydrostatics and buoyancy:** Pressure increases with depth in a stationary liquid. The displaced fluid determines the upward buoyant force, while the relative locations of mass and buoyancy affect restoring moments.
-- **Conservation of mass:** A flow model must account for material crossing its boundary and any accumulation inside it.
-- **Momentum balance:** Pressure, weight, and other external forces produce changes in the fluid's momentum. A control-volume diagram makes the force directions explicit.
-- **Energy and losses:** Bernoulli's ideal relation is useful within its assumptions. Viscous losses and pumps need additional terms rather than an unexplained pressure discrepancy.
-- **Similarity and viscous effects:** Reynolds number compares inertia and viscosity. Matching a shape alone does not guarantee that a small model reproduces full-scale flow behavior.
+Status: design phase, Fall 2026. No tunnel test results yet.
 
-These technical principles extend beyond the preliminary personal work below.
+## What I learned
 
-## Core equations
+A small model only predicts the full-size hull if the scaling holds, so the tunnel is built around what we need to see: where the flow stays attached to the hull and where the wake starts.
 
-$$
-p_g=\rho gh,\qquad F_B=\rho gV_{\rm disp},\qquad
-\mathrm{Re}=\frac{\rho UL}{\mu}
-$$
+## Skills and tools
 
-Gauge pressure (p_g) is in pascals and buoyant force (F_B) in newtons. Density (\rho) is in kg/m³; submerged volume (V_{\rm disp}) is in m³. Reynolds number is dimensionless, with speed (U), characteristic length (L), and dynamic viscosity (\mu) defined for the modeled flow.
-
-## My preliminary AUV work
-
-I compared streamlined underwater vehicles, multi-thruster concepts, and underwater gliders before proposing a symmetric hull 1.10 m long and 0.20 m in maximum diameter. My portfolio records an idealized displaced volume of 27.2 L in fresh water. At a density of 1,000 kg/m³, that corresponds to approximately 267 N of buoyant force and a 27.2 kg total mass for neutral buoyancy.
-
-The preliminary report also lists 49.1 kPa external gauge pressure at 5 m depth and a longitudinal center of buoyancy 0.501 m aft of the nose. The pressure and buoyancy arithmetic is consistent with the stated assumptions. The original geometry integration is still needed to verify volume and buoyancy-center location. These are reported preliminary analytical quantities, rather than measurements from a completed vehicle.
-
-I proposed keeping the center of gravity below the center of buoyancy to provide a passive restoring tendency. That is a design intention, not proof of stability in every direction. The supplied flow figure is a qualitative prediction, separate from CFD or an experimental measurement.
-
-## Representative problems and technical judgment
-
-Common problems include determining external pressure at depth, finding the ballast needed for neutral buoyancy, estimating the pressure change through a contraction, and calculating thrust from a changing flow momentum. For an illustrative level pipe contraction carrying 0.001 m³/s, areas of 0.001 m² and 0.0005 m² give average speeds of 1 and 2 m/s. An ideal incompressible energy balance predicts a 1.50 kPa pressure drop before losses. This example is separate from my AUV calculations.
-
-The documented project tradeoff is between a compact, efficient shape and enough space and maneuverability for equipment. No specific failed test or completed troubleshooting sequence is established by the available records. The next useful evidence is a checked geometry worksheet and the team-phase results, when available.
-
-## Engineering skills and applications
-
-The supported personal work includes literature comparison, hull idealization, hydrostatic calculation, buoyancy reasoning, and communicating a qualitative flow prediction. The wider subject adds control-volume balances and dimensionless analysis. Underwater robotics uses these methods for buoyancy and propulsion estimates; automotive ducts use them for pressure and flow management; pumps and piping use them to connect required flow with energy demand.
-
-**Visuals:** Use the two authentic Phase 1 figures with their preliminary captions, and link to the main AUV project for the full case study.
+SolidWorks · Hydrostatics and buoyancy · Similarity scaling · Test rig design · Team leadership

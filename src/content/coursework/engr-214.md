@@ -3,6 +3,9 @@ code: ENGR 214
 title: Computational Analysis
 summary: Uses programming and algorithms for engineering calculations involving matrices, data analysis and introductory numerical methods.
 category: Computing & data
+tier: core
+term: Spring 2025
+skills: Structured programming, algorithms, linear algebra and numerical methods
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/engineeringsciencesengr/
 catalogYear: 2025-2026
 order: 10
@@ -86,7 +89,7 @@ sources:
 - title: University of Illinois CS 357 - LU Decomposition for Solving Linear Equations
   url: https://cs357.cs.illinois.edu/textbook/notes/linsys.html
 officialTitle: Computational Analysis
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: Completed · Spring 2025
 evidenceStatus: Catalog scope and illustrative technical examples
 contentStatus: Private review draft
 technicalReference: research/coursework/ENGR_214_Computational_Analysis/TECHNICAL_REFERENCE.md

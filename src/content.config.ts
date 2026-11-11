@@ -23,6 +23,14 @@ const coursework = defineCollection({
   loader: glob({ pattern: '*.md', base: './src/content/coursework' }),
   schema: z.object({
     code: z.string(), title: z.string(), summary: z.string(), category: z.string(),
+    // featured: full page with hands-on work. core: one row on the index. foundation: one line.
+    tier: z.enum(['featured', 'core', 'foundation']),
+    // Shown only when confirmed, e.g. "In progress · Fall 2026".
+    term: z.string().optional(),
+    // One line of skills for the index.
+    skills: z.string(),
+    // Featured pages show at most three of their equations, picked by title.
+    keyEquations: z.array(z.string()).max(3).optional(),
     officialTitle: z.string().optional(), enrollmentStatus: z.string().optional(),
     evidenceStatus: z.string().optional(), contentStatus: z.string().optional(),
     technicalReference: z.string().optional(),

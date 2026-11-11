@@ -26,3 +26,11 @@
 - Coaster mold and laptop stand pages lead with real photographs, cropped to the part.
 - No further wheel data will be added. The wheel stays on the Projects page only. Drone status is "waiting on parts". Chair and water tunnel photographs are still to come.
 - Published 2026-11-11 with explicit approval, through the manual workflow.
+
+## Coursework recruiter pass, 2026-11-11
+- Courses have a `tier`: featured (hands-on work, own page), core (one row on the index), foundation (one line). Only featured courses get a page: MECH 355, MECH 438, MECH 313. The other 18 notes stay in src/content/coursework as source but are not built.
+- Featured pages use the same four sections: The course, What I did, What I learned, Skills and tools, then linked project cards and at most three key equations (`keyEquations`). `npm run check:content` enforces the sections and the tier.
+- A term is shown only when confirmed (`term`). Confirmed: MECH 313, 355, 438 and ECEG 205, in progress Fall 2026. Disclaimer box, "requires confirmation" badges, illustrative figures and hypothetical worked examples were removed from the public site.
+- Learning page renamed "AI + Learning" in the menu. The "Limits" section folded into a sixth ground rule ("Keep my judgment").
+- Terms come from the unofficial transcript (U:\private\Projects LinkedIN_Resume, dated 10-13): every course row shows its term; MATH 201 shows AP credit. Grades and GPA are never published. MECH 205, FOUN 098 and RELI 100 added; ENGR 099 (0-credit audited seminar) left off. Physics is listed as PHYS 211P, as on the transcript. Skills lines follow the 2026-2027 catalog. Research record: research/coursework/TRANSCRIPT_COURSE_RESEARCH.md.
+- Mathematics minor line (MATH 211, 212, 227, 303) shown at Brewster's statement; the courses meet the catalog's written minor rules, but the transcript does not list a declared minor.

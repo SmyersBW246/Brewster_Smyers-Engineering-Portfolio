@@ -3,9 +3,12 @@ code: ENGR 100
 title: Engineering Design Experience
 summary: Introduces engineering through themed design projects, with attention to design methods, teamwork, ethics and professional practice.
 category: Engineering foundations
+tier: foundation
+term: Fall 2024
+skills: Project-based design process, teamwork and engineering ethics
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/engineeringsciencesengr/
 catalogYear: 2025-2026
-order: 10
+order: 20
 documented: false
 connection: ''
 relatedProjects: []
@@ -39,7 +42,7 @@ sources:
 - title: NASA Systems Engineering Handbook
   url: https://www.nasa.gov/reference/system-engineering-handbook-appendix/
 officialTitle: Engineering Design Experience
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: Completed · Fall 2024
 evidenceStatus: Catalog scope and illustrative technical examples
 contentStatus: Private review draft
 technicalReference: research/coursework/ENGR_100_Engineering_Design_Experience/TECHNICAL_REFERENCE.md

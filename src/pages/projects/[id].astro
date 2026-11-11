@@ -105,8 +105,11 @@ const related = all.filter((c) => p.courses.includes(c.id));
   {related.length > 0 && (
     <section class="related wrap">
       <p class="eyebrow">Connected coursework</p>
-      {related.map((c) => (
+      {/* Only featured courses have their own page; the rest link to the coursework list. */}
+      {related.map((c) => c.data.tier === 'featured' ? (
         <a class="related-link" href={url(`coursework/${c.id}/`)}><span>{c.data.code}</span>{c.data.title}<b aria-hidden="true">↗</b></a>
+      ) : (
+        <a class="related-link" href={url('coursework/')}><span>{c.data.code}</span>{c.data.title}<b aria-hidden="true">↗</b></a>
       ))}
     </section>
   )}

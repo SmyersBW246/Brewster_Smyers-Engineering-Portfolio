@@ -3,11 +3,18 @@ code: MECH 355
 title: Manufacturing Processes
 summary: Surveys shaping and processing methods, supported by fabrication laboratories and introductory numerical control and CAD/CAM.
 category: Materials & manufacturing
+tier: featured
+term: In progress · Fall 2026
+skills: Casting, CNC machining, Mastercam CAM, welding, composites
+keyEquations:
+- Milling peripheral cutting speed
+- Table feed and removal rate
+- Casting solidification scaling
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/
 catalogYear: 2025-2026
 order: 1
 documented: true
-connection: My lab activities include bronze casting, a ring formed from a quarter, composite pressing and bonding, welding, and CNC work for injection-molding tooling. Visits to Lycoming Engines and a metalworking facility added industrial context.
+connection: Cast a bronze rook and machined an aluminum injection mold from my own G-code.
 relatedProjects:
 - ack-coaster-mold
 - bronze-cast-rook
@@ -52,50 +59,27 @@ sources:
 - title: 'MIT OCW 2.008: Deforming, Lecture20a'
   url: https://ocw.mit.edu/courses/2-008-design-and-manufacturing-ii-spring-2025/mit2_008_s25_lec20a.pdf
 officialTitle: Manufacturing Processes
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: In progress · Fall 2026
 evidenceStatus: Documented project or laboratory connection
 contentStatus: Private review draft
 technicalReference: research/coursework/MECH_355_Manufacturing_Processes/TECHNICAL_REFERENCE.md
 ---
 
-## Course overview
+## The course
 
-My manufacturing coursework connects a part's design to the physical process used to make it. The activities I have described include casting bronze from wax and clay/plaster work, forming a ring from a quarter, pressing and bonding carbon fiber, welding, and CNC work associated with plastic injection-molding tooling. Seeing several processes together makes material behavior, geometry and production method part of the same engineering decision. A shape that works well in CAD may require different allowances, tooling or finishing when it is cast, formed or machined. I also visited Lycoming Engines and a separate metalworking facility with large forging hammers. These experiences give me concrete examples for discussing manufacturing choices without claiming measured performance that the available records do not establish.
+Bucknell's manufacturing processes course: casting, forming, machining, joining, plastics and additive manufacturing, taught through fabrication labs and an introduction to CAD/CAM.
 
-Bucknell's catalog covers deformation, solidification, material removal, plastics and additive processes, with fabrication laboratories and introductory CAD/CAM. [Official catalog](https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/).
+## What I did
 
-## Principles that connect the processes
+- **Bronze casting.** Designed a chess rook in SolidWorks, 3D printed it as a pattern, built the wax gating system and cast it in bronze by lost-PLA investment casting. Then I measured the finished piece against the CAD.
+- **Injection mold.** Designed a Nantucket coaster and the aluminum mold that makes it, wrote the process plan and Mastercam toolpaths, and machined the mold from my own G-code on the lab's Haas mill.
+- **Shop labs.** Welding, pressing and bonding carbon fiber, and forming a ring from a quarter.
+- **Industry visits.** Lycoming Engines and a metalworking facility with large forging hammers.
 
-**Process and geometry:** the production route affects attainable shape, surface condition, dimensional control and tooling needs. Process selection begins with requirements and material behavior.
+## What I learned
 
-**Solidification:** casting introduces heat flow and shrinkage considerations. Changes in section size can alter cooling behavior, so the pattern and mold are part of the design problem.
+The process shapes the design. Draft on the mold walls decided which cutters I could use, every flaw on the printed pattern carried straight into the bronze, and the order of machining operations set how long the mold took to cut.
 
-**Plastic deformation:** forming changes shape through permanent strain. Thickness reduction and material flow must be considered together; a visually successful shape alone does not measure residual stress or strength.
+## Skills and tools
 
-**Material removal:** CNC machining links tool motion with cutting speed, feed and engagement. A toolpath must be feasible for both the cutting tool and the workholding arrangement.
-
-**Joining and composites:** welding and bonding create interfaces with process-dependent behavior. Surface preparation, heat input or resin conditions can matter as much as the visible joint. These are standard engineering principles associated with the processes; no undocumented inspection or material test is claimed.
-
-## Core equations and a representative problem
-
-For a hypothetical milling calculation:
-
-$$N=\frac{1000v_c}{\pi D},\qquad v_f=f_z zN,\qquad Q=a_e a_p v_f.$$
-
-With cutting speed 80 m/min, a 6 mm cutter, two teeth and 0.03 mm/tooth feed, the nominal spindle speed is about 4,244 rpm and table feed 255 mm/min. A 3 mm width and 1 mm depth give approximately 764 mm³/min removal. These assumed values illustrate consistent units; they are not a recommended machine setup or my measured production result. Tool, material, rigidity and shop limits must determine an actual operation.
-
-Additional standard models include casting-time scaling, compression strain, projected-area clamp force and production-cost comparisons. Each model identifies its assumptions and the information it cannot establish.
-
-## Laboratories and practical experience
-
-The bronze and quarter-ring activities provide direct physical examples of process choice. Comparing starting material or pattern with the finished part explains the material transformation. Welding, carbon-fiber pressing and CNC tooling can be presented as concise process examples once original photographs or records are supplied. The Lycoming and forging-facility visits add industrial context, but the second facility's identity and hammer specification remain unverified. No quantitative hammer specification is established here.
-
-## Technical challenges and evidence
-
-The available notes confirm the activities, not a specific casting defect, welding problem or machining correction. No specific process failure or corrective action has been established from the current records. A process-improvement record connects an observed difficulty to the parameter or method changed, then compares the resulting part with the original requirement. Common troubleshooting questions help organize that reasoning without assuming a defect or corrective action occurred in these activities.
-
-## Skills and engineering applications
-
-The work supports practical exposure to casting, forming, composite pressing/bonding, welding, CNC tooling and comparing manufacturing routes. It does not establish independent machine qualification or a measured tolerance capability. These subjects apply to aircraft component production, automotive cast or formed parts, and injection-molded product tooling. My carbon-drone document provides a related preliminary design idea; its class assignment and physical completion are unconfirmed, so it is identified as a separate developing project.
-
-The cooling-size plot uses an idealized casting model to explain size effects. It is a teaching illustration, separate from the reported laboratory activities.
+SolidWorks · Mastercam 2026 · CNC process planning and G-code · Lost-PLA investment casting · Welding · Composite pressing

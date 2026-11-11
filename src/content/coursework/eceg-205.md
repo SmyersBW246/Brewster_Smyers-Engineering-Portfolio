@@ -3,9 +3,12 @@ code: ECEG 205
 title: Electrical and Computer Engineering Fundamentals
 summary: Introduces electrical quantities and measurement, sensor behavior and signal filtering.
 category: Computing & data
+tier: core
+term: In progress · Fall 2026
+skills: Electrical measurement, sensors and sensor dynamics, filters
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/computerengineeringcpeg/
 catalogYear: 2025-2026
-order: 10
+order: 11
 documented: false
 connection: ''
 relatedProjects: []
@@ -85,7 +88,7 @@ sources:
 - title: 'OpenStax University Physics Vol. 2 :  RC Circuits'
   url: https://openstax.org/books/university-physics-volume-2/pages/10-5-rc-circuits
 officialTitle: Electrical and Computer Engineering Fundamentals
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: In progress · Fall 2026
 evidenceStatus: Catalog scope and illustrative technical examples
 contentStatus: Private review draft
 technicalReference: research/coursework/ECEG_205_Electrical_and_Computer_Engineering_Fundamentals/TECHNICAL_REFERENCE.md

@@ -3,9 +3,12 @@ code: MATH 211
 title: Calculus III
 summary: Extends calculus to vectors and multiple variables, with optimization, multidimensional integration and major vector-calculus theorems.
 category: Mathematics & analysis
+tier: foundation
+term: Spring 2025
+skills: Vector and multivariable calculus; Green’s, Stokes’ and Divergence Theorems
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/mathematicsmath/
 catalogYear: 2025-2026
-order: 10
+order: 14
 documented: false
 connection: ''
 relatedProjects: []
@@ -76,7 +79,7 @@ sources:
 - title: 'OpenStax/Rice University, Calculus Volume 3: Line Integrals'
   url: https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals
 officialTitle: Calculus III
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: Completed · Spring 2025
 evidenceStatus: Catalog scope and illustrative technical examples
 contentStatus: Private review draft
 technicalReference: research/coursework/MATH_211_Calculus_III/TECHNICAL_REFERENCE.md

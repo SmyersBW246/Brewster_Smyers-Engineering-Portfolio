@@ -2,7 +2,7 @@
 
 Milestones A–G complete: source audit; homepage refinement; About narrative; photo curation; editorial About implementation; styling and mount removal; functional/responsive QA.
 
-40 pages, 10 projects, 21 coursework notes (counts updated 2026-11-10), 6 homepage project tiles under three themes (build, ask why, lead; updated 2026-11-11), 6 personal photos with 17 responsive WebP exports. Complete source preserved in Git with recovered history; the remote `origin` is the GitHub repository SmyersBW246/Brewster_Smyers-Engineering-Portfolio. Published to GitHub Pages only by the manual workflow.
+22 pages, 10 projects, 3 featured course pages plus 21 more courses with transcript terms on the tiered Coursework index (updated 2026-11-11), 6 homepage project tiles under three themes (build, ask why, lead; updated 2026-11-11), 6 personal photos with 17 responsive WebP exports. Complete source preserved in Git with recovered history; the remote `origin` is the GitHub repository SmyersBW246/Brewster_Smyers-Engineering-Portfolio. Published to GitHub Pages only by the manual workflow.
 
 Production build/content checks pass. Root and /portfolio prefix reference checks: 601 href/src references, zero failures. Home/About/Projects reviewed at 1440, 390 and 320 pixels: no overflow or failed images. Menu, Escape, filters, search and anchors pass. See docs/REFINEMENT_QA.md and JSON reports.
 

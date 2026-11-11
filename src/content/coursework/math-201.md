@@ -3,9 +3,12 @@ code: MATH 201
 title: Calculus I
 summary: Introduces derivatives and their applications, followed by basic integration and the relationship between differentiation and integration.
 category: Mathematics & analysis
+tier: foundation
+term: AP credit, 2024
+skills: Derivatives, their applications, and an introduction to integration
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/mathematicsmath/
 catalogYear: 2025-2026
-order: 10
+order: 12
 documented: false
 connection: ''
 relatedProjects: []
@@ -76,7 +79,7 @@ sources:
 - title: 'OpenStax/Rice University, Calculus Volume 1: Applied Optimization Problems'
   url: https://openstax.org/books/calculus-volume-1/pages/4-7-applied-optimization-problems
 officialTitle: Calculus I
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: Transfer credit (AP), 2024
 evidenceStatus: Catalog scope and illustrative technical examples
 contentStatus: Private review draft
 technicalReference: research/coursework/MATH_201_Calculus_I/TECHNICAL_REFERENCE.md

@@ -3,9 +3,12 @@ code: MECH 213
 title: Thermodynamics
 summary: Applies thermodynamic laws and substance properties to efficiency and to power-generation and refrigeration cycles.
 category: Fluids & energy
+tier: core
+term: Fall 2025
+skills: First and second laws, substance properties, power and refrigeration cycles
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/
 catalogYear: 2025-2026
-order: 10
+order: 8
 documented: false
 connection: ''
 relatedProjects: []
@@ -85,7 +88,7 @@ sources:
 - title: MIT Unified Engineering, Thermodynamics chapter6
   url: https://ocw.mit.edu/ans7870/16/16.unified/thermoF03/chapter_6.htm
 officialTitle: Thermodynamics
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: Completed · Fall 2025
 evidenceStatus: Catalog scope and illustrative technical examples
 contentStatus: Private review draft
 technicalReference: research/coursework/MECH_213_Thermodynamics/TECHNICAL_REFERENCE.md

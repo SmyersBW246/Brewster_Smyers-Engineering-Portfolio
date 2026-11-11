@@ -1,76 +1,93 @@
 ---
-// Coursework page: every course note, grouped by category, with a search box.
+// Coursework page in three tiers:
+//   featured   = courses with hands-on work, each with its own page
+//   core       = core mechanical engineering, one row each
+//   foundation = math and science, one compact list
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { url } from '../../lib/urls';
 
-// Sorted by the "order" field first, then by course code.
 const courses = (await getCollection('coursework')).sort(
   (a, b) => a.data.order - b.data.order || a.data.code.localeCompare(b.data.code)
 );
+const tier = (name: string) => courses.filter((c) => c.data.tier === name);
+const featured = tier('featured');
+const core = tier('core');
+const foundation = tier('foundation');
 
-// Each category once, in the order it first appears; these become the group headings.
-const categories = [...new Set(courses.map((c) => c.data.category))];
+const projects = await getCollection('projects');
+const projectTitle = (id: string) => projects.find((p) => p.id === id)?.data.shortTitle;
+const inProgress = courses.filter((c) => c.data.term?.startsWith('In progress')).length;
 ---
-<Base title="Coursework + Engineering Notes | Brewster Smyers">
+<Base title="Coursework | Brewster Smyers" description="Bucknell Mechanical Engineering coursework: the classes where I built something, plus the core engineering and math behind them.">
   <section class="page-heading wrap">
-    <p class="eyebrow">Engineering foundations</p>
+    <p class="eyebrow">Bucknell Mechanical Engineering</p>
     <h1>Understand it.<br/><span>Then apply it.</span></h1>
-    <p>Principles, equations and worked examples drawn from Bucknell’s published course scope, with personal project connections where documented.</p>
-    <div class="note">These subject notes do not establish course completion. Enrollment and term are identified on each page where supported; the remaining course statuses need confirmation.</div>
+    <p class="lead">The classes where I built something come first. The core engineering, math and other courses from my Bucknell transcript follow, with the term I took each one.</p>
   </section>
 
-  <section class="wrap section course-index">
-    <label class="search-label" for="course-search">Find a subject or course</label>
-    <input id="course-search" type="search" placeholder="Try aircraft, MATLAB, or MECH 355"/>
-    <p id="course-count" class="muted" aria-live="polite">{courses.length} subject notes</p>
+  {/* At a glance */}
+  <section class="wrap course-glance" aria-label="Coursework at a glance">
+    <div><strong>{featured.length}</strong><span>courses with hands-on project work</span></div>
+    <div><strong>{inProgress}</strong><span>courses in progress, Fall 2026</span></div>
+    <div><strong>SolidWorks · Mastercam · MATLAB</strong><span>tools used across my coursework</span></div>
+  </section>
 
-    {categories.map((category) => (
-      <section class="course-group" data-course-group>
-        <h2>{category}</h2>
-        <div>
-          {courses.filter((c) => c.data.category === category).map((c) => (
-            <a
-              data-course
-              data-search={`${c.data.code} ${c.data.title} ${c.data.category} ${c.data.summary}`.toLowerCase()}
-              href={url(`coursework/${c.id}/`)}
-              class="course-row"
-            >
-              <span class="course-code">{c.data.code}</span>
-              <div>
-                <h3>{c.data.title}</h3>
-                <p>{c.data.summary}</p>
-                <small>{c.data.documented ? 'Documented project connection' : 'Catalog-based subject note'}</small>
-              </div>
-              <span aria-hidden="true">↗</span>
-            </a>
-          ))}
-        </div>
-      </section>
-    ))}
+  {/* Featured: real work, with its own page */}
+  <section class="wrap section course-tier" aria-labelledby="featured-title">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Hands-on work</p>
+        <h2 id="featured-title">Where I built something.</h2>
+      </div>
+    </div>
+    <div class="course-feature-grid">
+      {featured.map((c) => (
+        <a class="course-feature" href={url(`coursework/${c.id}/`)}>
+          <span class="course-code">{c.data.code}{c.data.term && <> · {c.data.term}</>}</span>
+          <h3>{c.data.title}</h3>
+          <p>{c.data.connection}</p>
+          {c.data.relatedProjects.length > 0 && (
+            <small>Projects: {c.data.relatedProjects.map(projectTitle).filter(Boolean).join(', ')}</small>
+          )}
+          <span class="course-feature-arrow" aria-hidden="true">↗</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  {/* Core mechanical engineering */}
+  <section class="wrap section course-tier" aria-labelledby="core-title">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Core mechanical engineering</p>
+        <h2 id="core-title">The engineering behind it.</h2>
+      </div>
+    </div>
+    <ul class="course-table">
+      {core.map((c) => (
+        <li>
+          <span class="course-code">{c.data.code}</span>
+          <strong>{c.data.title}</strong>
+          <span class="course-skills">{c.data.skills}</span>
+          <span class="course-term">{c.data.term ?? ''}</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  {/* Math and science foundations */}
+  <section class="wrap section course-tier" aria-labelledby="foundation-title">
+    <p class="eyebrow">Foundations</p>
+    <h2 id="foundation-title" class="course-foundation-title">Math, science + humanities.</h2>
+    <p class="course-minor"><strong>Mathematics minor:</strong> MATH 211, MATH 212, MATH 227 and MATH 303.</p>
+    <ul class="course-foundation">
+      {foundation.map((c) => (
+        <li>
+          <span><span class="course-code">{c.data.code}</span> {c.data.title}</span>
+          {c.data.term && <span class="course-term">{c.data.term}</span>}
+        </li>
+      ))}
+    </ul>
   </section>
 </Base>
-
-<script>
-  // Search box: hide the course rows that do not contain the typed text, then update the count.
-  const search = document.getElementById('course-search') as HTMLInputElement;
-
-  search?.addEventListener('input', () => {
-    const q = search.value.toLowerCase().trim();
-    let count = 0;
-
-    document.querySelectorAll('[data-course]').forEach((item) => {
-      const show = item.getAttribute('data-search')?.includes(q);
-      (item as HTMLElement).hidden = !show;
-      if (show) count++;
-    });
-
-    // Hide a whole category when none of its rows are showing.
-    document.querySelectorAll('[data-course-group]').forEach(
-      (group) => ((group as HTMLElement).hidden = !group.querySelector('[data-course]:not([hidden])'))
-    );
-
-    const output = document.getElementById('course-count');
-    if (output) output.textContent = `${count} subject note${count === 1 ? '' : 's'}`;
-  });
-</script>

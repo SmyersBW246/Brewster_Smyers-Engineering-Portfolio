@@ -1,7 +1,7 @@
 ---
 // Learning with AI page. The wording lives in src/data/learning; this file only arranges it.
 import Base from '../layouts/Base.astro';
-import { intro, uses, rules, limits, portfolio, desk, ending } from '../data/learning';
+import { intro, uses, rules, portfolio, desk, ending } from '../data/learning';
 import { url } from '../lib/urls';
 ---
 <Base title="Learning with AI | Brewster Smyers" description="How Brewster Smyers, a Bucknell Mechanical Engineering student, uses AI as a study tool and tutor, and the ground rules that keep the learning his own.">
@@ -52,25 +52,12 @@ import { url } from '../lib/urls';
       <p class="eyebrow">Building with it</p>
       <h2 id="desk-title">Brewster’s <span>Desk.</span></h2>
       <p>{desk}</p>
+      <p>{portfolio}</p>
       <a class="text-link" href={url('learning/desk/')}>See how it works <span aria-hidden="true">↗</span></a>
     </div>
     <a class="desk-teaser" href={url('learning/desk/')}>
       <img src={url('images/desk/desk-sleep.webp')} alt="Brewster's Desk in sleep mode" loading="lazy" width="800" height="600"/>
     </a>
-  </section>
-
-  {/* Limits of the tool, with a link to the projects */}
-  <section class="section learn-limits wrap" aria-labelledby="limits-title">
-    <div class="story-copy">
-      <p class="eyebrow">Knowing the limits</p>
-      <h2 id="limits-title">A tool, not a substitute.</h2>
-      {limits.map((p) => <p>{p}</p>)}
-    </div>
-    <aside class="learn-aside">
-      <p class="eyebrow">Beyond the classroom</p>
-      <p>{portfolio}</p>
-      <a class="text-link" href={url('projects/')}>See the projects <span aria-hidden="true">↗</span></a>
-    </aside>
   </section>
 
   {/* Closing call to action */}

@@ -3,9 +3,12 @@ code: MECH 202
 title: Graphics for Design and Manufacture
 summary: Covers engineering graphics, production drawings, three-dimensional digital geometry and introductory rapid-prototyping fabrication.
 category: Design & mechanics
+tier: core
+term: Spring 2025
+skills: Production drawings, 3D CAD and rapid prototyping
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/
 catalogYear: 2025-2026
-order: 10
+order: 4
 documented: false
 connection: ''
 relatedProjects: []
@@ -42,7 +45,7 @@ sources:
 - title: 'SOLIDWORKS Help: Boundary Surface'
   url: https://help.solidworks.com/2023/english/SolidWorks/sldworks/c_boundary_surface.htm?format=P&value=
 officialTitle: Graphics for Design and Manufacture
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: Completed · Spring 2025
 evidenceStatus: Catalog scope and illustrative technical examples
 contentStatus: Private review draft
 technicalReference: research/coursework/MECH_202_Graphics_for_Design_and_Manufacture/TECHNICAL_REFERENCE.md

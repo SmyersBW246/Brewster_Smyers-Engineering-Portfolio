@@ -1,99 +1,88 @@
 ---
-// One course page. Astro builds a copy of this page for every file in src/content/coursework.
+// One course page. Only "featured" courses (hands-on work to show) get a page.
+// Every page follows the same outline: The course, What I did, What I learned, Skills and tools,
+// then the linked projects and up to three key equations.
 import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
 import { url } from '../../lib/urls';
 import katex from 'katex';
 
-// Tells Astro which pages to build: one per course, at /coursework/<file name>/.
+// Tells Astro which pages to build: one per featured course, at /coursework/<file name>/.
 export async function getStaticPaths() {
-  return (await getCollection('coursework')).map((course) => ({
-    params: { id: course.id },
-    props: { course },
-  }));
+  return (await getCollection('coursework'))
+    .filter((course) => course.data.tier === 'featured')
+    .map((course) => ({ params: { id: course.id }, props: { course } }));
 }
 
 const { course } = Astro.props;
 const c = course.data;
 const { Content } = await render(course);
 
-// Projects listed in this course's "relatedProjects" field.
-const projects = (await getCollection('projects')).filter((p) => c.relatedProjects.includes(p.id));
+// Projects listed in this course's "relatedProjects" field, in that order.
+const allProjects = await getCollection('projects');
+const projects = c.relatedProjects
+  .map((id) => allProjects.find((p) => p.id === id && !p.data.hidden))
+  .filter((p) => p !== undefined);
+
+// The (at most three) equations named in keyEquations.
+const equations = (c.keyEquations ?? [])
+  .map((title) => c.equations.find((eq) => eq.title === title))
+  .filter((eq) => eq !== undefined);
 ---
-<Base title={`${c.code}: ${c.title} | Brewster Smyers`} description={c.summary}>
+<Base title={`${c.code}: ${c.title} | Brewster Smyers`} description={c.connection}>
   <section class="course-heading wrap">
-    <a class="back-link" href={url('coursework/')}>← Coursework + notes</a>
-    <p class="eyebrow">{c.code} / {c.category}</p>
+    <a class="back-link" href={url('coursework/')}>← Coursework</a>
+    <p class="eyebrow">{c.code}</p>
     <h1>{c.title}<span>.</span></h1>
-    <p class="lead">{c.summary}</p>
+    <p class="lead">{c.connection}</p>
     <div class="course-meta">
-      <span>{c.enrollmentStatus || 'Course status requires confirmation'}</span>
-      <a href={c.catalog}>Bucknell catalog · {c.catalogYear} ↗</a>
+      {c.term && <span>{c.term}</span>}
+      <a href={c.catalog}>Bucknell catalog ↗</a>
     </div>
   </section>
 
   <section class="course-reading wrap">
-    {/* Side menu that jumps to each part of the note */}
+    {/* Side menu that jumps to each part of the page */}
     <aside class="reading-nav">
-      <p class="eyebrow">In this note</p>
-      <a href="#principles">Principles + methods</a>
-      {c.equations.length > 0 && <a href="#equations">Governing equations</a>}
-      {c.connection && <a href="#connections">My project connection</a>}
-      <a href="#sources">Sources</a>
+      <p class="eyebrow">On this page</p>
+      <a href="#overview">Course + my work</a>
+      {projects.length > 0 && <a href="#projects">Linked projects</a>}
+      {equations.length > 0 && <a href="#equations">Key equations</a>}
     </aside>
 
     <div>
-      {/* The written note from the course's .md file */}
-      <article id="principles" class="prose">
+      <article id="overview" class="prose">
         <Content/>
       </article>
 
-      {/* Equation cards. A note may open with a bold lead-in written as **like this**. */}
-      {c.equations.length > 0 && (
+      {projects.length > 0 && (
+        <section id="projects" class="course-projects">
+          <p class="eyebrow">Applied</p>
+          <h2>Linked projects.</h2>
+          <div class="course-project-grid">
+            {projects.map((p) => (
+              <a class="course-project" href={url(`projects/${p.id}/`)}>
+                <img src={url(p.data.hero)} alt={p.data.heroAlt} width="600" height="430" loading="lazy"/>
+                <span class="card-meta"><span>{p.data.status}</span></span>
+                <h3>{p.data.shortTitle} <b aria-hidden="true">↗</b></h3>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {equations.length > 0 && (
         <section id="equations" class="equations">
           <p class="eyebrow">Reference toolkit</p>
-          <h2>Governing equations.</h2>
-          {c.equations.map((eq, i) => (
+          <h2>Key equations.</h2>
+          {equations.map((eq, i) => (
             <div class="equation">
               <h3><span>{String(i + 1).padStart(2, '0')}</span>{eq.title}</h3>
               <div class="math" set:html={katex.renderToString(eq.latex, { displayMode: true, throwOnError: true, strict: 'ignore' })}/>
-              <div class="equation-note">
-                {eq.note.split(/\n\n+/).map((note) => {
-                  const m = note.match(/^\*\*(.+?)\*\*\s*([\s\S]*)$/);
-                  return <p>{m ? <><strong>{m[1]}</strong> {m[2]}</> : note}</p>;
-                })}
-              </div>
             </div>
           ))}
         </section>
       )}
-
-      {c.figures.map((f) => (
-        <figure class="course-figure">
-          <img src={url(f.src)} alt={f.alt} width="1000" height="600" loading="lazy"/>
-          <figcaption>{f.caption}</figcaption>
-        </figure>
-      ))}
-
-      {/* How the course ties to Brewster's own projects */}
-      {c.connection && (
-        <section id="connections" class="connection">
-          <p class="eyebrow">Applied learning</p>
-          <h2>My project connection.</h2>
-          <p>{c.connection}</p>
-          {projects.map((p) => (
-            <a class="related-link" href={url(`projects/${p.id}/`)}>{p.data.shortTitle}<b aria-hidden="true">↗</b></a>
-          ))}
-        </section>
-      )}
-
-      <section id="sources" class="sources">
-        <h2>Sources + scope.</h2>
-        <p>Subject explanations and illustrative examples are separate from personal project results. The official catalog establishes curriculum scope; it does not verify my enrollment or individual experience.</p>
-        <ul>
-          {c.sources.map((s) => <li><a href={s.url}>{s.title} ↗</a></li>)}
-        </ul>
-      </section>
     </div>
   </section>
 </Base>

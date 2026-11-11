@@ -1,11 +1,14 @@
 ---
-code: PHYS 211
+code: PHYS 211P
 title: Classical and Modern Physics I
 summary: Surveys mechanics, gravity, relativity, thermodynamics and statistical mechanics in the first introductory physics course.
 category: Engineering foundations
+tier: foundation
+term: Fall 2024
+skills: Newtonian mechanics, relativity, thermodynamics, gravity
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofartsandsciencescurricula/areasofstudy/physicsandastronomy/
 catalogYear: 2025-2026
-order: 10
+order: 18
 documented: false
 connection: ''
 relatedProjects: []
@@ -96,7 +99,7 @@ sources:
 - title: OpenStax University Physics Vol. 1 - Universal Gravitation
   url: https://openstax.org/books/university-physics-volume-1/pages/13-1-newtons-law-of-universal-gravitation
 officialTitle: Classical and Modern Physics I
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: Completed · Fall 2024
 evidenceStatus: Catalog scope and illustrative technical examples
 contentStatus: Private review draft
 technicalReference: research/coursework/PHYS_211_Classical_and_Modern_Physics_I/TECHNICAL_REFERENCE.md

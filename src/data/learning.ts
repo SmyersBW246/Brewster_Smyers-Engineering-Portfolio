@@ -28,12 +28,8 @@ export const rules = [
   ["Hints before answers.", "I ask for the next step or a guiding question, not a finished solution."],
   ["Verify everything.", "AI can be confidently wrong. I cross-check against course material, hand calculations and, when needed, professors and TAs."],
   ["Explain it back.", "If I can’t explain a result in my own words, I don’t understand it yet."],
+  ["Keep my judgment.", "AI doesn’t replace office hours, classmates or lab time, and it doesn’t replace engineering judgment. A clean-looking answer can still have the wrong units or a missing load case. Catching that is my job."],
   ["Follow the course policy.", "Each class sets its own AI rules, and I follow them along with Bucknell’s academic integrity standards."]
-];
-
-export const limits = [
-  "AI does not replace office hours, study groups or lab time. Some of my best learning still comes from working through a problem with classmates or asking a professor why something behaves the way it does.",
-  "It also does not replace engineering judgment. A tool can produce a clean-looking answer with the wrong units or a missing load case. Learning to catch that is part of becoming an engineer, and it is a skill I want to keep building."
 ];
 
 export const portfolio = "This site is a small example of the same approach. I used AI coding assistants to help build and maintain it, while I decided what belongs here and checked that each project page matches the evidence I actually have: what is finished, what is preliminary and what is still in progress.";

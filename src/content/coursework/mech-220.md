@@ -3,9 +3,12 @@ code: MECH 220
 title: Mechanics
 summary: Analyzes rigid-body equilibrium, structural force systems, friction, distributed loading and internal forces.
 category: Design & mechanics
+tier: core
+term: Spring 2025
+skills: Rigid-body equilibrium, trusses, frames and machines, friction, internal loads
 catalog: https://coursecatalog.bucknell.edu/archive/2025-2026/collegeofengineeringcurricula/areasofstudy/mechanicalengineeringmech/
 catalogYear: 2025-2026
-order: 10
+order: 5
 documented: false
 connection: ''
 relatedProjects: []
@@ -76,7 +79,7 @@ sources:
 - title: OpenStax/Rice University | University Physics Volume 1,6.2 Friction
   url: https://openstax.org/books/university-physics-volume-1/pages/6-2-friction
 officialTitle: Mechanics
-enrollmentStatus: Course status requires confirmation
+enrollmentStatus: Completed · Spring 2025
 evidenceStatus: Catalog scope and illustrative technical examples
 contentStatus: Private review draft
 technicalReference: research/coursework/MECH_220_Mechanics/TECHNICAL_REFERENCE.md

@@ -3,12 +3,15 @@
 //  - No em dashes anywhere in public copy (content, pages, data, components, layouts).
 //  - No generated concept art as a project hero.
 //  - Every project page uses the same five sections, in order, and three "At a glance" facts.
+//  - Every course has a tier; featured courses use the same four sections.
 // Usage: npm run check:content
 import fs from 'node:fs';
 import path from 'node:path';
 
 // The fixed outline of a project page. Sub-headings inside a section use ###.
 const PROJECT_SECTIONS = ['Problem', 'My role', 'What I built', 'Evidence', 'Status'];
+// The fixed outline of a featured course page.
+const COURSE_SECTIONS = ['The course', 'What I did', 'What I learned', 'Skills and tools'];
 
 const errors = [];
 const result = [];
@@ -27,6 +30,17 @@ for (const dir of ['src/content/projects', 'src/content/coursework']) {
       continue;
     }
     if (/hero:.*(?:wheel-concept|drone-concept)/.test(text)) errors.push(`${name}: generated project hero`);
+
+    if (dir.endsWith('coursework')) {
+      const tier = text.slice(0, end).match(/^tier: (\w+)/m)?.[1];
+      if (!['featured', 'core', 'foundation'].includes(tier)) errors.push(`${name}: missing or unknown tier`);
+      if (tier === 'featured') {
+        const sections = [...text.slice(end + 5).matchAll(/^## (.+)$/gm)].map((m) => m[1].trim());
+        if (sections.join(' | ') !== COURSE_SECTIONS.join(' | ')) {
+          errors.push(`${name}: sections are [${sections.join(', ')}], expected [${COURSE_SECTIONS.join(', ')}]`);
+        }
+      }
+    }
 
     if (dir.endsWith('projects')) {
       const frontmatter = text.slice(0, end);
