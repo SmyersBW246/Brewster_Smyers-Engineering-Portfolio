@@ -32,7 +32,7 @@ Project copy lives in `src/content/projects/`; subject notes live in `src/conten
 ## Included
 
 - 40 pages: Home, project index, ten case studies, coursework index and 21 course notes, Learning with AI, Brewster's Desk, About, Resume, Contact and a 404 page.
-- Four authentic featured projects: chair, biplane, AUV and ski jump. Robot deferred pending evidence.
+- Homepage built on three themes (build, ask why, lead) with six project tiles: chair, coaster mold, bronze rook, pipe bracket, underwater vehicle + water tunnel and biplane.
 - 110 governing-equation cards plus equations in the teaching prose, rendered with KaTeX and accessible MathML.
 - Three concise project PDF briefs, the supplied MATLAB archive and supplied resume PDF.
 - Recovery records, source references, content/asset inventories, QA records and maintenance/deployment guides.

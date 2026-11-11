@@ -5,21 +5,18 @@ order: 5
 featured: false
 hero: /images/drone-mold-assembly.webp
 role: Personal project, with the mold developed alongside MECH 355
-period: Fall 2026 · Ready for production
+period: Fall 2026 · Waiting on parts
 tools:
 - SolidWorks part + assembly modeling
 - Compression mold design
 - SolidWorks Simulation
-- Electronics packaging
 facts:
 - value: 102 × 102 mm
   label: Frame footprint, 3 mm thick
 - value: ~19 g
   label: Estimated bare frame in chopped carbon
 - value: 3 parts
-  label: Two cavity halves and a top press plate
-- value: Planned
-  label: Molding, structural tests and flight
+  label: Mold with two cavity halves and a top press plate
 figures:
 - src: /images/drone-chassis-assembly.webp
   alt: SolidWorks assembly of the drilled X-frame chassis with four 1104 brushless motors mounted on the arm pads.
@@ -36,18 +33,26 @@ figures:
 courses:
 - mech-355
 title: Compression-Molded Micro-Drone Chassis
-summary: I am designing a compact quadcopter chassis and the compression mold to make it from chopped carbon fiber. The goal is to compare the molded frame with a 3D-printed one of the same shape and find out whether the composite is stiffer, lighter or more durable enough to justify the extra manufacturing work.
-status: Ready for production
+summary: I designed a compact quadcopter chassis and the compression mold to make it from chopped carbon fiber. The goal is to compare the molded frame with a 3D-printed one of the same shape and find out whether the composite is worth the extra manufacturing work. No frame has been molded yet.
+status: Design done · Waiting on parts
 concept: false
 heroAlt: SolidWorks assembly of the split compression mold for the drone chassis, with an X-shaped cavity across two blocks.
 heroCaption: The full press mold assembly in SolidWorks. Two blocks meet along a split line and together form the X-shaped cavity for the frame.
 ---
 
-## The idea
+## Problem
 
-Most small racing and freestyle drones use frames cut from carbon plate. I wanted to try a different route that ties into my manufacturing coursework: pressing chopped carbon fiber in a mold so the frame comes out near its final shape. To judge whether that is worth it, I am also planning an identical frame printed in polymer, so the two can be tested side by side with the same electronics.
+Most small racing and freestyle drones use frames cut from carbon plate. I wanted to try a different route that ties into my manufacturing coursework: pressing chopped carbon fiber in a mold so the frame comes out near its final shape.
 
-## Chassis design
+The question is whether that is worth it. Is the molded frame stiffer, lighter or more durable than a 3D-printed one of the same shape, by enough to justify the extra manufacturing work?
+
+## My role
+
+This is a personal project. I designed the chassis and the compression mold in SolidWorks, and I developed the mold alongside MECH 355.
+
+## What I built
+
+### Chassis
 
 The frame is a single-piece X layout with broad, tapered arms. It sits on a 102 × 102 mm footprint at a nominal 3 mm thickness.
 
@@ -61,36 +66,25 @@ The frame is a single-piece X layout with broad, tapered arms. It sits on a 102 
 | Flight controller | 26 × 26 mm M2 pattern on the hub |
 | Propellers | 2.2 in, about 136 mm total swept width |
 
-From the CAD volume of about 13.3 cm³, the bare frame works out to roughly 19 g in chopped carbon and 17 g in PETG, using assumed densities of 1.45 and 1.25 g/cm³. Those are estimates, not weighed parts.
+I keep two versions of the part. The blank is the clean molded shape. The drilled version adds the motor and flight controller holes and sits in an assembly with vendor models of the flight controller and 1104 brushless motors.
 
-I keep two versions of the part. The blank is the clean molded shape. The drilled version adds motor and flight controller holes and is placed in an assembly with vendor models of the flight controller and 1104 brushless motors. That assembly is where I check that the bolt patterns line up and the props clear the arms.
+### Mold
 
-## Mold design
+The mold is a three-part SolidWorks assembly built around the chassis blank.
 
-The mold is a SolidWorks assembly built around the chassis blank.
-
-- **Split cavity.** The X-shaped pocket is divided between two blocks that meet along a split line. Separating the blocks frees the thin frame instead of prying it out of a single pocket.
-- **Motor pads and hub.** Each block forms two arms, their round motor pads and half of the hub, so the halves together make the full part.
+- **Split cavity.** The X-shaped pocket is divided between two blocks that meet along a split line. Each block forms two arms, their motor pads and half of the hub. Separating the blocks frees the thin frame instead of prying it out of a single pocket.
 - **Alignment and clamping.** Holes on the top faces line up with the press plate, and cross holes through the sides take hardware that pulls the two halves together while the press closes.
 - **Top press plate.** A flat plate covers the cavity and spreads the press load evenly over the carbon charge.
 
-## Analysis so far
+## Evidence
 
-I set up initial static studies of the chassis in SolidWorks Simulation using PLA+ material properties, along with chopped carbon and alternate material versions of the part. I am still checking the load cases and units, so I am not reporting stress or deflection numbers yet. The next studies will use realistic thrust and crash loads.
+Everything so far is CAD and calculation. No frame has been molded, measured or flown.
 
-## What is still open
+- **Fit.** The assembly is where I check that the bolt patterns line up and the props clear the arms.
+- **Mass.** From the CAD volume of about 13.3 cm³, the bare frame works out to roughly 19 g in chopped carbon and 17 g in PETG, using assumed densities of 1.45 and 1.25 g/cm³. Those are estimates, not weighed parts.
+- **Thrust budget.** Four BETAFPV LAVA 1104 7200KV motors, 2.2 in three-blade props and a 3S 580 mAh battery put the drone at about 112 g on paper. With a 15% margin for wiring and small parts, I plan around 129 g.
 
-- The lab press size limit. A 6 in limit has been mentioned but not confirmed, and it decides whether the mold footprint works.
-- Resin, fiber length, cure temperature, pressure and release method for the actual process.
-- Draft angles and corner radii on the cavity, which depend on the process.
-- Whether a printed mold could survive the process or the tool has to be machined from metal.
-- Final fit of the purchased motors and flight controller against the CAD hole patterns.
-
-## Next iteration: how much can it carry?
-
-The parts list sets the starting point. Four BETAFPV LAVA 1104 7200KV motors, 2.2 in three-blade props and a 3S 580 mAh battery put the drone at about 112 g on paper. With a 15% margin for wiring and small parts, I plan around 129 g.
-
-A common rule for a small quad that still flies with control is a thrust-to-weight ratio of at least 2 to 1. That means the four motors together need to make twice the takeoff weight:
+A common rule for a small quad that still flies with control is a thrust-to-weight ratio of at least 2 to 1.
 
 | Step | Value |
 |---|---|
@@ -99,15 +93,14 @@ A common rule for a small quad that still flies with control is a thrust-to-weig
 | Thrust needed per motor | about 65 g |
 | Extra thrust per motor for every 10 g of payload | 5 g |
 
-Put another way, the most payload I can carry is **2T − 129 g**, where T is the measured thrust of one motor in grams. I have not measured T yet. The vendor only lists current draw for these motors, not a thrust I can trust, so the first bench test is a single motor on a thrust stand with the real prop and battery. Until then, the plan is no more than 10 g of passive payload, and only after thrust, motor temperature and balance are measured.
+Put another way, the most payload I can carry is **2T − 129 g**, where T is the measured thrust of one motor in grams. I have not measured T yet. The vendor only lists current draw for these motors, not a thrust I can trust.
 
-Other changes I would look at once I have real numbers:
+I also set up initial static studies of the chassis in SolidWorks Simulation. I am still checking the load cases and units, so I am not reporting stress or deflection numbers yet.
 
-- **Bigger props.** With 80 mm between motors, the 2.2 in props leave about 24 mm between neighboring tips. A 2.5 in prop would still leave about 16 mm and should make more thrust at the same speed, if the motors stay cool.
-- **Lighter arms.** If the stiffness test shows extra margin, I can taper the arms further or add lightening cutouts. Every gram saved on the frame is a gram of payload.
-- **Battery position.** The battery is about 42 g, the heaviest single part. Moving its mount to keep the center of gravity right under the hub matters more than small frame savings.
-- **Another power setup.** My design study also looked at a smaller 2S build and a larger 4S build with 3 in props. If the 1104 setup cannot carry what I need, the 4S route is the next step up.
+## Status
 
-## Plan for testing
+The chassis and mold design are finished. The build is waiting on parts that are shipping from China. That carbon is better is a hypothesis to test. Once the parts arrive, three steps come next.
 
-The chassis and mold design are finished and ready for production. Next, I plan to make coupons, then matched carbon and printed frames. Both get the same electronics, and I will compare mass, stiffness under load, vibration and how well the screw holes hold up. That carbon is better is a hypothesis to test. No frame has been molded, measured or flown yet.
+- **Settle the process.** The lab press size limit is not confirmed, and it decides whether the mold footprint works. Resin, fiber length, cure temperature, pressure, release method, draft angles and corner radii are also still open, along with whether a printed mold could survive or the tool has to be machined from metal.
+- **Measure thrust.** The first bench test is a single motor on a thrust stand with the real prop and battery. Until then, the plan is no more than 10 g of passive payload.
+- **Make and compare.** I plan to make coupons, then matched carbon and printed frames with the same electronics, and compare mass, stiffness under load, vibration and how well the screw holes hold up.

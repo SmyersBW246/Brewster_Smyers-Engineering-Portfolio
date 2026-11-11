@@ -29,15 +29,21 @@ courses:
 - mech-353
 - mech-220
 title: 90° Pipe Brace Bracket
-summary: I modeled a bent steel pipe bracket in SolidWorks, ran a static FEA study on it and checked the numbers by hand. The write-up covers my assumptions, where the part is weakest and what I would change.
+summary: I modeled a bent steel pipe bracket in SolidWorks, ran a static FEA study and checked the numbers by hand. The software showed a 376 MPa peak that I did not take at face value.
 status: Completed
 concept: false
 heroAlt: SolidWorks von Mises stress plot of the 90 degree pipe brace bracket.
 heroCaption: von Mises stress under a 1,000 N load. Stress builds along the bend and peaks near the base plate.
 ---
-## What it is
+## Problem
 
 The part is a simple metal support: a 90° bent pipe welded between two bolted plates. Whatever bolts to the end plate gets its load carried back into the floor, wall or frame the base is bolted to. I wanted to know how much load it could actually take and where it would fail first.
+
+## My role
+
+This was an independent project. I built the CAD model, set up and ran the FEA, checked it by hand and wrote the report.
+
+## What I built
 
 | Feature | Dimension |
 | --- | --- |
@@ -47,16 +53,16 @@ The part is a simple metal support: a 90° bent pipe welded between two bolted p
 | Pipe bore | Ø1.330 in through the end plate |
 | Material and mass | Plain carbon steel (yield 220.6 MPa), 2.54 kg total |
 
-## How I set it up
+For the study, I fixed the four bolt holes in the base plate, added a roller on its underside so it could bear against the surface, and put 1,000 N on the end plate. The mesh came out to 41,720 nodes and 23,845 elements, with 93.5% of elements under an aspect ratio of 3.
 
-I fixed the four bolt holes in the base plate, added a roller on its underside so it could bear against the surface, and put 1,000 N on the end plate. The mesh came out to 41,720 nodes and 23,845 elements, with 93.5% of elements under an aspect ratio of 3. The reactions added up to 999.999 N, so the model was in equilibrium.
+## Evidence
 
-## What I found
+- **The model balances.** The reactions added up to 999.999 N against the 1,000 N load.
+- **The hand check agrees.** The FEA shows 110 to 190 MPa along the bend. I treated the bend as a curved cantilever with a 12 in moment arm and got 140 MPa at the base, right in that range. That is a factor of safety of about 1.6 against yield.
+- **The peak is not what it looks like.** The plot shows a 376 MPa peak, but it is a tiny spot at the sharp corner where the pipe meets the plate. Sharp corners in FEA create artificially high stress, so I did not take that number at face value. It still told me something useful: in a real welded part, that weld is where it would crack first.
 
-The FEA shows 110 to 190 MPa along the bend. To check it, I treated the bend as a curved cantilever with a 12 in moment arm and got 140 MPa at the base, which lands right in that range. That works out to a factor of safety of about 1.6 against yield.
+These results come from the model and the hand calculation. The welds are idealized and the bolts are not modeled.
 
-The plot also shows a 376 MPa peak, but it is a tiny spot at the sharp corner where the pipe meets the plate. Sharp corners in FEA create artificially high stress, so I did not take that number at face value. It still told me something useful: in a real welded part, that weld is where it would crack first.
+## Status
 
-## What I would change
-
-The plates and bolts have plenty of margin, so the pipe is the weak link. At 1,000 N the safety factor is lower than I would want, so I would either keep this version under about 700 N or move to Schedule 80 or 1-1/4 in pipe. I would also add a proper fillet weld or a gusset at the base. The full report lists my assumptions. The biggest ones are that the welds are idealized and the bolts are not modeled.
+Completed in November 2026. The plates and bolts have plenty of margin, so the pipe is the weak link. I would keep this version under about 700 N, or move to Schedule 80 or 1-1/4 in pipe, and add a proper fillet weld or a gusset at the base. The full report lists my assumptions.

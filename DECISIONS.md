@@ -17,3 +17,12 @@
 - Remove bicycle mount from active portfolio; retain mountain biking as an interest.
 - Retain ski jump until original robot evidence is supplied.
 - 2026-11-08: Wheel project returns as the Mach-E GT Sunburst Wheel page at Brewster's request, using real CAD renders (v1 5-spoke, v2 sunburst) plus one labeled concept render of the wheel on the car. The body in that render is a simplified drawing; captions say so.
+
+## Recruiter-readiness pass, 2026-11-11
+- Every project page uses the same five sections, in order: Problem, My role, What I built, Evidence, Status. Sub-headings inside a section use ###. "At a glance" carries exactly three facts. `npm run check:content` enforces both, and its em dash scan covers pages, data and components as well as content.
+- Three themes carry the homepage: build, ask why, lead ("I build. I ask why. I lead.").
+- The homepage replaces the four featured tiles with six project tiles, strongest first: chair, coaster mold, bronze rook, pipe bracket, underwater vehicle + water tunnel, biplane. The tiles are the `picks` list in src/pages/index.astro. The resume lists the same six in the same order.
+- Laptop stand page is visible again: version 2 is printed and photographed.
+- Coaster mold and laptop stand pages lead with real photographs, cropped to the part.
+- No further wheel data will be added. The wheel stays on the Projects page only. Drone status is "waiting on parts". Chair and water tunnel photographs are still to come.
+- Published 2026-11-11 with explicit approval, through the manual workflow.

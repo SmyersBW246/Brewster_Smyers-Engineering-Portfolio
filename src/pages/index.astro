@@ -1,48 +1,117 @@
 ---
-// Home page.
+// Home page ("build, ask why, lead").
+// Order of the page: three claims about me, the proof behind each claim, then the six
+// projects a recruiter should see first.
+// To change the wording, edit the "themes" list. To change the projects, edit "picks".
 import Base from '../layouts/Base.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import { getCollection } from 'astro:content';
 import { url } from '../lib/urls';
 
-// The four featured projects, in their set order.
-const projects = (await getCollection('projects'))
-  .filter((p) => p.data.featured && !p.data.hidden)
-  .sort((a, b) => a.data.order - b.data.order)
-  .slice(0, 4);
+// The three themes, in page order. Each has exactly three proofs: [what, detail, link].
+const themes = [
+  {
+    label: 'Build',
+    title: 'I build things.',
+    line: 'I like taking something from a sketch to a thing people use.',
+    proofs: [
+      ['Outdoor chair', 'Designed in SolidWorks, then built by myself in 2 days for about $1,000.', 'projects/outdoor-landmark-chair/'],
+      ['Injection mold', 'Machined in aluminum on a Haas mill from my own G-code.', 'projects/ack-coaster-mold/'],
+      ['Backyard ski jump', 'Built in about 6 hours in eighth grade, then improved three ways.', 'projects/backyard-ski-jump/'],
+    ],
+  },
+  {
+    label: 'Ask why',
+    title: 'I ask why it works.',
+    line: 'I don’t trust a number until I know where it came from.',
+    proofs: [
+      ['Pipe bracket', 'The FEA showed a 376 MPa peak. I checked by hand, got 140 MPa and traced the peak to a sharp corner.', 'projects/pipe-brace-bracket/'],
+      ['Bronze rook', 'Cast it, then measured it: 3.36% narrower and about 14% lighter than my CAD.', 'projects/bronze-cast-rook/'],
+      ['Biplane model', 'A MATLAB model that ties geometry to lift, drag, fuel and trim.', 'projects/aerobatic-biplane/'],
+    ],
+  },
+  {
+    label: 'Lead',
+    title: 'I lead the team.',
+    line: 'I make sure everyone knows what they own, then we get it done.',
+    proofs: [
+      ['Fluids project', 'Team lead on a team of six, designing an underwater vehicle hull and the water tunnel to test it.', 'projects/autonomous-underwater-vehicle/'],
+      ['Movember triathlon', 'Organizing an indoor fundraiser at Bucknell: venue, safety plan, schedule and volunteers.', 'about/#bucknell'],
+      ['Ultimate Frisbee', 'Founded the team at St. Paul’s School.', 'about/#st-pauls'],
+    ],
+  },
+];
+
+// The six projects shown as tiles, strongest first. These are file names in src/content/projects.
+const picks = [
+  'outdoor-landmark-chair',
+  'ack-coaster-mold',
+  'bronze-cast-rook',
+  'pipe-brace-bracket',
+  'autonomous-underwater-vehicle',
+  'aerobatic-biplane',
+];
+const all = await getCollection('projects', (p) => !p.data.hidden);
+const projects = picks.map((id) => all.find((p) => p.id === id)).filter(Boolean);
 ---
 <Base>
-  {/* Opening: name, short introduction and the chair model */}
-  <section class="hero wrap first-impression">
-    <div class="hero-copy">
-      <p class="eyebrow">Bucknell University · Mechanical Engineering · 2028</p>
-      <h1>Brewster<br/><span>Smyers.</span></h1>
-      <p class="hero-statement">I like building things.<br/>And figuring out how they work.</p>
-      <p class="hero-intro">From a full-size timber chair to aircraft models in MATLAB, I’m learning how to connect a design with the calculations and work behind it.</p>
-      <p class="availability">Seeking a Summer 2027 engineering internship.</p>
+  {/* Opening: three short claims, one sentence, and the résumé button */}
+  <section class="three-hero wrap">
+    <p class="eyebrow">Brewster Smyers · Mechanical Engineering · Bucknell 2028</p>
+    <h1>I build.<br/>I ask why.<br/><span>I lead.</span></h1>
+    <div class="three-intro">
+      <p class="three-statement">I like building things, asking why they work, and leading the team that gets them done.</p>
+      <p class="three-availability">Seeking a Summer 2027 mechanical engineering internship.</p>
       <div class="actions">
-        <a class="button" href="#selected-work">Explore my work <span aria-hidden="true">↘</span></a>
-        <a class="text-link" href={url('about/')}>Meet Brewster <span aria-hidden="true">↗</span></a>
+        <a class="button" href={url('resume/')}>View my résumé <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="#selected-work">See the projects <span aria-hidden="true">↘</span></a>
       </div>
     </div>
-    <figure class="hero-figure">
-      <div class="hero-image">
-        <img src={url('images/chair-cad.webp')} alt="My SolidWorks model of the oversized timber chair I designed and built" width="1052" height="1046" fetchpriority="high"/>
-        <span class="image-tag">DESIGNED IN CAD. BUILT BY HAND.</span>
-      </div>
-      <figcaption>
-        <span>Outdoor Landmark Chair</span>
-        <span>Independent build · 2 days · ~$1,000</span>
-      </figcaption>
-    </figure>
   </section>
 
-  {/* Four featured project tiles */}
-  <section id="selected-work" class="section wrap selected-section">
+  {/* Three quick facts */}
+  <section class="three-facts wrap" aria-label="At a glance">
+    <div>
+      <small>Degree</small>
+      <p>B.S. Mechanical Engineering, Bucknell University, May 2028</p>
+    </div>
+    <div>
+      <small>Looking for</small>
+      <p>A Summer 2027 internship in mechanical design or manufacturing</p>
+    </div>
+    <div>
+      <small>Tools</small>
+      <p>SolidWorks (CSWA), MATLAB and Mastercam</p>
+    </div>
+  </section>
+
+  {/* The three themes side by side, each with three proofs */}
+  <section class="themes wrap" aria-label="Three things about me">
+    {themes.map((t, i) => (
+      <article class="theme" aria-labelledby={`theme-${i + 1}`}>
+        <p class="eyebrow">0{i + 1} / {t.label}</p>
+        <h2 id={`theme-${i + 1}`}>{t.title}</h2>
+        <p class="theme-line">{t.line}</p>
+        <ul class="theme-proofs">
+          {t.proofs.map(([what, detail, href]) => (
+            <li>
+              <a href={url(href)}>
+                <strong>{what} <span aria-hidden="true">↗</span></strong>
+                <span>{detail}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </article>
+    ))}
+  </section>
+
+  {/* Six project tiles */}
+  <section id="selected-work" class="section wrap selected-six">
     <div class="section-heading">
       <div>
-        <p class="eyebrow">Selected work / 01–04</p>
-        <h2>Built, modeled,<br/>worked through.</h2>
+        <p class="eyebrow">Selected work / 01–06</p>
+        <h2>The projects<br/>behind the claims.</h2>
       </div>
       <a class="text-link" href={url('projects/')}>All projects <span aria-hidden="true">↗</span></a>
     </div>
@@ -51,35 +120,9 @@ const projects = (await getCollection('projects'))
     </div>
   </section>
 
-  {/* Personal note with portrait */}
-  <section class="home-personal wrap">
-    <img src={url('images/portrait.webp')} alt="Brewster Smyers" width="1280" height="1915" loading="lazy"/>
-    <div>
-      <p class="eyebrow">Beyond the projects</p>
-      <h2>New England roots.<br/>Usually outside.</h2>
-      <p>Skiing, starting an Ultimate Frisbee team, and roughly 200 miles on the Appalachian Trail. There’s a little more to my story than CAD.</p>
-      <a class="text-link" href={url('about/')}>A little about me <span aria-hidden="true">↗</span></a>
-    </div>
-  </section>
-
-  {/* Coursework teaser */}
-  <section class="foundation wrap">
-    <div>
-      <p class="eyebrow">Theory, put to work</p>
-      <h2>The principles<br/>behind the projects.</h2>
-      <p>From buoyancy and fluid flow to aircraft performance and manufacturing, these notes connect engineering methods with their practical uses.</p>
-      <a class="text-link" href={url('coursework/')}>Explore coursework <span aria-hidden="true">↗</span></a>
-    </div>
-    <div class="foundation-list">
-      <a href={url('coursework/mech-355/')}><span>01</span> Manufacturing Processes <b aria-hidden="true">↗</b></a>
-      <a href={url('coursework/mech-438/')}><span>02</span> Aircraft Design <b aria-hidden="true">↗</b></a>
-      <a href={url('coursework/mech-313/')}><span>03</span> Fluid Dynamics <b aria-hidden="true">↗</b></a>
-    </div>
-  </section>
-
   {/* Closing call to action */}
   <section class="closing wrap">
-    <p class="eyebrow">Next chapter</p>
+    <p class="eyebrow">Summer 2027</p>
     <h2>Ready to build<br/>what comes next.</h2>
     <div>
       <p>I’m pursuing Summer 2027 engineering internships in mechanical design, manufacturing, aerospace and product development.</p>
@@ -87,3 +130,190 @@ const projects = (await getCollection('projects'))
     </div>
   </section>
 </Base>
+
+<style>
+  /* Opening: big three-line headline on the left, statement and buttons on the right. */
+  .three-hero {
+    padding-block: 72px 56px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    column-gap: 56px;
+    align-items: end;
+  }
+
+  .three-hero .eyebrow {
+    grid-column: 1 / -1;
+    margin-bottom: 30px;
+  }
+
+  .three-hero h1 {
+    font-size: clamp(3.6rem, 7.4vw, 7rem);
+    letter-spacing: -.065em;
+    line-height: .98;
+  }
+
+  .three-intro {
+    padding-bottom: 10px;
+  }
+
+  .three-statement {
+    font-family: var(--display);
+    font-size: clamp(1.25rem, 1.9vw, 1.7rem);
+    line-height: 1.3;
+    letter-spacing: -.03em;
+    max-width: 520px;
+  }
+
+  .three-availability {
+    margin-top: 22px;
+    font-size: .8rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  /* Three quick facts in one ruled row. */
+  .three-facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-block: 1px solid var(--line);
+  }
+
+  .three-facts > div {
+    padding: 22px 28px 24px 0;
+  }
+
+  .three-facts > div + div {
+    padding-left: 28px;
+    border-left: 1px solid var(--line);
+  }
+
+  .three-facts small {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .13em;
+    font-size: .62rem;
+    font-weight: 750;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+
+  .three-facts p {
+    font-size: .86rem;
+    line-height: 1.55;
+    font-weight: 600;
+  }
+
+  /* The three themes: three equal columns. */
+  .themes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 44px;
+    padding-block: 84px 28px;
+  }
+
+  .theme .eyebrow {
+    margin-bottom: 18px;
+  }
+
+  .theme h2 {
+    font-size: clamp(1.9rem, 2.7vw, 2.6rem);
+    letter-spacing: -.05em;
+  }
+
+  .theme-line {
+    font-family: var(--display);
+    font-size: 1.02rem;
+    letter-spacing: -.02em;
+    line-height: 1.4;
+    color: var(--accent);
+    margin-top: 14px;
+    min-height: 2.8em;
+  }
+
+  .theme-proofs {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0;
+    border-top: 2px solid var(--ink);
+  }
+
+  .theme-proofs a {
+    display: block;
+    padding: 15px 0 16px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .theme-proofs strong {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: .82rem;
+    font-weight: 750;
+  }
+
+  .theme-proofs a > span {
+    display: block;
+    margin-top: 5px;
+    font-size: .8rem;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+
+  .theme-proofs a:hover strong {
+    color: var(--accent);
+  }
+
+  /* Six tiles: three across on a wide screen. */
+  .selected-six .project-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 48px 28px;
+  }
+
+  /* Tablets: themes stack, tiles go two across. */
+  @media (max-width: 980px) {
+    .three-hero {
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+      padding-block: 48px 40px;
+    }
+
+    .themes {
+      grid-template-columns: 1fr;
+      gap: 52px;
+      padding-block: 56px 12px;
+    }
+
+    .theme-line {
+      min-height: 0;
+    }
+
+    .selected-six .project-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  /* Phones: one column everywhere. */
+  @media (max-width: 720px) {
+    .three-hero h1 {
+      font-size: clamp(3rem, 15vw, 4.2rem);
+    }
+
+    .three-facts {
+      grid-template-columns: 1fr;
+    }
+
+    .three-facts > div,
+    .three-facts > div + div {
+      padding: 16px 0;
+      border-left: 0;
+    }
+
+    .three-facts > div + div {
+      border-top: 1px solid var(--line);
+    }
+
+    .selected-six .project-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

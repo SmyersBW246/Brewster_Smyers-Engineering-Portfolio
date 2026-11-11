@@ -63,7 +63,8 @@ for (const file of files(root).filter(f => f.endsWith('.css'))) {
 }
 const home = docs.get(path.join(root, 'index.html')) || '';
 const about = docs.get(path.join(root, 'about/index.html')) || '';
-if (!home.includes('I like building things.') || (home.match(/class="project-card"/g) || []).length !== 4) errors.push('Homepage: expected revised introduction and four featured projects');
+// Homepage ("build, ask why, lead"): three themes and six project tiles.
+if (!home.includes('I ask why.') || (home.match(/<article class="theme"/g) || []).length !== 3 || (home.match(/class="project-card"/g) || []).length !== 6) errors.push('Homepage: expected the three themes and six project tiles');
 for (const id of ['new-england','st-pauls','outside','bucknell','building']) if (!about.includes(`id="${id}"`)) errors.push(`About: missing revised chapter ${id}`);
 if (!about.includes('Always making')) errors.push('About: old content or missing introduction');
 if (fs.existsSync(path.join(root, 'projects/bicycle-computer-mount/index.html'))) errors.push('Removed bicycle-mount project still published');

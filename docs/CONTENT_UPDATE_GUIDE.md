@@ -2,9 +2,9 @@
 
 ## Change project text
 
-Open the matching Markdown file in `src/content/projects`. Text between the first pair of `---` lines is metadata: title, category, status, image, tools, facts and related course IDs. The remainder is the case study. Keep real results separate from assumptions and planned tests.
+Open the matching Markdown file in `src/content/projects`. Text between the first pair of `---` lines is metadata: title, category, status, image, tools, facts and related course IDs. The remainder is the case study. Keep real results separate from assumptions and planned tests. The case study always has the same five sections, in this order: `## Problem`, `## My role`, `## What I built`, `## Evidence`, `## Status`. Use `###` for sub-headings inside a section, and keep exactly three facts. `npm run check:content` fails if a page breaks this.
 
-To add a project, copy an existing file, give it a new lowercase filename with hyphens, change the metadata and body, and add genuine images to `public/images/`. Its route is generated automatically. Set `featured: true` only for the four chosen homepage projects, and control order with the `order` field. Use `hero: ''` if no authentic image exists. Add PDF downloads to `public/documents/` and put the corresponding `/documents/name.pdf` in `document`.
+To add a project, copy an existing file, give it a new lowercase filename with hyphens, change the metadata and body, and add genuine images to `public/images/`. Its route is generated automatically. The six homepage tiles are the `picks` list near the top of `src/pages/index.astro`; the `order` field controls the order on the Projects page. Use `hero: ''` if no authentic image exists. Add PDF downloads to `public/documents/` and put the corresponding `/documents/name.pdf` in `document`.
 
 ## Add photographs
 

@@ -22,17 +22,17 @@ tools:
 facts:
 - value: 2 seats
   label: Concept configuration
-- value: 127.5 ft²
-  label: Total wing reference area
-- value: 10 + 1
-  label: MATLAB functions + data file
+- value: '7.2'
+  label: Best lift-to-drag ratio, from the model
+- value: 153 knots
+  label: Modeled cruise at 75% power, 6,000 ft
 figures:
 - src: /images/biplane-side.webp
   alt: Actual side view of the SolidWorks biplane concept.
-  caption: Side view extracted from the supplied CAD screenshot. Geometry remains in development.
+  caption: Side view of my SolidWorks model. The geometry is still in development.
 - src: /images/biplane-front.webp
   alt: Actual front view of the SolidWorks biplane concept.
-  caption: Front view showing the biplane configuration. No structural or aerodynamic validation is implied.
+  caption: Front view showing the biplane configuration. The CAD has not been structurally or aerodynamically validated.
 - src: /images/biplane-matlab-geometry.webp
   alt: MATLAB plot of the Bison UT-2 conceptual geometry in top, front and side views, with length 17.75 ft, span 20 ft, total wing area 127.5 square feet, wing gap 3.75 ft and stagger 0.5 ft.
   caption: Geometry the MATLAB model works from. Both wings, the tail surfaces and the fuselage share one set of reference dimensions.
@@ -53,23 +53,31 @@ document: /documents/Biplane_Model_Notes.pdf
 courses:
 - mech-438
 title: Aerobatic Biplane
-summary: I have developed a two-person aerobatic biplane concept through SolidWorks modeling and a modular MATLAB analysis. The project connects geometry with lift, drag, fuel use, power requirements and longitudinal trim so I can examine how a design choice affects the rest of the aircraft.
+summary: I developed a two-seat aerobatic biplane concept in SolidWorks and a modular MATLAB analysis of it. The model ties geometry to lift, drag, fuel use, power and trim, so I can see how one design choice affects the rest of the aircraft.
 status: MATLAB analysis complete
 concept: false
 heroAlt: Actual SolidWorks views of my aircraft model in development. Wing, fuselage and tail geometry are being refined alongside the analysis.
 heroCaption: My SolidWorks model (top left) next to three outputs from my MATLAB analysis, the geometry the model works from, drag against thrust at 6,000 ft and the design mission profile. Click any panel for full size.
 ---
 
-## My work and modeling approach
+## Problem
 
-I am adapting an earlier aircraft-analysis workflow for a biplane configuration and developing the associated CAD geometry. The modules share dimensions, weights and mission assumptions.
+On an aircraft, one design choice changes everything else. I wanted a model of a two-seat aerobatic biplane where I could change the geometry and see what happens to lift, drag, fuel use, power and trim. The design mission is an upset-recovery lesson flight.
+
+The hard part is consistency. Every module has to work from the same dimensions, weights and mission assumptions.
+
+## My role
+
+I developed the SolidWorks geometry and adapted an earlier aircraft-analysis workflow in MATLAB for a biplane configuration. Span, total wing area, length and power are based on a reference aircraft, the [Aviat Pitts S-2C](https://aviataircraft.com/fusion_element/pitts-specs/). The CAD concept has its own geometry and is not a model of the production aircraft.
+
+## What I built
+
+The MATLAB model has four modules that share one set of inputs.
 
 - **Geometry:** Two lifting wings, rounded tips, horizontal and vertical tails, and fuselage cross-sectional stations.
 - **Aerodynamics:** Representative NACA 0012 geometry, finite-wing lift slopes, component parasite drag and a parabolic aircraft drag model.
-- **Mission and performance:** Phase-by-phase fuel and weight accounting, wing-loading constraints, shaft-power requirements and preliminary takeoff/landing estimates.
+- **Mission and performance:** Phase-by-phase fuel and weight accounting, wing-loading constraints, shaft-power requirements and preliminary takeoff and landing estimates.
 - **Longitudinal trim:** An assumed mass budget, center-of-gravity movement, stick-fixed neutral point and elevator trim.
-
-## Selected model inputs
 
 | Input | Value | Basis |
 | --- | --- | --- |
@@ -79,20 +87,20 @@ I am adapting an earlier aircraft-analysis workflow for a biplane configuration 
 | Sizing engine power | 260 hp | Aircraft-class reference |
 | Wing gap | 45 in | Project geometry assumption |
 
-These are documented analysis inputs, not measured prototype results or a structural qualification of the proposed geometry.
+Total wing reference area includes both wings, while each wing has its own chord and aspect ratio. Fuel burn changes weight and center of gravity during the mission, and the workflow carries those changes into the aerodynamic, power and trim calculations.
 
-## Keeping the analysis consistent
+## Evidence
 
-A central challenge is using the same reference definitions throughout the model. Total wing reference area includes both wings, while each wing has its own chord and aspect ratio. Fuel burn changes weight and center of gravity during the mission; the workflow carries those changes into the aerodynamic, power and trim calculations.
+The finished model runs the full mission and passes all 12 of its internal checks.
 
-## Results
+- **Aerodynamics.** Best lift-to-drag ratio is 7.2. Minimum drag is 222 lb at 97 knots.
+- **Cruise.** 75% power gives a 153-knot cruise at 6,000 ft.
+- **Mission.** The upset-recovery lesson burns about 96 lb of fuel, taking the aircraft from 1,611 lb to 1,515 lb. It stays under the 1,625 lb aerobatic limit throughout.
 
-The finished MATLAB model runs the full mission and passes all 12 of its internal checks. Best lift-to-drag ratio is 7.2. Minimum drag is 222 lb at 97 knots, and 75% power gives a 153-knot cruise at 6,000 ft. The upset-recovery mission burns about 96 lb of fuel, taking the aircraft from 1,611 lb to 1,515 lb, under the 1,625 lb aerobatic limit throughout. The plots are under Design evidence below.
+The plots are in the figures below. You can also [download the MATLAB analysis package](../../documents/Biplane_MATLAB.zip), which contains ten MATLAB functions and one representative NACA 0012 data file.
 
-## Reference configuration
+These are model outputs from documented inputs. They are not measurements from a prototype, and the internal checks are not experimental validation.
 
-Span, total wing area, length and power are based on the [Aviat Pitts S-2C](https://aviataircraft.com/fusion_element/pitts-specs/). The CAD concept includes project-specific geometry and is not an exact production-aircraft model.
+## Status
 
-## Source package
-
-[Download the MATLAB analysis package](../../documents/Biplane_MATLAB.zip). The archive contains ten MATLAB functions and one representative NACA 0012 data file. Its internal checks are part of the model, not evidence of experimental validation.
+The MATLAB analysis is complete as of Fall 2026. The SolidWorks geometry is still being refined alongside it.

@@ -10,14 +10,11 @@ tools:
 - SolidWorks
 - ISO 4000-2 rim standard
 - Beam FEA, cornering fatigue
-- 6061-T6 forged blank, lathe + 5-axis mill
 facts:
 - value: 72 rays
   label: One every 5°, widest at the hub
 - value: 20 × 8.0J ET47.5
   label: Same fitment as the factory wheel
-- value: 17.4 kg
-  label: Version 2 mass (version 1 was 12.9 kg)
 - value: 81 MPa
   label: Peak ray stress vs. 96.5 MPa endurance
 figures:
@@ -47,31 +44,37 @@ figures:
   caption: Rim contour checked against ISO 4000-2 for a 20 × 8.0J rim. Every dimension measured off the CAD falls inside the standard.
 courses: []
 title: Back to the Future Sunburst Wheel for My Mach-E GT
-summary: I designed a one-piece, CNC-machinable 20 inch wheel for my black 2023 Mustang Mach-E GT to give it an iconic Back to the Future feel. It has a 72-ray stainless-look sunburst face on a rim and hub that match the factory fitment.
+summary: I designed a one-piece, CNC-machinable 20 inch wheel for my black 2023 Mustang Mach-E GT to give it a Back to the Future feel. It has a 72-ray sunburst face on a rim and hub that match the factory fitment. It is a CAD design, and nothing has been machined yet.
 status: Version 2 in CAD · Car measurements next
 concept: true
 heroAlt: Rendering of a black Mustang Mach-E GT in a dark concrete tunnel fitted with the 72-ray sunburst wheels, with red brake calipers visible behind the rays.
 heroCaption: Rendering of my sunburst wheel design on a black Mach-E GT. It is a visualization of the design, not a photo of a finished wheel on the car.
 ---
-## Why I wanted it
+## Problem
 
-The Mach-E GT is a modern EV, but I wanted it to feel like it just came back from 1985. My goal was the iconic Back to the Future look: brushed stainless steel that catches the light, against a dark body, in a design that feels retro and futuristic at the same time. My car is black, so a bright metal wheel stands out as the one detail you notice first.
+The Mach-E GT is a modern EV, but I wanted mine to feel like it just came back from 1985. The look I was after is Back to the Future: brushed stainless steel that catches the light against a dark body. My car is black, so a bright metal wheel is the one detail you notice first.
 
-A sunburst face gets that effect best. With dozens of thin rays fanning out from the hub, the light runs across each facet as the wheel turns, like the brushed stainless panels on the DeLorean. I wanted it to look like a set piece from the movie, but bolt onto my car and work as a real wheel.
+The wheel had to do three things. It had to get that look, fit my car exactly like the factory wheel, and be something one CNC workpiece can make.
 
-## How I approached it
+## My role
 
-I set one hard rule first: the wheel has to fit my car exactly like the factory wheel. That means 20 × 8.0J with ET47.5 offset, the 5 × 108 bolt pattern, a 63.4 mm hub-centric bore, 60° conical lug seats and room for the OE 245/45R20 tire and TPMS valve. Steering, fenders and tire stay the same, and only the face changes.
+This is a personal project. I set the styling concept, wrote the requirements, modeled both versions and ran the design checks.
 
-I modeled it in SolidWorks, with every key dimension driven by a named parameter, so I could rebuild and recheck the whole wheel quickly. The rim is a revolve that follows ISO 4000-2 for a 20 × 8.0J rim, including the bead seats, safety humps and drop-centre well. I wrote 18 requirements and checked each one by measuring the CAD directly. Fitment, rim contour, brake clearance, clamp face, cornering fatigue, mass and whether one CNC workpiece can make it are all on that list.
+## What I built
 
-## Version 1: five spokes
+**Fitment first.** The wheel is 20 × 8.0J with ET47.5 offset, the 5 × 108 bolt pattern, a 63.4 mm hub-centric bore, 60° conical lug seats and room for the OE 245/45R20 tire and TPMS valve. Steering, fenders and tire stay the same, and only the face changes.
 
-My first version used five lofted spokes placed between the lug holes. It passed every check I could run at 12.85 kg. The spoke-root stress came out at 81 MPa against a 96.5 MPa fatigue endurance limit for 6061-T6. That works, but the margin is thin. It looked like a good aftermarket wheel, not like Back to the Future.
+**A model I can rebuild.** Every key dimension is driven by a named parameter, so I can rebuild and recheck the whole wheel quickly. The rim is a revolve that follows ISO 4000-2 for a 20 × 8.0J rim, including the bead seats, safety humps and drop-centre well.
 
-## Version 2: the sunburst
+**Two versions.** Version 1 used five lofted spokes placed between the lug holes. It looked like a good aftermarket wheel, not like Back to the Future. For version 2 I kept the rim and hub and replaced the spokes with 72 pyramid-shaped rays, one every 5°, each widest at the hub and thinnest at the rim.
 
-For version 2 I kept the rim and hub and replaced the spokes with 72 pyramid-shaped rays, one every 5°. Each ray is widest at the hub and thinnest at the rim. The challenge was making it machinable. Near the hub the rays sit so close together that no cutter fits between them. So inside a 160 mm radius the face is closed and the rays are 60° ridges cut with a chamfer tool. Outside that radius the gaps open into windows 6.76 mm wide at the root, which a 6 mm end mill can cut. Ten hidden pockets on the back take out weight where nobody sees them.
+The challenge in version 2 was making it machinable. Near the hub the rays sit so close together that no cutter fits between them. So inside a 160 mm radius the face is closed, and the rays are 60° ridges cut with a chamfer tool. Outside that radius the gaps open into windows 6.76 mm wide at the root, which a 6 mm end mill can cut. Ten hidden pockets on the back take out weight where nobody sees them.
+
+The wheel is designed in forged 6061-T6 aluminum, the standard wheel alloy. I would get the stainless look with a brushed, clear-coated finish, not by making the wheel out of steel.
+
+## Evidence
+
+I wrote 18 requirements and checked each one by measuring the CAD directly. They cover fitment, rim contour, brake clearance, clamp face, cornering fatigue, mass and whether one CNC workpiece can make it.
 
 | | Version 1 (5-spoke) | Version 2 (sunburst) |
 |---|---|---|
@@ -81,10 +84,14 @@ For version 2 I kept the rim and hub and replaced the spokes with 72 pyramid-sha
 | Endurance limit | 96.5 MPa | 96.5 MPa |
 | Brake clearance | 6.0 mm (assumed caliper) | 6.0 mm (assumed caliper) |
 
-## The finish
+Both versions build as one valid solid and export to STEP. The peak stress sits under the 96.5 MPa fatigue endurance limit for 6061-T6, but the margin is thin. The rim contour falls inside ISO 4000-2 at every dimension I measured.
 
-The finish I am going for is a brushed stainless look. The wheel itself is designed in forged 6061-T6 aluminum, the standard wheel alloy. It is lighter, well documented for fatigue and machines well. I would get the stainless effect with a brushed, clear-coated aluminum finish, not by making the wheel out of steel.
+All of this is CAD and calculation. The brake caliper envelope is an assumption, the stress numbers come from a beam model, and the image of the wheel on the car is a rendering.
 
-## Where it stands
+## Status
 
-Both versions build as one valid solid and export to STEP. Version 2 is my current design. Before any real use I still need to measure two things on the car: the brake caliper envelope and how far the studs stick out. I also need to run a full solid FEA in SolidWorks. That analysis should let me thin the closed face and win back some of the 4.6 kg version 2 added. Nothing has been machined or physically tested yet.
+Version 2 is my current design, in CAD. Nothing has been machined or physically tested. Three things come next.
+
+- **Measure the car.** I need the brake caliper envelope and how far the studs stick out.
+- **Run a full solid FEA.** The beam check needs to be confirmed on the real geometry.
+- **Take weight out.** That analysis should let me thin the closed face and win back some of the 4.6 kg version 2 added.

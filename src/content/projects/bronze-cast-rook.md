@@ -8,18 +8,15 @@ role: Pattern CAD, print prep, gating and finishing
 period: MECH 355 · September 2026 · Completed
 tools:
 - SolidWorks
-- 3D-printed pattern
 - Lost-PLA investment casting
 - Band saw, Dremel + hand finishing
 facts:
 - value: 237.78 g
   label: Finished bronze casting
-- value: 3.36%
-  label: Width shrinkage vs. CAD
-- value: 32.1 cm³
-  label: Pattern volume from CAD
-- value: 2.58 in
-  label: Design height
+- value: −3.36%
+  label: Width, measured vs. CAD
+- value: ~14%
+  label: Lighter than predicted from the CAD volume
 figures:
 - src: /images/rook-cad.webp
   alt: Shaded view of the rook pattern CAD model with a crenellated top, tapered body and stepped base.
@@ -43,25 +40,21 @@ heroAlt: Finished bronze rook standing on a workbench, with a cast bronze globe 
 heroCaption: The finished rook after cutting off the gating and cleaning it up with a Dremel and sandpaper. Some surface pitting from the plaster and print lines still shows.
 ---
 
-## The project
+## Problem
 
-The first MECH 355 lab was investment casting. Each of us designed a small part, printed it in plastic, built a gating system onto it, and poured bronze into a plaster mold after the plastic burned out. I picked a rook because its straight body and open crenellated top would show how well the metal filled thin features.
+The first MECH 355 lab was investment casting. Each of us designed a small part, printed it in plastic, built a gating system onto it, and poured bronze into a plaster mold after the plastic burned out. I picked a rook because its straight body and open crenellated top would show how well the metal filled thin features. I also wanted to know how close the casting would come to my CAD.
 
-## Preparing the pattern
+## My role
 
-The rook printed bottom up in stacked layers, which left visible lines on the outside. The first layer of the base also failed, so half of the bottom was open to the infill. I sanded the outside to keep the layer lines from transferring into the bronze, and I filled the failed base with wax. The plaster copies the pattern's surface exactly, so any flaw left on the print shows up in the metal.
+I designed the pattern, prepared the print, built the gating in wax and finished the casting. Space and materials in the lab were limited, so I shared one casting tree with a partner. That changed the layout a little but not the plan for my part.
 
-## Gating and pouring
+## What I built
 
-I wasn't sure at first that a straight part like this needed a full gating system. I decided it did, mainly to make sure bronze reached the top of the castle before it froze. I built the pour spout, runners and reservoir in wax. Space and materials in the lab were limited, so I combined my pattern with a partner's on one tree. That changed the layout a little but not the plan for my part.
-
-## What came out
-
-- **Surface bumps** came from imperfections in the plaster and from the print itself.
-- **Gate removal was harder than it should have been.** I attached the pour spout in an orientation that helped flow but left a lot of extra finishing. A cleaner gate location would have saved time.
+- **Pattern.** The rook printed bottom up, which left layer lines on the outside. The first layer of the base also failed, so half of the bottom was open to the infill. I sanded the outside and filled the failed base with wax, because the plaster copies every flaw on the pattern into the metal.
+- **Gating.** I wasn't sure at first that a straight part needed a full gating system. I decided it did, to make sure bronze reached the top of the castle before it froze. I built the pour spout, runners and reservoir in wax.
 - **Finishing.** I separated the pieces with a band saw, then smoothed the rook with a metal Dremel and sandpaper.
 
-## Measured against the CAD
+## Evidence
 
 | | CAD | Measured | Change |
 |---|---|---|---|
@@ -71,6 +64,11 @@ I wasn't sure at first that a straight part like this needed a full gating syste
 
 The width shrank 3.36%, which is the clearest sign of solidification shrinkage. The height looks like it grew, but that's a small runner stub left on top of one battlement. It's material, not expansion. The part also came out lighter than the bronze density predicted. I haven't yet separated how much of that comes from shrinkage, how much from internal porosity, and how much from material removed during finishing.
 
-## If I did it again
+Two things did not go as well as they should have.
 
-I would move the gate to a spot that is easier to cut and finish. I'd fix the print's base layer instead of patching it with wax. And I would weigh the part before and after finishing so the mass loss could be split into casting and cleanup.
+- **Surface bumps** came from imperfections in the plaster and from the print itself.
+- **Gate removal was hard.** I attached the pour spout in an orientation that helped flow but left a lot of extra finishing.
+
+## Status
+
+Cast and measured in September 2026. If I did it again, I would change three things. I would move the gate to a spot that is easier to cut and finish. I'd fix the print's base layer instead of patching it with wax. And I would weigh the part before and after finishing, so the mass loss could be split into casting and cleanup.

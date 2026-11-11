@@ -25,15 +25,21 @@ import { url } from '../lib/urls';
     {/* Right column: the resume itself */}
     <article class="prose">
       <h2>Technical foundation</h2>
-      <p>SolidWorks (CSWA), structural simulation, MATLAB, Python, Java, carpentry and Microsoft Office.</p>
+      <p>SolidWorks (CSWA), FEA simulation, Mastercam, MATLAB, Python, Java, carpentry and Microsoft Office.</p>
 
       <h2>Selected engineering work</h2>
-      <h3>Outdoor Landmark Chair</h3>
-      <p>Independent design and fabrication. Modeled the structure in SolidWorks and completed a preliminary structural study. Built it in two days within an approximate $1,000 budget.</p>
-      <h3>Autonomous Underwater Vehicle</h3>
-      <p>Fall 2026 fluid mechanics project, in progress. Individual hull concept, literature review, hydrostatics, buoyancy calculations and qualitative flow prediction; continuing into team development.</p>
-      <h3>Backyard Ski Jump</h3>
-      <p>Independent project, March 2020. Built and iterated a timber ski feature, adjusting approach, angle and access through practical use.</p>
+      <h3><a href={url('projects/outdoor-landmark-chair/')}>Outdoor Landmark Chair</a></h3>
+      <p>Independent design and fabrication. Designed a braced-frame outdoor chair in SolidWorks with a preliminary stress study, then built it alone in two days on a budget of about $1,000. It seats four to five people and is still in use.</p>
+      <h3><a href={url('projects/ack-coaster-mold/')}>Nantucket Coaster Injection Mold</a></h3>
+      <p>Manufacturing Processes, Fall 2026. Designed a coaster and its aluminum injection mold, then wrote the process plan and Mastercam toolpaths (5 tools, 880 lines of G-code). The mold was machined on a Haas mill from my G-code.</p>
+      <h3><a href={url('projects/bronze-cast-rook/')}>Bronze Cast Rook</a></h3>
+      <p>Manufacturing Processes, Fall 2026. Designed and 3D printed a pattern, built the wax gating and cast it in bronze. Measured against CAD, the width came out 3.36% smaller and the mass about 14% below prediction.</p>
+      <h3><a href={url('projects/pipe-brace-bracket/')}>90° Pipe Brace Bracket</a></h3>
+      <p>Independent FEA study, November 2026. Ran a static FEA at 1,000 N in SolidWorks Simulation, confirmed the 140 MPa bend stress by hand and traced a 376 MPa peak to a sharp corner in the model.</p>
+      <h3><a href={url('projects/autonomous-underwater-vehicle/')}>Underwater Vehicle and Water Tunnel</a></h3>
+      <p>Team lead, Fluid Dynamics project, Fall 2026, in progress. Leading a team of six that is designing an underwater vehicle hull and a miniature water tunnel to test a scale model. I own the tunnel design and did the hull hydrostatics and buoyancy calculations by hand.</p>
+      <h3><a href={url('projects/aerobatic-biplane/')}>Aerobatic Biplane</a></h3>
+      <p>SolidWorks and MATLAB concept study, Fall 2026. Modeled a two-seat biplane and adapted a MATLAB analysis of lift, drag, fuel use, power and trim.</p>
 
       <h2>Leadership + service</h2>
       <h3>Infrastructure and Social Chair · Sigma Phi Epsilon</h3>
@@ -47,7 +53,7 @@ import { url } from '../lib/urls';
       <h3>Bartender · The Landing</h3>
       <p>2022–2025 · Marblehead, Massachusetts. Coordinated bar service, food and drink orders, preparation and restaurant support.</p>
 
-      <p class="muted">This summary reflects the supplied September 27 résumé. The PDF retains the original details.</p>
+      <p class="muted">The PDF is the full one-page résumé.</p>
     </article>
   </section>
 </Base>

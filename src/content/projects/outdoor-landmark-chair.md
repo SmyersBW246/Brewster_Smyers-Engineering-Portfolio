@@ -20,44 +20,44 @@ facts:
 figures:
 - src: /images/chair-stress.webp
   alt: Archived SolidWorks chair stress plot.
-  caption: 'Archived model: maximum von Mises stress approximately 1.78 MPa. Applied force and full study setup are not retained. This is not a certified load rating.'
+  caption: 'Archived stress plot: about 1.78 MPa maximum von Mises stress. The load value and study setup were not kept, so this is a preliminary study and not a load rating.'
 document: /documents/Outdoor_Chair_Project_Brief.pdf
 courses:
 - mech-353
 title: Outdoor Landmark Chair
-summary: I designed and built an oversized outdoor chair for seating and group photographs at Bucknell. The project combined SolidWorks modeling and a preliminary structural study with material selection, carpentry and a two-day construction schedule.
+summary: I designed an oversized outdoor chair in SolidWorks and built it myself in two days on a budget of about $1,000. It seats four to five people at Bucknell and is still in use.
 status: Completed
 concept: false
 heroAlt: My SolidWorks model of the braced outdoor chair.
 heroCaption: My SolidWorks model of the braced outdoor chair.
 ---
 
-## Objective and constraints
+## Problem
 
-The chair needed to work as an outdoor structure, accommodate repeated use and be practical to build independently. I worked within an approximate $1,000 budget and a two-day construction window.
+The goal was an oversized outdoor chair at Bucknell for seating and group photographs. It had to hold up outdoors, take repeated use and be something one person could build. I had about $1,000 and two days.
 
-| Requirement | Documented design |
+## My role
+
+This was an independent project, not a class assignment. I did the design, the CAD, the preliminary stress study, the material selection and all of the fabrication.
+
+## What I built
+
+| | Documented design |
 | --- | --- |
-| Overall dimensions | Approximately 6 ft 6 in high × 8 ft wide × 8 ft deep |
-| Materials | Pressure-treated nominal 1 × 5 boards, 2 × 4 members and limited 4 × 4 supports |
-| My role | Design, CAD, preliminary simulation, material selection and complete fabrication |
+| Overall size | About 6 ft 6 in high × 8 ft wide × 8 ft deep |
+| Materials | Pressure-treated nominal 1 × 5 boards, 2 × 4 members and a few 4 × 4 supports |
+| Structure | Braced timber frame, modeled in SolidWorks |
 
-## From model to construction
+I worked out the dimensions and the braced frame in SolidWorks, chose the lumber and planned the build. Then I cut, assembled, sanded and finished it myself.
 
-I developed the dimensions and braced frame in SolidWorks, then selected the lumber and planned the build. I cut, assembled, sanded and finished the structure independently. Working at full scale required attention to material handling, bracing and the order in which parts could be assembled.
+The CAD was only the start. Working at full scale, I had to pay attention to material handling, the bracing and the order the parts could go together.
 
-## Structural modeling
+## Evidence
 
-The archived SolidWorks plot reports approximately 1.78 MPa maximum von Mises stress for its modeled load case. It shows applied-load arrows and support locations, but the numerical force magnitude and complete material, connection and mesh setup are not retained in the available record.
+- **Schedule and budget.** I finished it in two days, within the approximate $1,000 budget.
+- **Use.** It seats four to five people, serves as a backdrop for larger group photographs and is still in use.
+- **Stress study.** The archived SolidWorks plot shows about 1.78 MPa maximum von Mises stress for its modeled load case. The load value and the full study setup were not kept, so it documents a preliminary study. It is not a load rating.
 
-The plot documents a preliminary analysis exercise; it does not establish a certified load rating or verified timber-and-joint capacity.
+## Status
 
-## Outcome and reflection
-
-I completed the chair within the approximate budget and schedule, and it remains in fraternity use. It seats four to five people and serves as a backdrop for larger group photographs.
-
-The project connected a digital model with fabrication decisions I could see and adjust during construction. My next documentation steps are to recover the original simulation setup and add detailed photographs of the completed structure and its connections.
-
-## Related engineering principles
-
-The braced frame provides a practical connection to load paths, joint behavior and structural stiffness. This was an independent project. Its relationship to mechanics coursework does not make it a class assignment.
+Completed and in use. I still need to add photographs of the finished chair and its joints, and recover the original simulation setup.

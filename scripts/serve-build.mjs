@@ -3,9 +3,12 @@
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const root = path.resolve('dist');
-const PORT = 4321;
+// dist/ sits next to this scripts/ folder, so the server works from any starting folder.
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 'dist');
+// Port: first argument, then the PORT variable, then 4321. Example: node scripts/serve-build.mjs 4322
+const PORT = Number(process.argv[2] || process.env.PORT || 4321);
 const MIME = {
   '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript',
   '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.svg': 'image/svg+xml',

@@ -1,8 +1,9 @@
 {
-  "pages": 35,
-  "internalReferences": 601,
-  "imageReferences": 48,
+  "pages": 40,
+  "internalReferences": 3519,
+  "imageReferences": 129,
   "renderedMathExpressions": 185,
-  "deploymentBase": "/portfolio",
+  "embeddedStylePages": 40,
+  "deploymentBase": "/Brewster_Smyers-Engineering-Portfolio",
   "errors": []
 }
