@@ -42,6 +42,18 @@ figures:
 - src: /images/auv-flow-channel-top.webp
   alt: Top view of the flow channel in SolidWorks, a narrow inlet channel that flares out into a wide test section, with a round port near the inlet end.
   caption: Top view of the channel, showing the narrow inlet flaring out into the test section.
+- src: /images/auv-tunnel-assembled-2.webp
+  alt: Top-down photo of the assembled clear acrylic water tunnel on a lab stool, with an orange honeycomb flow straightener at the wide end, a contraction narrowing into the channel, and a round port at the far end.
+  caption: The assembled water tunnel, built in clear acrylic on Nov 12. The orange honeycomb straightener sits at the wide inlet end, ahead of the contraction.
+- src: /images/auv-tunnel-assembled-1.webp
+  alt: Side photo of the assembled acrylic water tunnel resting on a lab stool, showing the inlet box with the orange honeycomb and the narrow channel running to the outlet box.
+  caption: Side view of the built tunnel, from the inlet box with the honeycomb down the channel to the outlet box.
+- src: /images/auv-tunnel-assembled-3.webp
+  alt: Photo of the assembled acrylic water tunnel from the outlet end, with the outlet box in front and the honeycomb inlet box behind.
+  caption: The built tunnel seen from the outlet end.
+- src: /images/auv-tunnel-assembled-4.webp
+  alt: Photo of the assembled acrylic water tunnel from a low side angle on a lab stool, showing the full length from inlet to outlet port.
+  caption: Full length of the built tunnel, inlet to outlet port.
 document: /documents/AUV_Project_Brief.pdf
 courses:
 - mech-313
