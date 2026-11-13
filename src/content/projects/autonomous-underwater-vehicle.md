@@ -11,8 +11,8 @@ heroGallery:
   alt: Qualitative predicted streamlines around the underwater hull.
 - src: /images/auv-flow-channel-front.webp
   alt: Isometric SolidWorks view of the water tunnel flow channel, a narrow inlet widening into a wider test section.
-- src: /images/auv-flow-channel-rear.webp
-  alt: Isometric SolidWorks view of the flow channel from the back, showing the test section dividers and a round port in the end wall.
+- src: /images/auv-tunnel-assembled-2.webp
+  alt: Top-down photo of the assembled clear acrylic water tunnel on a lab stool, with an orange honeycomb flow straightener at the wide end.
 role: Team lead, water tunnel design and individual hull concept
 period: Fall 2026 · In progress
 tools:
@@ -62,7 +62,7 @@ summary: For Fluid Dynamics, my team is designing the hull of an unmanned underw
 status: In progress
 concept: false
 heroAlt: Side profile of my proposed underwater-vehicle hull, with a rounded nose, cylindrical middle and tapered tail.
-heroCaption: My hull concept (top left) and its predicted flow pattern, then two isometric SolidWorks views of the water tunnel flow channel, from the front and from the back. Click any panel for full size.
+heroCaption: My hull concept (top left) and its predicted flow pattern, then the SolidWorks model of the water tunnel flow channel and the real tunnel we built in clear acrylic. Click any panel for full size.
 ---
 
 ## Problem

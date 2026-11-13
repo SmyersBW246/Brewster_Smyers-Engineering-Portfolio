@@ -18,6 +18,12 @@ facts:
 - value: 3 parts
   label: Mold with two cavity halves and a top press plate
 figures:
+- src: /images/drone-mold-open-photo.webp
+  alt: Photo of the 3D-printed blue compression mold opened up, showing the X-shaped frame cavity on one side and the matching plug on the other.
+  caption: The printed mold, opened. The X-shaped cavity is on the left and the matching plug that presses the charge is on the right.
+- src: /images/drone-mold-closed-photo.webp
+  alt: Photo of the 3D-printed blue compression mold bolted closed on a table, with screws through the top plate.
+  caption: The same printed mold bolted closed, the way it sits in the press.
 - src: /images/drone-chassis-assembly.webp
   alt: SolidWorks assembly of the drilled X-frame chassis with four 1104 brushless motors mounted on the arm pads.
   caption: Chassis assembly with vendor CAD models of the 1104 motors placed on the pads. I use this model to check the motor bolt pattern, flight controller holes and clearances before any material is pressed.
