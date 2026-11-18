@@ -878,7 +878,7 @@ figcaption {
 
 .prose .code-panel summary span {
   flex: none;
-  min-width: 3.6em;
+  min-width: 7em;
   font-family: var(--display);
   font-size: .7rem;
   letter-spacing: .08em;
