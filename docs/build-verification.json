@@ -1,9 +1,9 @@
 {
-  "pages": 22,
-  "internalReferences": 2019,
-  "imageReferences": 120,
-  "renderedMathExpressions": 9,
-  "embeddedStylePages": 22,
+  "pages": 23,
+  "internalReferences": 2107,
+  "imageReferences": 124,
+  "renderedMathExpressions": 19,
+  "embeddedStylePages": 23,
   "deploymentBase": "/",
   "errors": []
 }
