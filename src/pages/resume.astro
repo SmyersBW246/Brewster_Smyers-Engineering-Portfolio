@@ -24,34 +24,39 @@ import { url } from '../lib/urls';
 
     {/* Right column: the resume itself */}
     <article class="prose">
-      <h2>Technical foundation</h2>
-      <p>SolidWorks (CSWA), FEA simulation, Mastercam, MATLAB, Python, Java, carpentry and Microsoft Office.</p>
+      <h2>Education</h2>
+      <p>Bucknell University, B.S. Mechanical Engineering, expected May 2028. Minors in Mathematics and Business Analytics.</p>
+      <p>Relevant coursework: Manufacturing Processes, Fluid Mechanics, Thermodynamics, Dynamics, Differential Equations, Probability and Statistics, Spreadsheet Modeling and Data Analysis. Spring 2027: SQL, Cloud Data Analytics and Generative AI; Financial Decision Modeling using Spreadsheets.</p>
 
-      <h2>Selected engineering work</h2>
-      <h3><a href={url('projects/outdoor-landmark-chair/')}>Outdoor Landmark Chair</a></h3>
-      <p>Independent design and fabrication. Designed a braced-frame outdoor chair in SolidWorks with a preliminary stress study, then built it alone in two days on a budget of about $1,000. It seats four to five people and is still in use.</p>
-      <h3><a href={url('projects/ack-coaster-mold/')}>Nantucket Coaster Injection Mold</a></h3>
-      <p>Manufacturing Processes, Fall 2026. Designed a coaster and its aluminum injection mold, then wrote the process plan and Mastercam toolpaths (5 tools, 880 lines of G-code). The mold was machined on a Haas mill from my G-code.</p>
-      <h3><a href={url('projects/bronze-cast-rook/')}>Bronze Cast Rook</a></h3>
-      <p>Manufacturing Processes, Fall 2026. Designed and 3D printed a pattern, built the wax gating and cast it in bronze. Measured against CAD, the width came out 3.36% smaller and the mass about 14% below prediction.</p>
-      <h3><a href={url('projects/pipe-brace-bracket/')}>90° Pipe Brace Bracket</a></h3>
-      <p>Independent FEA study, November 2026. Ran a static FEA at 1,000 N in SolidWorks Simulation, confirmed the 140 MPa bend stress by hand and traced a 376 MPa peak to a sharp corner in the model.</p>
+      <h2>Technical skills</h2>
+      <p><strong>CAD and simulation:</strong> SolidWorks (CSWA certified), SolidWorks Simulation (FEA), hand stress calculations.</p>
+      <p><strong>Manufacturing:</strong> Mastercam, CNC milling (Haas), G-code, process planning, injection and compression molds, casting, 3D printing.</p>
+      <p><strong>Programming and data:</strong> MATLAB, Python, Java, Arduino (C++), Excel spreadsheet modeling and data analysis.</p>
+
+      <h2>Engineering projects</h2>
+      <h3><a href={url('projects/ack-coaster-mold/')}>Injection Mold for Coaster</a></h3>
+      <p>Manufacturing Processes, Fall 2026. Designed a coaster and its drafted aluminum injection mold in SolidWorks and wrote the approved process plan. Programmed the Mastercam toolpaths (5 tools, 880 lines of G-code), using rest machining to limit small-cutter time. The mold was CNC machined on a Haas mill from my code.</p>
+      <h3><a href={url('projects/micro-drone-chassis/')}>Compression-Molded Micro-Drone Chassis</a></h3>
+      <p>Personal project, Fall 2026 to present. Designed a 102 mm quadcopter frame and a 3D-printed split mold in SolidWorks to press it from chopped carbon. Molded the first carbon chassis in November 2026; next, testing it against 3D-printed frames of the same shape.</p>
       <h3><a href={url('projects/autonomous-underwater-vehicle/')}>Underwater Vehicle and Water Tunnel</a></h3>
-      <p>Team lead, Fluid Dynamics project, Fall 2026, in progress. Leading a team of six that is designing an underwater vehicle hull and a miniature water tunnel to test a scale model. I own the tunnel design and did the hull hydrostatics and buoyancy calculations by hand.</p>
-      <h3><a href={url('projects/aerobatic-biplane/')}>Aerobatic Biplane</a></h3>
-      <p>SolidWorks and MATLAB concept study, Fall 2026. Modeled a two-seat biplane and adapted a MATLAB analysis of lift, drag, fuel use, power and trim.</p>
+      <p>Team lead, Fluid Mechanics, Fall 2026 to present. Leading a six-person team designing an unmanned underwater vehicle hull and a water tunnel to test a 100 mm scale model, with the work split so each member owns a subsystem. Designed the acrylic water tunnel in SolidWorks and did the hull hydrostatics by hand (267 N buoyancy, 1.1 m hull).</p>
+      <h3><a href={url('projects/pipe-brace-bracket/')}>Pipe Brace Bracket FEA</a></h3>
+      <p>Personal project, November 2026. Ran a static FEA of a welded steel pipe bracket at 1,000 N in SolidWorks Simulation and validated the 140 MPa bend stress by hand (factor of safety about 1.6). Traced a 376 MPa peak to a sharp-corner artifact and recommended a 700 N limit or a gusset and heavier pipe.</p>
+      <h3><a href={url('projects/outdoor-landmark-chair/')}>Outdoor Landmark Chair</a></h3>
+      <p>Personal project, October 2025. Designed an 8 ft braced-frame chair in SolidWorks with a stress study and built it alone in 2 days for about $1,000. It seats four to five people and is still in use.</p>
 
-      <h2>Leadership + service</h2>
+      <h2>Leadership</h2>
+      <h3>Organizer · Movember Charity Triathlon</h3>
+      <p>Bucknell University, November 2026. Planning an indoor triathlon for men's mental health (venue, risk, waivers, volunteers); raised $850+.</p>
       <h3>Infrastructure and Social Chair · Sigma Phi Epsilon</h3>
-      <p>Designed and constructed modular risers, seating and stages, and coordinated event logistics, vendors and member participation.</p>
-      <h3>Teaching and Mentoring Assistant · LEAP for Education</h3>
-      <p>Summers 2022 and 2023. Supported students through seasonal educational outreach and mentoring.</p>
+      <p>Designed and built modular risers, seating and stages; planned events for 100+ attendees.</p>
 
       <h2>Work experience</h2>
-      <h3>Bartender · The Nantucket Hotel & Resort</h3>
-      <p>2026. High-volume service across the bar, pool, guest rooms and restaurant, including weddings and special events.</p>
-      <h3>Bartender · The Landing</h3>
-      <p>2022–2025 · Marblehead, Massachusetts. Coordinated bar service, food and drink orders, preparation and restaurant support.</p>
+      <h3>Bartender · The Nantucket Hotel & Resort (2026); The Landing, Marblehead (2022–2025)</h3>
+      <p>Ran a 13-seat bar and worked high-volume weddings and events, coordinating with kitchen and floor staff.</p>
+
+      <h2>Activities</h2>
+      <p>Founder, club Ultimate Frisbee · About 200 miles of the Appalachian Trail (Camp Kieve) · Skiing, cycling, hiking</p>
 
       <p class="muted">The PDF is the full one-page résumé.</p>
     </article>
