@@ -7,7 +7,7 @@ export const modes = [
     "time": "07:00 to 23:00, while I’m using it",
     "title": "Everything in one glance.",
     "image": "images/desk/desk-day.webp",
-    "caption": "Daytime, mid-afternoon on a class day. Real screenshot.",
+    "caption": "Daytime, a Friday morning before class. Real screenshot.",
     "alt": "Brewster's Desk in daytime mode: frosted widgets for upcoming classes, homework, tasks and email over a soft wallpaper, with a Claude chat bar along the bottom.",
     "body": [
       "During the day the Desk is a working screen. Today’s classes, what is due in the next 24 hours, upcoming quizzes and exams, my own tasks and the inbox all sit on one page. A “Do now” card picks the three things that matter most right now, so I don’t have to sort through everything to find them.",
@@ -20,7 +20,7 @@ export const modes = [
     "time": "After 3 idle minutes",
     "title": "A quiet screen that still keeps watch.",
     "image": "images/desk/desk-sleep.webp",
-    "caption": "Sleep mode showing the “Do next” widget. Real screenshot.",
+    "caption": "Sleep mode showing the “Up next” widget, 9 minutes before class. Real screenshot.",
     "alt": "Brewster's Desk in sleep mode: a dark StandBy-style screen with a large clock and a single widget showing one piece of information.",
     "body": [
       "When I stop touching it, the iPad goes dark and turns into a StandBy-style display. A large clock stays up and a single widget cycles every 12 seconds: up next, do next, next test, inbox, music, weather, markets and headlines. It is meant to be read from across the room.",
@@ -33,7 +33,7 @@ export const modes = [
     "time": "23:00 to 07:00",
     "title": "A bedside clock that knows tomorrow.",
     "image": "images/desk/desk-night.webp",
-    "caption": "Night mode, opened with the preview button at 4:30 PM. Real screenshot.",
+    "caption": "Night mode, opened with the preview button in the morning. Real screenshot.",
     "alt": "Brewster's Desk in night mode: a dim bedside clock with tomorrow's first class, essentials and any quiz or exam alerts.",
     "body": [
       "The iPad is visible from my bed, so at 11 PM the Desk dims to a night clock. It shows the time, tomorrow’s first commitments and any quiz or exam coming up, with an alarm and an optional music link that never plays on its own.",

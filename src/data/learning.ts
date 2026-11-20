@@ -20,6 +20,13 @@ export const uses = [
     "label": "04",
     "title": "Coding and engineering tools",
     "body": "In MATLAB and Python, AI helps me read error messages, understand unfamiliar functions and organize scripts so I can follow them later. I still run the code, check the outputs against hand calculations and make sure I can explain every line."
+  },
+  {
+    "label": "05",
+    "title": "Building engineering tools",
+    "body": "I also use AI to build tools I couldn’t write alone yet. CAM Tutor, a Fusion add-in, plans CNC toolpaths and explains every choice with a machining rule. AI wrote most of the code; I set the rules, chose the trade-offs and checked every run in Fusion’s simulation and the posted G-code.",
+    "link": "projects/cam-tutor-fusion-addin/",
+    "linkText": "See CAM Tutor"
   }
 ];
 

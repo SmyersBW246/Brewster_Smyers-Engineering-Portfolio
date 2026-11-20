@@ -25,9 +25,24 @@ import { url } from '../lib/urls';
           <span class="learn-number" aria-hidden="true">{u.label}</span>
           <h3>{u.title}</h3>
           <p>{u.body}</p>
+          {u.link && <a class="text-link" href={url(u.link)}>{u.linkText} <span aria-hidden="true">↗</span></a>}
         </article>
       ))}
     </div>
+  </section>
+
+  {/* Teaser for the Brewster's Desk page */}
+  <section class="section learn-limits wrap" aria-labelledby="desk-title">
+    <div class="story-copy">
+      <p class="eyebrow">Building with it</p>
+      <h2 id="desk-title">Brewster’s <span>Desk.</span></h2>
+      <p>{desk}</p>
+      <p>{portfolio}</p>
+      <a class="text-link" href={url('learning/desk/')}>See how it works <span aria-hidden="true">↗</span></a>
+    </div>
+    <a class="desk-teaser" href={url('learning/desk/')}>
+      <img src={url('images/desk/desk-day.webp')} alt="Brewster's Desk in daytime mode: classes, homework, calendar and inbox on one screen" loading="lazy" width="1600" height="1200"/>
+    </a>
   </section>
 
   {/* Numbered ground rules */}
@@ -44,20 +59,6 @@ import { url } from '../lib/urls';
         </li>
       ))}
     </ol>
-  </section>
-
-  {/* Teaser for the Brewster's Desk page */}
-  <section class="section learn-limits wrap" aria-labelledby="desk-title">
-    <div class="story-copy">
-      <p class="eyebrow">Building with it</p>
-      <h2 id="desk-title">Brewster’s <span>Desk.</span></h2>
-      <p>{desk}</p>
-      <p>{portfolio}</p>
-      <a class="text-link" href={url('learning/desk/')}>See how it works <span aria-hidden="true">↗</span></a>
-    </div>
-    <a class="desk-teaser" href={url('learning/desk/')}>
-      <img src={url('images/desk/desk-sleep.webp')} alt="Brewster's Desk in sleep mode" loading="lazy" width="800" height="600"/>
-    </a>
   </section>
 
   {/* Closing call to action */}

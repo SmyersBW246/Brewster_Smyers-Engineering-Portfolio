@@ -2513,6 +2513,11 @@ input[type=search] {
   border: 1px solid var(--line);
 }
 
+/* An odd card at the end spans the row instead of leaving an empty cell. */
+.learn-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 .learn-card {
   background: var(--paper);
   padding: 38px 40px 42px;

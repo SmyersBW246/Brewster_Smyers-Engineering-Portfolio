@@ -3,9 +3,9 @@ shortTitle: Micro-Drone Chassis
 category: Composite concepts
 order: 5
 featured: false
-hero: /images/drone-mold-assembly.webp
+hero: /images/drone-chassis-in-mold.webp
 role: Personal project, with the mold developed alongside MECH 355
-period: Fall 2026 · Waiting on parts
+period: Fall 2026 · Molded, now building
 tools:
 - SolidWorks part + assembly modeling
 - Compression mold design
@@ -13,11 +13,20 @@ tools:
 facts:
 - value: 102 × 102 mm
   label: Frame footprint, 3 mm thick
-- value: ~19 g
-  label: Estimated bare frame in chopped carbon
+- value: 1st part
+  label: Chassis molded in chopped carbon, Nov 2026
 - value: 3 parts
   label: Mold with two cavity halves and a top press plate
 figures:
+- src: /images/drone-chassis-in-mold.webp
+  alt: Photo of the black chopped-carbon X-frame still sitting in the opened blue printed mold.
+  caption: The first molded chassis, still in the split mold after pressing. The forged-carbon pattern shows on the face; the edges carry flash where resin and fiber squeezed into the parting lines.
+- src: /images/drone-chassis-demolded-mold.webp
+  alt: Photo of the opened mold halves with the demolded carbon chassis lying between them.
+  caption: Demolding. The four-piece mold split cleanly and survived, so it can press the next part.
+- src: /images/drone-chassis-demolded.webp
+  alt: Photo of the demolded black carbon X-frame with ragged fiber flash around its edges.
+  caption: The raw part before finishing. Next it gets trimmed and sanded, the one resin-starved arm tip gets filled, and it gets one more epoxy coat before drilling.
 - src: /images/drone-mold-open-photo.webp
   alt: Photo of the 3D-printed blue compression mold opened up, showing the X-shaped frame cavity on one side and the matching plug on the other.
   caption: The printed mold, opened. The X-shaped cavity is on the left and the matching plug that presses the charge is on the right.
@@ -39,11 +48,11 @@ figures:
 courses:
 - mech-355
 title: Compression-Molded Micro-Drone Chassis
-summary: I designed a compact quadcopter chassis and the compression mold to make it from chopped carbon fiber. The goal is to compare the molded frame with a 3D-printed one of the same shape and find out whether the composite is worth the extra manufacturing work. No frame has been molded yet.
-status: Design done · Waiting on parts
+summary: I designed a compact quadcopter chassis and the compression mold to make it from chopped carbon fiber. The goal is to compare the molded frame with 3D-printed ones of the same shape and find out whether the composite is worth the extra manufacturing work. The first carbon chassis came out of the mold in November 2026.
+status: Chassis molded · Build in progress
 concept: false
-heroAlt: SolidWorks assembly of the split compression mold for the drone chassis, with an X-shaped cavity across two blocks.
-heroCaption: The full press mold assembly in SolidWorks. Two blocks meet along a split line and together form the X-shaped cavity for the frame.
+heroAlt: Photo of the first chopped-carbon X-frame chassis sitting in the opened blue printed compression mold.
+heroCaption: The first chassis pressed in chopped carbon fiber, still in the printed split mold (November 2026).
 ---
 
 ## Problem
@@ -105,8 +114,10 @@ I also set up initial static studies of the chassis in SolidWorks Simulation. I 
 
 ## Status
 
-The chassis and mold design are finished. The build is waiting on parts that are shipping from China. That carbon is better is a hypothesis to test. Once the parts arrive, three steps come next.
+**November 2026: the first chopped-carbon chassis is molded** in the printed split mold, and the electronics have arrived (BETAFPV F4 AIO flight controller, four LAVA 1104 motors, 3S 580 mAh battery, RadioMaster Pocket ELRS radio). The part came out whole, with flash on the edges and one resin-starved arm tip. The build plan, in order:
 
-- **Settle the process.** The lab press size limit is not confirmed, and it decides whether the mold footprint works. Resin, fiber length, cure temperature, pressure, release method, draft angles and corner radii are also still open, along with whether a printed mold could survive or the tool has to be machined from metal.
-- **Measure thrust.** The first bench test is a single motor on a thrust stand with the real prop and battery. Until then, the plan is no more than 10 g of passive payload.
-- **Make and compare.** I plan to make coupons, then matched carbon and printed frames with the same electronics, and compare mass, stiffness under load, vibration and how well the screw holes hold up.
+1. **Finish:** trim the flash, sand the edges round, fill the dry tip, one more thin epoxy coat.
+2. **Drill:** motor and flight controller holes from a 1:1 template printed from the CAD plan, carbide bits, backed and taped to stop fraying.
+3. **Motors, then solder** the flight controller (battery lead, capacitor, motor phases), **then install** it on insulated standoffs, because carbon conducts.
+4. **Program** in Betaflight with ExpressLRS, then a first hover in self-level mode.
+5. **Compare** the carbon frame with matching PLA+ and PETG frames: mass, hover throttle, flight time, arm stiffness and a drop test. These will be the first measured numbers. Everything above this section is still CAD and calculation.
