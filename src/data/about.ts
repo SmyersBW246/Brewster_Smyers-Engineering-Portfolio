@@ -32,7 +32,7 @@ export const chapters = [
     "label": "04 / Bucknell University",
     "title": "Engineering, and everything around it.",
     "paragraphs": [
-      "I\u2019m now a junior studying Mechanical Engineering at Bucknell University, with minors in Mathematics and Business Analytics. My interests include automotive engineering, aerospace, mechanical design and manufacturing. Bucknell Baja and the American Society of Mechanical Engineers are also part of my involvement here.",
+      "I\u2019m now a junior studying Mechanical Engineering at Bucknell University, with minors in Mathematics and Business Analytics. My interests include mechanical design, manufacturing, construction, engineering consulting, automotive engineering and aerospace. Bucknell Baja and the American Society of Mechanical Engineers are also part of my involvement here.",
       "In Sigma Phi Epsilon, my Infrastructure and Social Chair work has included building risers, seating and stages, as well as organizing events. I\u2019ve supported students through LEAP for Education and worked in hospitality in Marblehead and Nantucket. Those are meaningful parts of my experience alongside engineering.",
       "Movember is the cause I\u2019ve put the most into outside of class. It raises money and awareness for men\u2019s health, especially mental health and suicide prevention. On November 29, 2026, I\u2019m doing a 70.3-mile triathlon indoors at Bucknell\u2019s Fitness Center: a 1.2-mile swim, a 56-mile bike and a 13.1-mile run.",
       "I set it up so anyone can join, at Sprint, Olympic, 70.3 or full 140.6 distance, on their own or as a relay team. My fundraising goal is $5,000, and if we reach it, I\u2019ll complete a full 140.6-mile triathlon. I\u2019ve raised more than $800 so far. Planning it has felt a lot like an engineering project: lining up the venue, the schedule, timing, volunteers and safety, then getting people to show up."
@@ -49,4 +49,4 @@ export const chapters = [
     ]
   }
 ];
-export const ending = "For Summer 2027, I\u2019m looking for hands-on engineering work in design, testing, analysis or product development. I want to keep learning, contribute to a team, and get closer to the things we\u2019re designing.";
+export const ending = "For Summer 2027, I\u2019m looking for hands-on engineering work in design, manufacturing, construction or engineering consulting: jobs where something physical gets built and someone has to line up the people, schedule and budget behind it. I want to keep learning, contribute to a team, and get closer to the things we\u2019re building.";
