@@ -11,6 +11,11 @@ const projects = defineCollection({
     hero: z.string(), heroAlt: z.string(), heroCaption: z.string(), concept: z.boolean(),
     // Optional 2 x 2 collage shown in place of the single hero image (tile and project page).
     heroGallery: z.array(z.object({ src: z.string(), alt: z.string() })).max(4).optional(),
+    // Optional single image for the project tile only, used when the page images are too small
+    // to look sharp at tile size. The project page keeps hero/heroGallery.
+    tileImage: z.object({ src: z.string(), alt: z.string() }).optional(),
+    // Optional one-line result shown on the tile instead of the summary.
+    tileLine: z.string().optional(),
     // Hidden projects stay in the source but are not built or listed on the site.
     hidden: z.boolean().optional(),
     role: z.string(), period: z.string(), tools: z.array(z.string()),

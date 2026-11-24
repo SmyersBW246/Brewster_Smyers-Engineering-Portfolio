@@ -4,6 +4,7 @@ category: Design & build
 order: 8
 featured: false
 hero: /images/pipe-brace-stress.webp
+tileLine: "FEA said 376 MPa. My hand check said 140, and the gap was a sharp corner."
 role: Independent CAD, FEA and hand calculations
 period: November 2026 · Completed
 tools:

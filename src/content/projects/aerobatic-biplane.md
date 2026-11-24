@@ -13,6 +13,7 @@ heroGallery:
   alt: MATLAB plot of parasite, induced and total drag against airspeed, with 75 percent power thrust crossing total drag at 153 knots.
 - src: /images/biplane-matlab-mission.webp
   alt: MATLAB mission profile of altitude and aircraft weight over an upset-recovery lesson flight.
+tileLine: "A MATLAB model tying geometry to lift, drag, fuel and trim."
 role: CAD development and analysis adaptation
 period: Fall 2026 · MATLAB analysis complete
 tools:

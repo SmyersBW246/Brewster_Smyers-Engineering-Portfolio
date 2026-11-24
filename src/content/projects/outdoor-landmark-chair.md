@@ -4,6 +4,7 @@ category: Design & build
 order: 1
 featured: true
 hero: /images/chair-cad.webp
+tileLine: "Designed in SolidWorks, built in 2 days for about $1,000."
 role: Independent design and fabrication
 period: Completed
 tools:

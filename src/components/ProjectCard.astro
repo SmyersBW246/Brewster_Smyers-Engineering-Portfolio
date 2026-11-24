@@ -1,14 +1,21 @@
 ---
 // One project tile: image (or a text panel when there is no image), number, category, status and summary.
 // Used on the home page and on the Projects page.
+// compact: smaller tile without the summary, used for the "More projects" row on the home page.
 import { url } from '../lib/urls';
 
-const { project, number } = Astro.props;
+const { project, number, compact = false } = Astro.props;
 const p = project.data;
+
+// Short one-line wording for the tile comes from the project's own tileLine field (src/content/projects).
+// Projects without one use the first sentence of their summary.
+const line = p.tileLine ?? p.summary.split(/(?<=[.!?])\s/)[0];
 ---
-<a class:list={['project-card', { 'no-image': !p.hero }]} href={url(`projects/${project.id}/`)}>
-  <div class:list={['card-image', { collage: p.heroGallery?.length }]}>
-    {p.heroGallery?.length ? (
+<a class:list={['project-card', { 'no-image': !p.hero, compact }]} href={url(`projects/${project.id}/`)}>
+  <div class:list={['card-image', { collage: !p.tileImage && p.heroGallery?.length }]}>
+    {p.tileImage ? (
+      <img src={url(p.tileImage.src)} alt={p.tileImage.alt} width="1000" height="720" loading="lazy"/>
+    ) : p.heroGallery?.length ? (
       <div class="hero-collage">
         {p.heroGallery.map((g) => <img src={url(g.src)} alt={g.alt} width="900" height="640" loading="lazy"/>)}
       </div>
@@ -28,5 +35,5 @@ const p = project.data;
     <span>{p.status}</span>
   </div>
   <h3>{p.shortTitle}</h3>
-  <p>{p.summary}</p>
+  {!compact && <p>{line}</p>}
 </a>

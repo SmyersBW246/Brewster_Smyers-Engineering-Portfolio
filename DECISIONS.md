@@ -34,3 +34,10 @@
 - Learning page renamed "AI + Learning" in the menu. The "Limits" section folded into a sixth ground rule ("Keep my judgment").
 - Terms come from the unofficial transcript (U:\private\Projects LinkedIN_Resume, dated 10-13): every course row shows its term; MATH 201 shows AP credit. Grades and GPA are never published. MECH 205, FOUN 098 and RELI 100 added; ENGR 099 (0-credit audited seminar) left off. Physics is listed as PHYS 211P, as on the transcript. Skills lines follow the 2026-2027 catalog. Research record: research/coursework/TRANSCRIPT_COURSE_RESEARCH.md.
 - Mathematics minor line (MATH 211, 212, 227, 303) shown at Brewster's statement; the courses meet the catalog's written minor rules, but the transcript does not list a declared minor.
+
+## Project review and homepage tiles, 2026-11-24
+- All 12 projects scored and reviewed with Brewster. Homepage tiles (`picks` in src/pages/index.astro), in order: micro-drone chassis, ACK coaster mold, CAM Tutor, underwater vehicle + water tunnel, aerobatic biplane, outdoor chair. Everything else is listed under "More projects".
+- Coaster stays a tile but not first (Brewster). Chair stays a tile with its CAD hero until a finished-chair photo exists. Pipe bracket is not featured: Brewster says it was about a 45-minute job.
+- Tiles read two optional content fields: `tileLine` (one-line result, replaces the summary on the tile) and `tileImage` (single tile image). Coaster and water tunnel use sharper fallbacks (toolpath plot, SolidWorks channel) because their photos are only about 240 to 370 px wide; their project pages keep the real photos. CAM Tutor's tile uses the coaster simulation.
+- Drone page Evidence no longer says nothing was molded; the first chopped-carbon frame was molded 2026-11-19.
+- Layout (A+) built by the layout session the same day; content and ordering are separate from layout files.

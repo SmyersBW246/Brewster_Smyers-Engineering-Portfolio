@@ -13,6 +13,10 @@ heroGallery:
   alt: Fusion stock simulation of a coaster mold being cut from a 4 by 4 inch aluminum block.
 - src: /images/cam-tutor-test-block.webp
   alt: The five-sided aluminum test block used to check 4- and 5-axis planning.
+tileImage:
+  src: /images/cam-tutor-coaster-sim.webp
+  alt: Fusion stock simulation of a coaster mold being cut from a 4 by 4 inch aluminum block.
+tileLine: "A Fusion add-in that plans CNC toolpaths and explains every choice with a rule a student can check."
 role: "Personal project. I set the rules and tested every run in Fusion; the code was written with Claude Code (AI)"
 period: Fall 2026 · In progress
 tools:

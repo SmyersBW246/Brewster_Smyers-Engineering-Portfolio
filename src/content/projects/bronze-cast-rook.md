@@ -4,6 +4,7 @@ category: Materials & manufacturing
 order: 7
 featured: false
 hero: /images/rook-finished.webp
+tileLine: "Cast in bronze, then measured against my CAD: 3.36% narrower, about 14% lighter."
 role: Pattern CAD, print prep, gating and finishing
 period: MECH 355 · September 2026 · Completed
 tools:

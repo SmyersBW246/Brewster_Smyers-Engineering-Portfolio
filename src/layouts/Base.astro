@@ -5,6 +5,7 @@ import '@fontsource-variable/manrope';
 import '@fontsource-variable/space-grotesk';
 import 'katex/dist/katex.min.css';
 import '../styles/global.css';
+import '../styles/aplus.css';
 import { url } from '../lib/urls';
 
 const {
@@ -40,6 +41,7 @@ const nav = [
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
+    <div class="site-header-bar">
     <header class="site-header wrap">
       <a class="brand" href={url()} aria-label="Brewster Smyers home">
         <span class="monogram" aria-hidden="true">BS<span>.</span></span>
@@ -48,15 +50,17 @@ const nav = [
       <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">Menu <span aria-hidden="true">+</span></button>
       <nav id="primary-nav" aria-label="Main navigation">
         {nav.map(([label, path]) => (
-          <a href={url(path)} aria-current={current.startsWith(url(path)) ? 'page' : undefined}>{label}</a>
+          <a class:list={{ 'nav-pill': path === 'resume/' }} href={url(path)} aria-current={current.startsWith(url(path)) ? 'page' : undefined}>{label}</a>
         ))}
       </nav>
     </header>
+    </div>
 
     <main id="main">
       <slot/>
     </main>
 
+    <div class="site-footer-bar">
     <footer class="site-footer wrap">
       <div>
         <a class="footer-name" href={url()}>Brewster Smyers<span>.</span></a>
@@ -67,6 +71,7 @@ const nav = [
         <small>Bucknell University · Class of 2028</small>
       </div>
     </footer>
+    </div>
 
     <script>
       // Phone menu: the Menu button shows or hides the navigation links.

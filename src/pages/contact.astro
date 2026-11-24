@@ -2,6 +2,10 @@
 // Contact page: email, LinkedIn and resume download.
 import Base from '../layouts/Base.astro';
 import { url, email, linkedin } from '../lib/urls';
+
+// Phone number shown on this page, and the same number in dialing form for the tap-to-call link.
+const phone = '781-513-7141';
+const phoneLink = '+17815137141';
 ---
 <Base title="Contact | Brewster Smyers">
   <section class="contact-page wrap">
@@ -13,6 +17,11 @@ import { url, email, linkedin } from '../lib/urls';
       <a href={`mailto:${email}`}>
         <small>Email</small>
         <span>{email}</span>
+        <b aria-hidden="true">↗</b>
+      </a>
+      <a href={`tel:${phoneLink}`}>
+        <small>Phone</small>
+        <span>{phone}</span>
         <b aria-hidden="true">↗</b>
       </a>
       <a href={linkedin}>

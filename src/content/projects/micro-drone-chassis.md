@@ -4,6 +4,7 @@ category: Composite concepts
 order: 5
 featured: false
 hero: /images/drone-chassis-in-mold.webp
+tileLine: "The first chopped-carbon chassis, pressed in my own 3-part printed compression mold."
 role: Personal project, with the mold developed alongside MECH 355
 period: Fall 2026 · Molded, now building
 tools:
@@ -93,7 +94,7 @@ The mold is a three-part SolidWorks assembly built around the chassis blank.
 
 ## Evidence
 
-Everything so far is CAD and calculation. No frame has been molded, measured or flown.
+The first frame is molded (see the photos on this page), but nothing has been weighed, tested or flown yet. The numbers below are CAD and calculation.
 
 - **Fit.** The assembly is where I check that the bolt patterns line up and the props clear the arms.
 - **Mass.** From the CAD volume of about 13.3 cm³, the bare frame works out to roughly 19 g in chopped carbon and 17 g in PETG, using assumed densities of 1.45 and 1.25 g/cm³. Those are estimates, not weighed parts.

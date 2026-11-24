@@ -63,8 +63,13 @@ for (const file of files(root).filter(f => f.endsWith('.css'))) {
 }
 const home = docs.get(path.join(root, 'index.html')) || '';
 const about = docs.get(path.join(root, 'about/index.html')) || '';
-// Homepage ("build, ask why, lead"): three themes and six project tiles.
-if (!home.includes('I ask why.') || (home.match(/<article class="theme"/g) || []).length !== 3 || (home.match(/class="project-card"/g) || []).length !== 6) errors.push('Homepage: expected the three themes and six project tiles');
+// Homepage ("build, ask why, lead"): three themes, six featured project tiles and the remaining
+// projects as compact tiles under "More projects", so every project is reachable from the home page.
+const featuredTiles = (home.match(/class="project-card"/g) || []).length;
+const compactTiles = (home.match(/class="project-card compact"/g) || []).length;
+if (!/I ask (<em[^>]*>)?why\.(<\/em>)?/.test(home) || (home.match(/<article class="ap-theme"/g) || []).length !== 3 || featuredTiles !== 6) errors.push('Homepage: expected the three themes and six featured project tiles');
+const projectPages = [...docs.keys()].filter((f) => /[\\/]projects[\\/][^\\/]+[\\/]index\.html$/.test(f)).length;
+if (featuredTiles + compactTiles !== projectPages) errors.push(`Homepage: links ${featuredTiles + compactTiles} project tiles but ${projectPages} project pages exist`);
 for (const id of ['new-england','st-pauls','outside','bucknell','building']) if (!about.includes(`id="${id}"`)) errors.push(`About: missing revised chapter ${id}`);
 if (!about.includes('Always making')) errors.push('About: old content or missing introduction');
 if (fs.existsSync(path.join(root, 'projects/bicycle-computer-mount/index.html'))) errors.push('Removed bicycle-mount project still published');

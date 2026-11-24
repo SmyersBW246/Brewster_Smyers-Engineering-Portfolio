@@ -13,6 +13,10 @@ heroGallery:
   alt: Photo of the machined aluminum mold block from the side, showing the cavity and a vent slot.
 - src: /images/coaster-mold-model.webp
   alt: Top view of the finished coaster mold model with the island outline, lip groove and four vent slots.
+tileImage:
+  src: /images/coaster-toolpath.webp
+  alt: Top-view plot of every cutting move in the coaster mold G-code, colored by tool.
+tileLine: "Machined in aluminum from my own G-code."
 role: Coaster + mold CAD, process plan, Mastercam toolpaths and G-code
 period: MECH 355 · October 2026
 tools:

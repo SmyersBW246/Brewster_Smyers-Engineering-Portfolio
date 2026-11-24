@@ -13,6 +13,10 @@ heroGallery:
   alt: Isometric SolidWorks view of the water tunnel flow channel, a narrow inlet widening into a wider test section.
 - src: /images/auv-tunnel-assembled-2.webp
   alt: Top-down photo of the assembled clear acrylic water tunnel on a lab stool, with an orange honeycomb flow straightener at the wide end.
+tileImage:
+  src: /images/auv-flow-channel-front.webp
+  alt: Isometric SolidWorks view of the water tunnel flow channel, a narrow inlet widening into a wider test section.
+tileLine: "Team lead on a team of six: a vehicle hull and the water tunnel to test it."
 role: Team lead, water tunnel design and individual hull concept
 period: Fall 2026 · In progress
 tools:
